@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:18:32Z",
+      "id": "outlaw-tee-black-s",
+      "name": "Outlaw Tee - Black",
+      "size": "S",
+      "image": "images/outlaw-tee-black-1782256711467.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:18:02Z",
       "id": "og-syna-skull-black-one-size",
       "name": "OG Syna Skull - BLack",
