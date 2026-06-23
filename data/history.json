@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:47:21Z",
+      "id": "foundation-hoodie-black-s",
+      "name": "Foundation Hoodie - Black",
+      "size": "S",
+      "image": "images/foundation-hoodie-black-1782254840893.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:46:44Z",
       "id": "foundation-gilet-grey-camo-s",
       "name": "Foundation Gilet - Grey Camo",
