@@ -1,6 +1,46 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:04:32Z",
+      "id": "irongate-blocks-hoodie-black-s",
+      "name": "Irongate Blocks Hoodie - Black",
+      "size": "S",
+      "image": "images/irongate-blocks-hoodie-black-1782255871445.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T23:04:32Z",
+      "id": "irongate-blocks-hoodie-black-m",
+      "name": "Irongate Blocks Hoodie - Black",
+      "size": "M",
+      "image": "images/irongate-blocks-hoodie-black-1782255871445.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T23:04:32Z",
+      "id": "irongate-blocks-hoodie-black-l",
+      "name": "Irongate Blocks Hoodie - Black",
+      "size": "L",
+      "image": "images/irongate-blocks-hoodie-black-1782255871445.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T23:04:32Z",
+      "id": "irongate-blocks-hoodie-black-xl",
+      "name": "Irongate Blocks Hoodie - Black",
+      "size": "XL",
+      "image": "images/irongate-blocks-hoodie-black-1782255871445.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:03:32Z",
       "id": "irongate-arch-puffer-aw23-black-gradient-s",
       "name": "Irongate Arch Puffer AW23 - Black/Gradient",
