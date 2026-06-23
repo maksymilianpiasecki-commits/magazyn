@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:51:49Z",
+      "id": "synarchy-double-long-sleeve-tee-black-bl-s",
+      "name": "Synarchy Double Long Sleeve Tee - Black/Black",
+      "size": "S",
+      "image": "images/synarchy-double-long-sleeve-tee-black-bl-1782258708564.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:51:49Z",
+      "id": "synarchy-double-long-sleeve-tee-black-bl-m",
+      "name": "Synarchy Double Long Sleeve Tee - Black/Black",
+      "size": "M",
+      "image": "images/synarchy-double-long-sleeve-tee-black-bl-1782258708564.jpg",
+      "type": "new",
+      "delta": 10,
+      "after": 10
+    },
+    {
+      "ts": "2026-06-23T23:51:49Z",
+      "id": "synarchy-double-long-sleeve-tee-black-bl-l",
+      "name": "Synarchy Double Long Sleeve Tee - Black/Black",
+      "size": "L",
+      "image": "images/synarchy-double-long-sleeve-tee-black-bl-1782258708564.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:50:55Z",
       "id": "synarchy-double-longsleeve-tee-black-ros-s",
       "name": "Synarchy Double Longsleeve Tee - Black/Rose Gold",
