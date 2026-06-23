@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:50:55Z",
+      "id": "synarchy-double-longsleeve-tee-black-ros-s",
+      "name": "Synarchy Double Longsleeve Tee - Black/Rose Gold",
+      "size": "S",
+      "image": "images/synarchy-double-longsleeve-tee-black-ros-1782258654488.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:50:55Z",
+      "id": "synarchy-double-longsleeve-tee-black-ros-m",
+      "name": "Synarchy Double Longsleeve Tee - Black/Rose Gold",
+      "size": "M",
+      "image": "images/synarchy-double-longsleeve-tee-black-ros-1782258654488.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:49:52Z",
       "id": "synarchy-cuffed-beanie-black-green-one-size",
       "name": "Synarchy Cuffed Beanie - Black/Green",
