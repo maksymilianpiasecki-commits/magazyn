@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:00:45Z",
+  "updated": "2026-06-23T21:01:43Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -228,6 +228,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T21:00:45Z"
+    },
+    {
+      "id": "allstarz-folded-beanie-blue-one-size",
+      "name": "Allstarz Folded Beanie - Blue",
+      "brand": "Corteiz",
+      "subtitle": "Beanie",
+      "image": "images/allstarz-folded-beanie-blue-1782248502510.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:01:43Z"
     }
   ]
 }
