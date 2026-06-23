@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:10:01Z",
+  "updated": "2026-06-23T22:10:43Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -600,6 +600,18 @@
       "price": "100",
       "location": "Wrocław",
       "updated": "2026-06-23T22:10:01Z"
+    },
+    {
+      "id": "yacht-club-grey-trucker-one-size",
+      "name": "Yacht Club Grey Trucker",
+      "brand": "Corteiz",
+      "subtitle": "Czapka z daszkiem",
+      "image": "images/yacht-club-grey-trucker-1782252641962.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "120",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:10:43Z"
     }
   ]
 }
