@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:55:15Z",
+  "updated": "2026-06-23T21:55:47Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -456,6 +456,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T21:55:15Z"
+    },
+    {
+      "id": "micro-allstarz-beanie-cream-one-size",
+      "name": "Micro Allstarz Beanie - Cream",
+      "brand": "Corteiz",
+      "subtitle": "Beanie",
+      "image": "images/micro-allstarz-beanie-cream-1782251746418.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:55:47Z"
     }
   ]
 }
