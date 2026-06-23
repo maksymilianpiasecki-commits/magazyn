@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:25:49Z",
+      "id": "shooters-league-2-0-hoodie-black-l",
+      "name": "Shooters League 2.0 Hoodie - Black",
+      "size": "L",
+      "image": "images/shooters-league-2-0-hoodie-black-1782257148632.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:25:07Z",
       "id": "shooters-hooded-puffer-black-reflective-s",
       "name": "Shooters Hooded Puffer - Black/Reflective",
