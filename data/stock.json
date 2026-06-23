@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:56:49Z",
+  "updated": "2026-06-23T23:57:53Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2700,6 +2700,30 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T23:56:49Z"
+    },
+    {
+      "id": "boxerki-syna-black-black-3pack-s",
+      "name": "Boxerki Syna Black/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-black-black-3pack-1782259072893.jpg",
+      "size": "S",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:57:53Z"
+    },
+    {
+      "id": "boxerki-syna-black-black-3pack-m",
+      "name": "Boxerki Syna Black/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-black-black-3pack-1782259072893.jpg",
+      "size": "M",
+      "qty": 5,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:57:53Z"
     }
   ]
 }
