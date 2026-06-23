@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:12:26Z",
+  "updated": "2026-06-23T22:13:13Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -648,6 +648,30 @@
       "price": "1200",
       "location": "Wrocław",
       "updated": "2026-06-23T22:12:26Z"
+    },
+    {
+      "id": "decoded-camo-hoodie-black-neon-green-m",
+      "name": "Decoded Camo Hoodie - Black/Neon Green",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-camo-hoodie-black-neon-green-1782252792325.jpg",
+      "size": "M",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:13:13Z"
+    },
+    {
+      "id": "decoded-camo-hoodie-black-neon-green-l",
+      "name": "Decoded Camo Hoodie - Black/Neon Green",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-camo-hoodie-black-neon-green-1782252792325.jpg",
+      "size": "L",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:13:13Z"
     }
   ]
 }
