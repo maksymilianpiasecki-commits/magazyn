@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:06:05Z",
+  "updated": "2026-06-23T20:09:44Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -60,6 +60,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T20:06:05Z"
+    },
+    {
+      "id": "adg-thermal-green-m",
+      "name": "ADG Thermal Green",
+      "brand": "Denim Tears",
+      "subtitle": "Longsleeve",
+      "image": "images/adg-thermal-green-1782245383605.jpg",
+      "size": "M",
+      "qty": 5,
+      "price": "400",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:09:44Z"
     }
   ]
 }
