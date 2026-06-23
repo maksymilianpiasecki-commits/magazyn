@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:26:11Z",
+      "id": "shooters-league-2-0-t-shirt-black-l",
+      "name": "Shooters League 2.0 T-Shirt - Black",
+      "size": "L",
+      "image": "images/shooters-league-2-0-t-shirt-black-1782257170354.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
       "ts": "2026-06-23T23:25:49Z",
       "id": "shooters-league-2-0-hoodie-black-l",
       "name": "Shooters League 2.0 Hoodie - Black",
