@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:50:14Z",
+  "updated": "2026-06-23T22:50:38Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1248,6 +1248,18 @@
       "price": "280",
       "location": "Wrocław",
       "updated": "2026-06-23T22:50:14Z"
+    },
+    {
+      "id": "halftone-hoodie-black-s",
+      "name": "Halftone Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/halftone-hoodie-black-1782255037378.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:50:38Z"
     }
   ]
 }
