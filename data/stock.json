@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:16:55Z",
+  "updated": "2026-06-23T22:17:57Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -744,6 +744,42 @@
       "price": "150",
       "location": "Wrocław",
       "updated": "2026-06-23T22:16:55Z"
+    },
+    {
+      "id": "decoded-paisley-monochrome-edition-hoodi-s",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "size": "S",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:17:57Z"
+    },
+    {
+      "id": "decoded-paisley-monochrome-edition-hoodi-m",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "size": "M",
+      "qty": 4,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:17:57Z"
+    },
+    {
+      "id": "decoded-paisley-monochrome-edition-hoodi-l",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "size": "L",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:17:57Z"
     }
   ]
 }
