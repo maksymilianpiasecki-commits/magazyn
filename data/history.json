@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:46:13Z",
+      "id": "foundation-gilet-black-s",
+      "name": "Foundation Gilet - Black",
+      "size": "S",
+      "image": "images/foundation-gilet-black-1782254772447.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:44:59Z",
       "id": "foundation-crew-inked-blue-s",
       "name": "Foundation Crew - Inked Blue",
