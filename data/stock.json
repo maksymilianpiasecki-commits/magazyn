@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:59:00Z",
+  "updated": "2026-06-23T21:00:45Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -216,6 +216,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T20:59:00Z"
+    },
+    {
+      "id": "alcatraz-beanie-cream-one-size",
+      "name": "Alcatraz Beanie - Cream",
+      "brand": "Corteiz",
+      "subtitle": "Beanie",
+      "image": "images/alcatraz-beanie-cream-1782248444318.jpg",
+      "size": "ONE SIZE",
+      "qty": 2,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:00:45Z"
     }
   ]
 }
