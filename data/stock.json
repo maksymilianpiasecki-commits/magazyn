@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:08:12Z",
+  "updated": "2026-06-23T23:09:05Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1668,6 +1668,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:08:12Z"
+    },
+    {
+      "id": "it-s-a-secret-hooded-puffer-black-m",
+      "name": "It's A Secret Hooded Puffer - Black",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/it-s-a-secret-hooded-puffer-black-1782256144901.jpg",
+      "size": "M",
+      "qty": 6,
+      "price": "450",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:09:05Z"
     }
   ]
 }
