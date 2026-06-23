@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:24:26Z",
+      "id": "shooters-breakthrough-tee-black-m",
+      "name": "Shooters Breakthrough Tee - Black",
+      "size": "M",
+      "image": "images/shooters-breakthrough-tee-black-1782257065623.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:24:26Z",
+      "id": "shooters-breakthrough-tee-black-l",
+      "name": "Shooters Breakthrough Tee - Black",
+      "size": "L",
+      "image": "images/shooters-breakthrough-tee-black-1782257065623.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:23:58Z",
       "id": "script-tee-black-teal-l",
       "name": "Script Tee - Black/Teal",
