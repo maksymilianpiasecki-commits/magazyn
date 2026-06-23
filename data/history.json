@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:36:04Z",
+      "id": "sun-will-rise-tee-black-l",
+      "name": "Sun Will Rise Tee - Black",
+      "size": "L",
+      "image": "images/sun-will-rise-tee-black-1782257763219.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:35:35Z",
       "id": "strike-out-hoodie-black-s",
       "name": "Strike Out Hoodie - Black",
