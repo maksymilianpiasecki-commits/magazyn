@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:32:32Z",
+      "id": "chain-script-hoodie-black-ice-s",
+      "name": "Chain Script Hoodie - Black/Ice",
+      "size": "S",
+      "image": "images/chain-script-hoodie-black-ice-1782246751476.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T20:15:20Z",
       "id": "bust-down-dreams-tee-black-m",
       "name": "Bust Down Dreams Tee - Black",
