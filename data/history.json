@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:12:40Z",
+      "id": "link-up-tee-black-m",
+      "name": "Link Up Tee - Black",
+      "size": "M",
+      "image": "images/link-up-tee-black-1782256358998.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:12:07Z",
       "id": "lil-syna-womens-t-shirt-s",
       "name": "Lil Syna Womens T-shirt",
