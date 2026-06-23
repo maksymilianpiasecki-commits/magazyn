@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:56:56Z",
+  "updated": "2026-06-23T21:57:39Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -492,6 +492,18 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T21:56:56Z"
+    },
+    {
+      "id": "og-strike-beanie-brown-one-size",
+      "name": "OG Strike Beanie - Brown",
+      "brand": "Corteiz",
+      "subtitle": "Beanie",
+      "image": "images/og-strike-beanie-brown-1782251857898.jpg",
+      "size": "ONE SIZE",
+      "qty": 3,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:57:39Z"
     }
   ]
 }
