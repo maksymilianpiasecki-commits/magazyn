@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:32:32Z",
+  "updated": "2026-06-23T20:49:34Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -120,6 +120,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T20:32:32Z"
+    },
+    {
+      "id": "college-crew-short-set-l",
+      "name": "College Crew - Short Set",
+      "brand": "Syna World",
+      "subtitle": "Short set",
+      "image": "images/college-crew-short-set-1782247773021.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "750",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:49:34Z"
     }
   ]
 }
