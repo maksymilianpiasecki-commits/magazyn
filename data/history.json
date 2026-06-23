@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:17:30Z",
+      "id": "nocturnal-tee-white-m",
+      "name": "Nocturnal Tee - White",
+      "size": "M",
+      "image": "images/nocturnal-tee-white-1782256649369.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:17:30Z",
+      "id": "nocturnal-tee-white-l",
+      "name": "Nocturnal Tee - White",
+      "size": "L",
+      "image": "images/nocturnal-tee-white-1782256649369.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:16:42Z",
       "id": "nocturnal-tee-black-l",
       "name": "Nocturnal Tee - Black",
