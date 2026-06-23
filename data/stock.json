@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:33:15Z",
+  "updated": "2026-06-23T23:33:57Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2208,6 +2208,18 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T23:33:15Z"
+    },
+    {
+      "id": "yella-guerillaz-cargos-black-yellow-m",
+      "name": "Yella Guerillaz Cargos Black Yellow",
+      "brand": "Corteiz",
+      "subtitle": "Spodnie",
+      "image": "images/yella-guerillaz-cargos-black-yellow-1782257636153.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "600",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:33:57Z"
     }
   ]
 }
