@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:57:42Z",
+      "id": "c-star-corduroy-trucker-black-navy-one-size",
+      "name": "C-Star Corduroy Trucker - Black/Navy",
+      "size": "ONE SIZE",
+      "image": "images/c-star-corduroy-trucker-black-navy-1782248261482.jpg",
+      "type": "new",
+      "delta": 5,
+      "after": 5
+    },
+    {
       "ts": "2026-06-23T20:57:17Z",
       "id": "corteiz-c-star-corduroy-trucker-black-na-one-size",
       "name": "Corteiz  C-Star Corduroy Trucker - Black/Navy",
