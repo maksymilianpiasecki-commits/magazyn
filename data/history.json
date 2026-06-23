@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:21:04Z",
+      "id": "decoded-tracksuit-black-monochrome-s",
+      "name": "Decoded Tracksuit - Black Monochrome",
+      "size": "S",
+      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:21:04Z",
+      "id": "decoded-tracksuit-black-monochrome-m",
+      "name": "Decoded Tracksuit - Black Monochrome",
+      "size": "M",
+      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:21:04Z",
+      "id": "decoded-tracksuit-black-monochrome-l",
+      "name": "Decoded Tracksuit - Black Monochrome",
+      "size": "L",
+      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:20:19Z",
       "id": "decoded-paisley-revolution-tee-m",
       "name": "Decoded Paisley Revolution Tee",
