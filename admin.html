@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazyn - panel</title>
+
+<!--
+  =========================================================================
+  PANEL ADMINA - dodawanie i edycja stanu, zapisuje prosto do repo GitHub.
+  Zastepuje arkusz Google + sync.py + sync.yml (nie sa juz potrzebne).
+
+  USTAW NIZEJ w CONFIG: OWNER, REPO, BRANCH (twoj login, nazwa repo, galaz).
+
+  TOKEN (robisz raz):
+    GitHub -> Settings (konto) -> Developer settings -> Personal access tokens
+    -> Fine-grained tokens -> Generate new token
+      - Resource owner: Ty
+      - Repository access: Only select repositories -> wskaz to repo
+      - Permissions -> Repository permissions -> Contents: Read and write
+      - (Metadata zostanie wlaczone samo - to OK)
+    Skopiuj token i wklej go w panelu po wejsciu na strone (pole "Token").
+    Token NIE jest nigdzie zapisywany - wpisujesz go raz na sesje.
+
+  Strona publiczna to index.html (tylko podglad, bez tokenu).
+  =========================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #F4F7FB; --surface: #FFFFFF; --surface-2: #FAFCFF;
+    --line: #E4EAF3; --line-soft: #EEF2F8;
+    --ink: #13294B; --ink-soft: #4E5F7B; --muted: #8A99B2;
+    --blue: #2563EB; --blue-soft: #EAF1FE; --blue-line: #C9DCFD;
+    --green: #15924B; --green-soft: #E6F6ED;
+    --amber: #B8730A; --amber-soft: #FBF1DF;
+    --red: #D62E2E; --red-soft: #FCEAEA;
+    --shadow: 0 1px 2px rgba(19,41,75,0.05), 0 1px 3px rgba(19,41,75,0.04);
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; line-height: 1.45; min-height: 100vh; font-size: 14px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px 80px; }
+
+  .topbar { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 40; }
+  .topbar-in { max-width: 880px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 18px; letter-spacing: -0.3px; }
+  .brand .sq { width: 22px; height: 22px; border-radius: 6px; background: var(--blue); display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 800; }
+  .brand small { font-weight: 600; font-size: 12px; color: var(--muted); margin-left: 2px; }
+  .conn { margin-left: auto; font-size: 12px; font-weight: 600; padding: 5px 11px; border-radius: 20px; display: inline-flex; align-items: center; gap: 6px; }
+  .conn::before { content: ""; width: 7px; height: 7px; border-radius: 50%; }
+  .conn.off { background: var(--line-soft); color: var(--muted); }
+  .conn.off::before { background: var(--muted); }
+  .conn.on { background: var(--green-soft); color: var(--green); }
+  .conn.on::before { background: var(--green); }
+  .link-view { margin-left: 4px; font-size: 12px; color: var(--blue); text-decoration: none; font-weight: 600; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); padding: 20px; margin-top: 18px; }
+  .card h2 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .card .hint { font-size: 12.5px; color: var(--muted); margin-bottom: 16px; }
+
+  label.fl { display: block; font-size: 12px; font-weight: 600; color: var(--ink-soft); margin-bottom: 5px; }
+  .inp, textarea { width: 100%; background: var(--surface); border: 1px solid var(--line); color: var(--ink); padding: 10px 12px; border-radius: 9px; font-size: 14px; font-family: inherit; }
+  .inp:focus, textarea:focus { outline: 2px solid var(--blue); outline-offset: 0; border-color: transparent; }
+  .inp::placeholder { color: var(--muted); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .field { margin-bottom: 14px; }
+
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; cursor: pointer; font-family: inherit; font-weight: 600; font-size: 14px; padding: 11px 18px; border-radius: 9px; border: 1px solid transparent; transition: background .14s, transform .1s, border-color .14s; }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--blue); color: #fff; }
+  .btn-primary:hover { background: #1d57d6; }
+  .btn-ghost { background: var(--surface); border-color: var(--line); color: var(--ink); }
+  .btn-ghost:hover { border-color: var(--blue-line); }
+  .btn-danger { background: var(--surface); border-color: var(--line); color: var(--red); }
+  .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+  .btn-sm { padding: 7px 12px; font-size: 13px; }
+
+  /* rozmiary */
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 10px; }
+  .chip { cursor: pointer; font-size: 12.5px; font-weight: 600; padding: 6px 12px; border-radius: 20px; border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft); }
+  .chip:hover { border-color: var(--blue-line); color: var(--blue); }
+  .sizeRow { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; }
+  .sizeRow .s { flex: 1; }
+  .sizeRow .q { width: 96px; }
+  .iconbtn { width: 38px; height: 38px; flex-shrink: 0; border: 1px solid var(--line); background: var(--surface); border-radius: 9px; cursor: pointer; color: var(--muted); font-size: 18px; line-height: 1; display: grid; place-items: center; }
+  .iconbtn:hover { color: var(--red); border-color: var(--red-soft); }
+
+  /* zdjecie */
+  .drop { border: 1.5px dashed var(--blue-line); border-radius: 11px; background: var(--blue-soft); padding: 18px; text-align: center; cursor: pointer; color: var(--blue); font-weight: 600; font-size: 13.5px; transition: background .14s; }
+  .drop:hover { background: #e1ecfe; }
+  .preview { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+  .preview img { width: 64px; height: 64px; object-fit: cover; border-radius: 9px; border: 1px solid var(--line); }
+  .preview .x { font-size: 12.5px; color: var(--red); cursor: pointer; font-weight: 600; }
+
+  /* lista stanu */
+  .prod { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
+  .prod-head { display: flex; align-items: center; gap: 12px; padding: 11px 14px; background: var(--surface-2); border-bottom: 1px solid var(--line-soft); }
+  .prod-head img { width: 44px; height: 44px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); flex-shrink: 0; }
+  .prod-head .n { font-weight: 600; font-size: 14px; }
+  .prod-head .s { font-size: 12px; color: var(--muted); }
+  .vrow { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-bottom: 1px solid var(--line-soft); }
+  .vrow:last-child { border-bottom: none; }
+  .vrow .size { font-weight: 600; font-size: 13.5px; min-width: 70px; }
+  .vrow .qty { width: 84px; }
+  .vrow .stat { font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 6px; }
+  .stat-zero { background: var(--red-soft); color: var(--red); }
+  .vrow .grow { flex: 1; }
+
+  .savebar { position: sticky; bottom: 0; background: rgba(244,247,251,0.92); backdrop-filter: blur(8px); border-top: 1px solid var(--line); padding: 12px 16px; margin: 18px -16px -80px; display: none; align-items: center; gap: 12px; }
+  .savebar.show { display: flex; }
+  .savebar .txt { font-size: 13px; color: var(--ink-soft); font-weight: 600; }
+  .savebar .txt b { color: var(--amber); }
+
+  .empty { text-align: center; padding: 30px 20px; color: var(--muted); font-size: 13.5px; }
+  .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: #fff; padding: 12px 18px; border-radius: 11px; font-size: 13.5px; z-index: 100; opacity: 0; transition: opacity .25s, transform .25s; max-width: 90vw; box-shadow: 0 12px 36px rgba(19,41,75,0.28); }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .toast.err { background: #7a1f1f; }
+  .toast b { color: #9ec1ff; }
+  .hidden { display: none !important; }
+  a.tokenlink { color: var(--blue); font-weight: 600; text-decoration: none; }
+
+  @media (max-width: 560px) { .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="sq" id="brandSq">M</span><span id="brandName">Magazyn</span><small>panel</small></div>
+    <span class="conn off" id="conn">Niepołączony</span>
+    <a class="link-view" id="viewLink" href="index.html" target="_blank">Podgląd ▸</a>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- POLACZENIE -->
+  <div class="card" id="connectCard">
+    <h2>Połącz z repo</h2>
+    <p class="hint">Wklej token GitHuba (fine-grained, uprawnienie Contents: Read and write na tym repo). Token zostaje tylko w tej karcie i nie jest nigdzie zapisywany.</p>
+    <div class="field">
+      <label class="fl">Token GitHub</label>
+      <input class="inp" id="token" type="password" placeholder="github_pat_...">
+    </div>
+    <button class="btn btn-primary" id="btnConnect">Połącz</button>
+    <p class="hint" style="margin-top:12px;margin-bottom:0">Nie masz tokenu? <a class="tokenlink" href="https://github.com/settings/tokens?type=beta" target="_blank">Wygeneruj fine-grained token ▸</a></p>
+  </div>
+
+  <!-- APLIKACJA -->
+  <div id="app" class="hidden">
+
+    <!-- DODAJ PRODUKT -->
+    <div class="card">
+      <h2>Dodaj produkt</h2>
+      <p class="hint">Jeden produkt, dowolnie wiele rozmiarów z osobną ilością. Zdjęcie wspólne dla wszystkich rozmiarów.</p>
+
+      <div class="field"><label class="fl">Nazwa</label><input class="inp" id="aName" placeholder="np. SynaWorld OG Syna Skull Beanie"></div>
+      <div class="grid2">
+        <div class="field"><label class="fl">Kategoria (opcjonalnie)</label><input class="inp" id="aCat" placeholder="np. Czapka"></div>
+        <div class="field"><label class="fl">Cena (opcjonalnie)</label><input class="inp" id="aPrice" placeholder="np. 250"></div>
+      </div>
+      <div class="field"><label class="fl">Magazyn</label><input class="inp" id="aLoc" value="Wrocław"></div>
+
+      <div class="field">
+        <label class="fl">Rozmiary i ilości</label>
+        <div class="chips" id="sizeChips"></div>
+        <div id="sizeRows"></div>
+        <button class="btn btn-ghost btn-sm" id="btnAddSize" type="button">+ Dodaj rozmiar</button>
+      </div>
+
+      <div class="field">
+        <label class="fl">Zdjęcie</label>
+        <div class="drop" id="drop">Kliknij, żeby wybrać zdjęcie z dysku lub telefonu</div>
+        <input type="file" id="aImg" accept="image/*" class="hidden">
+        <div class="preview hidden" id="imgPreview"><img id="imgThumb" alt=""><span class="x" id="imgClear">Usuń zdjęcie</span></div>
+      </div>
+
+      <button class="btn btn-primary" id="btnAdd">Dodaj produkt</button>
+    </div>
+
+    <!-- STAN -->
+    <div class="card">
+      <h2>Stan magazynowy <span id="cntBadge" style="font-size:12px;font-weight:600;color:var(--muted)"></span></h2>
+      <p class="hint">Zmień ilość, żeby zaktualizować stan. Ustaw 0, żeby oznaczyć rozmiar jako wyprzedany. Po edycji kliknij Zapisz zmiany.</p>
+      <div id="stockList"></div>
+    </div>
+
+    <div class="savebar" id="savebar">
+      <span class="txt">Masz <b id="dirtyCount">0</b> niezapisanych zmian</span>
+      <div style="flex:1"></div>
+      <button class="btn btn-ghost btn-sm" id="btnDiscard">Odrzuć</button>
+      <button class="btn btn-primary btn-sm" id="btnSave">Zapisz zmiany</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ====================== CONFIG ====================== */
+const CONFIG = {
+  STORE_NAME: "Magazyn",
+  OWNER:  "twoj-login",   // <- twoj login GitHub
+  REPO:   "twoje-repo",   // <- nazwa repo
+  BRANCH: "main",         // <- galaz (czesto main)
+  DATA_DIR: "data",
+  IMAGE_DIR: "images",
+  IMG_MAX: 900,           // max bok zdjecia po zmniejszeniu (px)
+  IMG_QUALITY: 0.82,
+  HISTORY_MAX: 800
+};
+/* ==================================================== */
+
+const API = `https://api.github.com/repos/${CONFIG.OWNER}/${CONFIG.REPO}`;
+let token = "";
+let items = [];       // aktualny stan roboczy
+let original = [];    // ostatnio zapisany stan (do liczenia zmian)
+let history = [];
+let shaStock = null, shaHistory = null;
+let pendingImage = null;   // { dataURL, name }
+
+/* ---------- utils ---------- */
+function $(id) { return document.getElementById(id); }
+function slug(s) {
+  return String(s || "").toLowerCase()
+    .replace(/ą/g,"a").replace(/ć/g,"c").replace(/ę/g,"e").replace(/ł/g,"l").replace(/ń/g,"n")
+    .replace(/ó/g,"o").replace(/ś/g,"s").replace(/ź/g,"z").replace(/ż/g,"z")
+    .replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,40) || "x";
+}
+function utf8ToB64(str) {
+  const bytes = new TextEncoder().encode(str); let bin = ""; const chunk = 0x8000;
+  for (let i = 0; i < bytes.length; i += chunk) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+  return btoa(bin);
+}
+function b64ToUtf8(b64) {
+  const bin = atob(b64.replace(/\s/g, "")); const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+function cleanItem(it) { const { _new, ...rest } = it; return rest; }
+function nowISO() { return new Date().toISOString().replace(/\.\d+Z$/, "Z"); }
+
+let toastT;
+function toast(html, isErr) {
+  const el = $("toast"); el.innerHTML = html; el.className = "toast show" + (isErr ? " err" : "");
+  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("show"), 4500);
+}
+
+/* ---------- GitHub API ---------- */
+async function ghGet(path) {
+  const r = await fetch(`${API}/contents/${path}?ref=${CONFIG.BRANCH}&_=${Date.now()}`, {
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" }
+  });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error(`GET ${path}: ${r.status}`);
+  return r.json();
+}
+async function ghPut(path, contentB64, sha, message) {
+  const body = { message, content: contentB64, branch: CONFIG.BRANCH };
+  if (sha) body.sha = sha;
+  const r = await fetch(`${API}/contents/${path}`, {
+    method: "PUT",
+    headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+  if (!r.ok) { const t = await r.text(); throw new Error(`PUT ${path}: ${r.status} ${t.slice(0,160)}`); }
+  return r.json();
+}
+
+/* ---------- polaczenie ---------- */
+async function connect() {
+  token = $("token").value.trim();
+  if (!token) return toast("Wklej token.", true);
+  $("btnConnect").disabled = true; $("btnConnect").textContent = "Łączę...";
+  try {
+    const repo = await fetch(`${API}`, { headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github+json" } });
+    if (repo.status === 401) throw new Error("Token nieprawidłowy (401).");
+    if (repo.status === 404) throw new Error("Nie widzę repo. Sprawdź OWNER/REPO w CONFIG i czy token ma dostęp do tego repo.");
+    if (!repo.ok) throw new Error("Błąd połączenia: " + repo.status);
+
+    await loadData();
+    $("conn").className = "conn on"; $("conn").textContent = "Połączono";
+    $("connectCard").classList.add("hidden");
+    $("app").classList.remove("hidden");
+    renderStock();
+    toast(`Połączono z <b>${CONFIG.OWNER}/${CONFIG.REPO}</b>.`);
+  } catch (e) {
+    toast(e.message, true);
+  } finally {
+    $("btnConnect").disabled = false; $("btnConnect").textContent = "Połącz";
+  }
+}
+
+async function loadData() {
+  const s = await ghGet(`${CONFIG.DATA_DIR}/stock.json`);
+  if (s) { shaStock = s.sha; const d = JSON.parse(b64ToUtf8(s.content)); items = (d.items || []).map(cleanItem); }
+  else { shaStock = null; items = []; }
+  original = items.map(cleanItem);
+
+  const h = await ghGet(`${CONFIG.DATA_DIR}/history.json`);
+  if (h) { shaHistory = h.sha; const d = JSON.parse(b64ToUtf8(h.content)); history = d.entries || []; }
+  else { shaHistory = null; history = []; }
+}
+
+/* ---------- zdjecie: zmniejszenie ---------- */
+function loadImageFile(file) {
+  return new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => { const img = new Image(); img.onload = () => res(img); img.onerror = () => rej(new Error("img")); img.src = fr.result; };
+    fr.onerror = () => rej(new Error("read"));
+    fr.readAsDataURL(file);
+  });
+}
+async function resizeToDataURL(file) {
+  const img = await loadImageFile(file);
+  const scale = Math.min(1, CONFIG.IMG_MAX / Math.max(img.width, img.height));
+  const w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+  const c = document.createElement("canvas"); c.width = w; c.height = h;
+  c.getContext("2d").drawImage(img, 0, 0, w, h);
+  return c.toDataURL("image/jpeg", CONFIG.IMG_QUALITY);
+}
+
+/* ---------- formularz rozmiarow ---------- */
+const COMMON_SIZES = ["XS","S","M","L","XL","XXL","ONE SIZE"];
+function addSizeRow(size, qty) {
+  const wrap = $("sizeRows");
+  const row = document.createElement("div");
+  row.className = "sizeRow";
+  row.innerHTML = `<input class="inp s" placeholder="Rozmiar" value="${size || ""}">
+                   <input class="inp q" type="number" min="0" placeholder="Ilość" value="${qty != null ? qty : ""}">
+                   <button class="iconbtn" type="button" title="Usuń">×</button>`;
+  row.querySelector(".iconbtn").addEventListener("click", () => row.remove());
+  wrap.appendChild(row);
+  return row;
+}
+function renderSizeChips() {
+  $("sizeChips").innerHTML = "";
+  COMMON_SIZES.forEach(s => {
+    const c = document.createElement("span"); c.className = "chip"; c.textContent = s;
+    c.addEventListener("click", () => { const r = addSizeRow(s, 1); r.querySelector(".q").focus(); r.querySelector(".q").select(); });
+    $("sizeChips").appendChild(c);
+  });
+}
+function readSizeRows() {
+  const out = [];
+  $("sizeRows").querySelectorAll(".sizeRow").forEach(r => {
+    const size = r.querySelector(".s").value.trim();
+    const qty = parseInt(r.querySelector(".q").value, 10);
+    if (size) out.push({ size, qty: isNaN(qty) ? 0 : Math.max(0, qty) });
+  });
+  return out;
+}
+
+/* ---------- dodaj produkt ---------- */
+async function addProduct() {
+  const name = $("aName").value.trim();
+  const sizes = readSizeRows();
+  if (!name) return toast("Podaj nazwę produktu.", true);
+  if (!sizes.length) return toast("Dodaj przynajmniej jeden rozmiar.", true);
+
+  const subtitle = $("aCat").value.trim();
+  const price = $("aPrice").value.trim();
+  const location = $("aLoc").value.trim();
+
+  $("btnAdd").disabled = true; $("btnAdd").textContent = "Zapisuję...";
+  try {
+    // 1. zdjecie (jedno, wspolne)
+    let imagePath = "";
+    if (pendingImage) {
+      const fname = `${CONFIG.IMAGE_DIR}/${slug(name)}-${Date.now()}.jpg`;
+      const b64 = pendingImage.dataURL.split(",")[1];
+      await ghPut(fname, b64, null, `foto: ${name}`);
+      imagePath = fname;
+    }
+
+    // 2. wiersze (rozmiar = osobny wiersz), scalanie z istniejacymi po id
+    const ts = nowISO();
+    const newEntries = [];
+    sizes.forEach(({ size, qty }) => {
+      const id = `${slug(name)}-${slug(size)}`;
+      const existing = items.find(it => it.id === id);
+      if (existing) {
+        const before = existing.qty;
+        existing.qty = qty;
+        if (imagePath) existing.image = imagePath;
+        existing.price = price; existing.subtitle = subtitle; existing.location = location;
+        if (qty !== before) newEntries.push(diffEntry(existing, before, qty, ts));
+      } else {
+        const it = { id, name, subtitle, image: imagePath, size, qty, price, location, updated: ts };
+        items.push(it);
+        newEntries.push({ ts, id, name, size, image: imagePath, type: "new", delta: qty, after: qty });
+      }
+    });
+
+    // 3. zapis stock + historia
+    await saveStock(ts);
+    if (newEntries.length) await saveHistory(newEntries);
+    original = items.map(cleanItem);
+
+    // reset formularza
+    $("aName").value = ""; $("aCat").value = ""; $("aPrice").value = "";
+    $("sizeRows").innerHTML = ""; clearImage();
+    renderStock(); markClean();
+    toast(`Dodano: <b>${name}</b> (${sizes.length} rozm.). Na stronie za chwilę.`);
+  } catch (e) {
+    toast("Nie udało się zapisać: " + e.message, true);
+  } finally {
+    $("btnAdd").disabled = false; $("btnAdd").textContent = "Dodaj produkt";
+  }
+}
+
+/* ---------- liczenie zmian ---------- */
+function diffEntry(row, before, after, ts) {
+  let type, delta = after - before;
+  if (after === 0 && before > 0) type = "sold_out";
+  else if (after < before) type = "decrease";
+  else if (before === 0 && after > 0) type = "restock";
+  else type = "increase";
+  return { ts, id: row.id, name: row.name, size: row.size || "", image: row.image || "", type, delta, after };
+}
+function buildDiff(ts) {
+  const oldById = {}; original.forEach(r => oldById[r.id] = r);
+  const newById = {}; items.forEach(r => newById[r.id] = r);
+  const entries = [];
+  items.forEach(r => {
+    if (!(r.id in oldById)) entries.push({ ts, id: r.id, name: r.name, size: r.size || "", image: r.image || "", type: "new", delta: r.qty, after: r.qty });
+    else if (oldById[r.id].qty !== r.qty) entries.push(diffEntry(r, oldById[r.id].qty, r.qty, ts));
+  });
+  original.forEach(r => { if (!(r.id in newById)) entries.push({ ts, id: r.id, name: r.name, size: r.size || "", image: r.image || "", type: "removed", delta: -r.qty, after: 0 }); });
+  return entries;
+}
+
+/* ---------- zapis plikow ---------- */
+async function saveStock(ts) {
+  const payload = { updated: ts, items: items.map(cleanItem) };
+  const res = await ghPut(`${CONFIG.DATA_DIR}/stock.json`, utf8ToB64(JSON.stringify(payload, null, 2)), shaStock, `stan: ${ts}`);
+  shaStock = res.content.sha;
+}
+async function saveHistory(entries) {
+  history = (entries.concat(history)).slice(0, CONFIG.HISTORY_MAX);
+  const res = await ghPut(`${CONFIG.DATA_DIR}/history.json`, utf8ToB64(JSON.stringify({ entries: history }, null, 2)), shaHistory, `historia: +${entries.length}`);
+  shaHistory = res.content.sha;
+}
+
+/* ---------- zapis edycji stanu ---------- */
+async function saveChanges() {
+  const ts = nowISO();
+  const entries = buildDiff(ts);
+  if (!entries.length) { markClean(); return toast("Nic do zapisania."); }
+  $("btnSave").disabled = true; $("btnSave").textContent = "Zapisuję...";
+  try {
+    items.forEach(it => { const o = original.find(r => r.id === it.id); if (!o || o.qty !== it.qty) it.updated = ts; });
+    await saveStock(ts);
+    await saveHistory(entries);
+    original = items.map(cleanItem);
+    renderStock(); markClean();
+    toast(`Zapisano <b>${entries.length}</b> zmian. Na stronie za chwilę.`);
+  } catch (e) {
+    toast("Błąd zapisu: " + e.message, true);
+  } finally {
+    $("btnSave").disabled = false; $("btnSave").textContent = "Zapisz zmiany";
+  }
+}
+
+/* ---------- render stanu ---------- */
+function groupByProduct(list) {
+  const m = new Map();
+  list.forEach(it => {
+    if (!m.has(it.name)) m.set(it.name, { name: it.name, subtitle: it.subtitle, image: it.image, rows: [] });
+    m.get(it.name).rows.push(it);
+  });
+  return [...m.values()];
+}
+function phImg() {
+  const s = `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='80' height='80' fill='#EEF2F8'/><rect x='22' y='25' width='36' height='28' rx='4' fill='none' stroke='#B7C3D6' stroke-width='2.5'/><circle cx='33' cy='35' r='4' fill='#B7C3D6'/><path d='M27 49 L37 39 L45 47 L51 41 L57 49 Z' fill='#B7C3D6'/></svg>`;
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
+}
+function renderStock() {
+  const el = $("stockList");
+  $("cntBadge").textContent = items.length ? `(${items.length} pozycji)` : "";
+  if (!items.length) { el.innerHTML = `<div class="empty">Brak produktów. Dodaj pierwszy powyżej.</div>`; return; }
+  const groups = groupByProduct(items).sort((a, b) => a.name.localeCompare(b.name, "pl"));
+  el.innerHTML = groups.map(g => `
+    <div class="prod">
+      <div class="prod-head">
+        <img src="${g.image || phImg()}" alt="" data-ph="1">
+        <div><div class="n">${g.name}</div>${g.subtitle ? `<div class="s">${g.subtitle}</div>` : ""}</div>
+      </div>
+      ${g.rows.sort((a,b)=>String(a.size).localeCompare(String(b.size),"pl",{numeric:true})).map(it => `
+        <div class="vrow" data-id="${it.id}">
+          <span class="size">${it.size || "-"}</span>
+          <input class="inp qty" type="number" min="0" value="${it.qty}" data-id="${it.id}">
+          <span class="grow"></span>
+          ${it.qty <= 0 ? `<span class="stat stat-zero">Wyprzedane</span>` : ""}
+          <button class="iconbtn" title="Usuń rozmiar" data-del="${it.id}">×</button>
+        </div>`).join("")}
+    </div>`).join("");
+
+  el.querySelectorAll("img[data-ph]").forEach(img => img.addEventListener("error", () => { img.src = phImg(); img.removeAttribute("data-ph"); }));
+  el.querySelectorAll("input.qty").forEach(inp => inp.addEventListener("input", () => {
+    const it = items.find(r => r.id === inp.dataset.id);
+    if (it) { it.qty = Math.max(0, parseInt(inp.value, 10) || 0); checkDirty(); }
+  }));
+  el.querySelectorAll("button[data-del]").forEach(btn => btn.addEventListener("click", () => {
+    items = items.filter(r => r.id !== btn.dataset.del); renderStock(); checkDirty();
+  }));
+}
+
+/* ---------- stan zmian (dirty) ---------- */
+function countDirty() {
+  let n = 0; const oldById = {}; original.forEach(r => oldById[r.id] = r); const ids = new Set();
+  items.forEach(r => { ids.add(r.id); if (!(r.id in oldById) || oldById[r.id].qty !== r.qty) n++; });
+  original.forEach(r => { if (!ids.has(r.id)) n++; });
+  return n;
+}
+function checkDirty() {
+  const n = countDirty();
+  $("dirtyCount").textContent = n;
+  $("savebar").classList.toggle("show", n > 0);
+}
+function markClean() { $("savebar").classList.remove("show"); $("dirtyCount").textContent = "0"; }
+async function discard() { await loadData(); renderStock(); markClean(); toast("Cofnięto niezapisane zmiany."); }
+
+/* ---------- zdjecie UI ---------- */
+async function onPickImage(file) {
+  if (!file) return;
+  try {
+    const dataURL = await resizeToDataURL(file);
+    pendingImage = { dataURL };
+    $("imgThumb").src = dataURL; $("imgPreview").classList.remove("hidden"); $("drop").classList.add("hidden");
+  } catch (e) {
+    toast("Nie udało się wczytać zdjęcia. Spróbuj JPG lub PNG.", true);
+  }
+}
+function clearImage() { pendingImage = null; $("aImg").value = ""; $("imgPreview").classList.add("hidden"); $("drop").classList.remove("hidden"); }
+
+/* ---------- init ---------- */
+$("brandName").textContent = CONFIG.STORE_NAME;
+$("brandSq").textContent = (CONFIG.STORE_NAME[0] || "M").toUpperCase();
+renderSizeChips();
+addSizeRow();
+$("btnConnect").addEventListener("click", connect);
+$("token").addEventListener("keydown", e => { if (e.key === "Enter") connect(); });
+$("btnAddSize").addEventListener("click", () => addSizeRow());
+$("btnAdd").addEventListener("click", addProduct);
+$("btnSave").addEventListener("click", saveChanges);
+$("btnDiscard").addEventListener("click", discard);
+$("drop").addEventListener("click", () => $("aImg").click());
+$("aImg").addEventListener("change", e => onPickImage(e.target.files[0]));
+$("imgClear").addEventListener("click", clearImage);
+</script>
+</body>
+</html>

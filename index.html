@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Magazyn - stan na żywo</title>
+
+<!--
+  =========================================================================
+  STRUKTURA PLIKOW W REPO:
+    index.html                      <- ten plik
+    scripts/sync.py                 <- skrypt synchronizujacy (osobny plik)
+    .github/workflows/sync.yml      <- GitHub Action (osobny plik)
+    data/stock.json                 <- tworzy sie SAM po pierwszym uruchomieniu Action
+    data/history.json               <- tworzy sie SAM (historia zmian)
+
+  JAK ODPALIC:
+    1. Zrob arkusz Google: id | zdjecie | nazwa | kategoria | rozmiar | ilosc | cena | magazyn
+       (kategoria, cena i magazyn sa opcjonalne)
+    2. Plik -> Udostepnij -> Opublikuj w internecie -> CSV -> skopiuj link
+    3. W repo: Settings -> Secrets and variables -> Actions -> New secret
+       Nazwa: SHEET_CSV_URL,  wartosc: ten link CSV
+    4. Wrzuc wszystkie pliki, wlacz GitHub Pages, odpal Action recznie (Run workflow)
+
+  Dopoki data/stock.json nie istnieje, strona pokazuje dane przykladowe.
+  =========================================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #F4F7FB; --surface: #FFFFFF; --surface-2: #FAFCFF;
+    --line: #E4EAF3; --line-soft: #EEF2F8;
+    --ink: #13294B; --ink-soft: #4E5F7B; --muted: #8A99B2;
+    --blue: #2563EB; --blue-soft: #EAF1FE; --blue-line: #C9DCFD;
+    --green: #15924B; --green-soft: #E6F6ED;
+    --amber: #B8730A; --amber-soft: #FBF1DF;
+    --red: #D62E2E; --red-soft: #FCEAEA;
+    --shadow: 0 1px 2px rgba(19,41,75,0.05), 0 1px 3px rgba(19,41,75,0.04);
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.45; min-height: 100vh; font-size: 14px;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px 80px; }
+
+  /* ---------- topbar ---------- */
+  .topbar { background: var(--surface); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 40; }
+  .topbar-in { max-width: 1100px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; gap: 14px; }
+  .brand { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 19px; letter-spacing: -0.3px; }
+  .brand .sq { width: 22px; height: 22px; border-radius: 6px; background: var(--blue);
+    display: grid; place-items: center; color: #fff; font-size: 13px; font-weight: 800; }
+  .brand .live { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--green); background: var(--green-soft); padding: 3px 8px; border-radius: 20px;
+    display: inline-flex; align-items: center; gap: 5px; }
+  .brand .live::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+  .sync { margin-left: auto; font-size: 12px; color: var(--muted); }
+  .sync b { color: var(--ink-soft); font-weight: 600; }
+
+  /* ---------- tabs ---------- */
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin: 22px 0 20px; }
+  .tab {
+    appearance: none; background: none; border: none; cursor: pointer; font-family: inherit;
+    font-size: 15px; font-weight: 600; color: var(--muted); padding: 12px 16px 14px;
+    border-bottom: 2px solid transparent; margin-bottom: -1px; display: flex; align-items: center; gap: 8px;
+  }
+  .tab:hover { color: var(--ink-soft); }
+  .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+  .tab .count { font-size: 11px; font-weight: 700; background: var(--blue-soft); color: var(--blue);
+    padding: 1px 7px; border-radius: 20px; min-width: 18px; text-align: center; }
+  .tab.active .count { background: var(--blue); color: #fff; }
+
+  /* ---------- toolbar ---------- */
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .search { position: relative; flex: 1 1 220px; min-width: 160px; }
+  .search input {
+    width: 100%; background: var(--surface); border: 1px solid var(--line); color: var(--ink);
+    padding: 10px 12px 10px 36px; border-radius: 9px; font-size: 14px; font-family: inherit; box-shadow: var(--shadow);
+  }
+  .search input::placeholder { color: var(--muted); }
+  .search svg { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; stroke: var(--muted); fill: none; }
+  select {
+    background: var(--surface); color: var(--ink); border: 1px solid var(--line); border-radius: 9px;
+    padding: 10px 11px; font-size: 13px; font-family: inherit; cursor: pointer; box-shadow: var(--shadow);
+  }
+  .search input:focus, select:focus { outline: 2px solid var(--blue); outline-offset: 0; border-color: transparent; }
+  .spacer { flex: 1; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 7px; cursor: pointer; font-family: inherit;
+    font-weight: 600; font-size: 13.5px; padding: 10px 15px; border-radius: 9px; border: 1px solid transparent;
+    transition: background .14s ease, transform .1s ease, border-color .14s ease; white-space: nowrap;
+  }
+  .btn svg { width: 16px; height: 16px; stroke-width: 2; fill: none; }
+  .btn:active { transform: translateY(1px); }
+  .btn-primary { background: var(--blue); color: #fff; box-shadow: var(--shadow); }
+  .btn-primary:hover { background: #1d57d6; }
+  .btn-primary svg { stroke: #fff; }
+  .btn-ghost { background: var(--surface); border-color: var(--line); color: var(--ink); box-shadow: var(--shadow); }
+  .btn-ghost:hover { border-color: var(--blue-line); }
+  .btn-ghost svg { stroke: var(--ink-soft); }
+  .btn[disabled] { opacity: 0.55; cursor: progress; }
+  .filter-note { font-size: 12px; color: var(--muted); margin: -4px 0 14px; }
+  .filter-note b { color: var(--blue); font-weight: 600; }
+
+  /* ---------- list ---------- */
+  .list { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); }
+  .row { display: flex; align-items: center; gap: 14px; padding: 11px 16px; border-bottom: 1px solid var(--line-soft);
+    position: relative; transition: background .12s ease; }
+  .row::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: transparent; transition: background .12s ease; }
+  .row:last-child { border-bottom: none; }
+  .row:hover { background: var(--surface-2); }
+  .row:hover::before { background: var(--blue); }
+  .row.out { background: #FCFCFD; }
+  .row.out:hover::before { background: var(--red); }
+
+  .thumb { width: 52px; height: 52px; border-radius: 9px; background: var(--line-soft); flex-shrink: 0;
+    overflow: hidden; border: 1px solid var(--line); }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+  .info { min-width: 0; flex: 1 1 240px; }
+  .name { font-weight: 600; font-size: 14px; color: var(--ink); line-height: 1.25;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .sub { font-size: 12.5px; color: var(--muted); margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; flex: 1 1 auto; justify-content: flex-end; }
+  .field { font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+  .field b { color: var(--ink); font-weight: 600; }
+  .price { font-weight: 700; color: var(--ink); font-size: 13.5px; }
+  .when { font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+
+  .stan { font-weight: 700; font-size: 13px; padding: 5px 11px; border-radius: 8px; white-space: nowrap; min-width: 74px; text-align: center; }
+  .stan-ok { background: var(--green-soft); color: var(--green); }
+  .stan-low { background: var(--amber-soft); color: var(--amber); }
+  .stan-zero { background: var(--red-soft); color: var(--red); }
+
+  /* ---------- changes ---------- */
+  .day { font-size: 12px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; color: var(--muted);
+    margin: 22px 4px 9px; }
+  .day:first-child { margin-top: 4px; }
+  .chg-row { display: flex; align-items: center; gap: 13px; padding: 11px 16px; border-bottom: 1px solid var(--line-soft); }
+  .chg-row:last-child { border-bottom: none; }
+  .chg-tag { font-weight: 700; font-size: 12.5px; padding: 5px 11px; border-radius: 8px; white-space: nowrap; min-width: 92px; text-align: center; }
+  .t-dec { background: var(--red-soft); color: var(--red); }
+  .t-sold { background: var(--red); color: #fff; }
+  .t-inc { background: var(--green-soft); color: var(--green); }
+  .t-new { background: var(--blue-soft); color: var(--blue); }
+  .t-rem { background: var(--line-soft); color: var(--ink-soft); }
+  .chg-name { flex: 1; min-width: 0; }
+  .chg-name .n { font-weight: 600; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .chg-name .s { font-size: 12px; color: var(--muted); }
+  .chg-time { font-size: 12px; color: var(--muted); white-space: nowrap; }
+
+  .empty { text-align: center; padding: 64px 20px; color: var(--muted); }
+  .empty h3 { font-size: 18px; color: var(--ink); margin-bottom: 6px; font-weight: 700; }
+  .foot { margin-top: 16px; font-size: 12px; color: var(--muted); text-align: center; }
+
+  .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(20px);
+    background: var(--ink); color: #fff; padding: 12px 18px; border-radius: 11px; font-size: 13.5px; z-index: 100;
+    opacity: 0; transition: opacity .25s ease, transform .25s ease; max-width: 90vw; box-shadow: 0 12px 36px rgba(19,41,75,0.28); }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .toast b { color: #9ec1ff; }
+
+  .hidden { display: none !important; }
+
+  @media (max-width: 680px) {
+    .meta { justify-content: flex-start; gap: 10px 14px; flex-basis: 100%; margin-top: 6px; }
+    .info { flex-basis: calc(100% - 66px); }
+    .row { flex-wrap: wrap; }
+    .stan { margin-left: auto; }
+    .sync { display: none; }
+    .btn { flex: 1 1 auto; justify-content: center; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">
+      <span class="sq" id="brandSq">M</span>
+      <span id="brandName">Magazyn</span>
+      <span class="live">Live</span>
+    </div>
+    <div class="sync">Aktualizacja: <b id="syncTime">-</b></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="tabs">
+    <button class="tab active" id="tabStock" data-page="stock">Stan magazynowy <span class="count" id="cStock">0</span></button>
+    <button class="tab" id="tabChanges" data-page="changes">Ostatnie zmiany <span class="count" id="cChanges">0</span></button>
+  </div>
+
+  <!-- ===== STAN MAGAZYNOWY ===== -->
+  <section id="pageStock">
+    <div class="toolbar">
+      <label class="search">
+        <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="q" placeholder="Szukaj: nazwa, rozmiar...">
+      </label>
+      <select id="fSize"><option value="">Wszystkie rozmiary</option></select>
+      <select id="sort">
+        <option value="name">Sortuj: nazwa A-Z</option>
+        <option value="qtyDesc">Sortuj: ilość malejąco</option>
+        <option value="qtyAsc">Sortuj: ilość rosnąco</option>
+        <option value="dateDesc">Sortuj: ostatnio zmienione</option>
+      </select>
+      <div class="spacer"></div>
+      <button class="btn btn-primary" id="btnXls">
+        <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Pobierz Excel
+      </button>
+      <button class="btn btn-ghost" id="btnZip">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v5M9 11v2M9 16v2"/></svg>
+        Pobierz zdjęcia (ZIP)
+      </button>
+    </div>
+    <p class="filter-note" id="filterNote"></p>
+    <div class="list" id="stockList"></div>
+    <p class="foot" id="foot"></p>
+  </section>
+
+  <!-- ===== OSTATNIE ZMIANY ===== -->
+  <section id="pageChanges" class="hidden">
+    <p class="filter-note">Co się ruszyło w stanie: zejścia sztuk, wyprzedane rozmiary, dostawy i nowe produkty. Każdy wpis z datą.</p>
+    <div id="changesList"></div>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ====================== CONFIG ====================== */
+const CONFIG = {
+  STORE_NAME: "Magazyn",     // nazwa w naglowku (np. "Twoja Hurtownia")
+  DATA_DIR: "data/",         // folder z plikami z Action
+  IMAGE_BASE: "",            // jesli zdjecia trzymasz jako nazwy plikow w repo: "images/"
+  LOW_STOCK: 3,              // ponizej/rowne = pomaranczowy
+};
+/* ==================================================== */
+
+let STOCK = [];
+let HISTORY = [];
+
+/* ---------- przykladowe dane (gdy brak data/*.json) ---------- */
+function ph() {
+  const s = `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>
+    <rect width='120' height='120' fill='#EEF2F8'/>
+    <rect x='34' y='38' width='52' height='40' rx='5' fill='none' stroke='#B7C3D6' stroke-width='3'/>
+    <circle cx='49' cy='52' r='5' fill='#B7C3D6'/>
+    <path d='M40 72 L54 58 L64 68 L72 60 L82 72 Z' fill='#B7C3D6'/></svg>`;
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
+}
+function hAgo(h) { const d = new Date(); d.setHours(d.getHours() - h); return d.toISOString(); }
+
+// Magazyn startuje pusty. Produkty pojawiaja sie dopiero gdy dodasz je w panelu (admin.html).
+const SAMPLE_STOCK = [];
+const SAMPLE_HISTORY = [];
+
+/* ---------- helpers ---------- */
+function lc(s) { return String(s || "").trim().toLowerCase(); }
+function imgSrc(it) {
+  if (!it.image) return "";
+  if (/^(https?:|data:)/.test(it.image)) return it.image;
+  return CONFIG.IMAGE_BASE + it.image;
+}
+function fmtPrice(p) {
+  const s = String(p || "").trim();
+  if (!s) return "";
+  return /^\d+([.,]\d+)?$/.test(s) ? s + " zł" : s;
+}
+function parseTs(v) { const d = new Date(v); return isNaN(d) ? null : d; }
+function daysSince(d) { return d ? Math.floor((Date.now() - d.getTime()) / 86400000) : Infinity; }
+function relDate(v) {
+  const d = parseTs(v); if (!d) return "brak daty";
+  const n = daysSince(d);
+  if (n <= 0) return "dziś"; if (n === 1) return "wczoraj"; if (n < 7) return n + " dni temu";
+  return d.toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
+function dayLabel(v) {
+  const d = parseTs(v); if (!d) return "Bez daty";
+  const n = daysSince(d);
+  if (n <= 0) return "Dzisiaj"; if (n === 1) return "Wczoraj";
+  return d.toLocaleDateString("pl-PL", { day: "numeric", month: "long", year: "numeric" });
+}
+function timeLabel(v) {
+  const d = parseTs(v); if (!d) return "";
+  return d.toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" });
+}
+function sanitize(s) { return String(s).replace(/[^a-zA-Z0-9ąćęłńóśźżĄĆĘŁŃÓŚŹŻ -]/g, "").replace(/\s+/g, "_").slice(0, 60); }
+
+/* ---------- ladowanie ---------- */
+async function loadJSON(file, fallback) {
+  try {
+    const res = await fetch(CONFIG.DATA_DIR + file + "?_=" + Date.now());
+    if (!res.ok) throw new Error(res.status);
+    return await res.json();
+  } catch (e) { return fallback; }
+}
+async function loadData() {
+  const stockData = await loadJSON("stock.json", null);
+  const histData = await loadJSON("history.json", null);
+  if (stockData && Array.isArray(stockData.items) && stockData.items.length) {
+    STOCK = stockData.items;
+    document.getElementById("syncTime").textContent = stockData.updated
+      ? new Date(stockData.updated).toLocaleString("pl-PL", { day:"2-digit", month:"2-digit", hour:"2-digit", minute:"2-digit" })
+      : "-";
+  } else {
+    STOCK = SAMPLE_STOCK;
+    document.getElementById("syncTime").textContent = new Date().toLocaleTimeString("pl-PL", { hour:"2-digit", minute:"2-digit" }) + " (demo)";
+  }
+  HISTORY = (histData && Array.isArray(histData.entries) && histData.entries.length) ? histData.entries : SAMPLE_HISTORY;
+}
+
+/* ---------- filtrowanie stanu ---------- */
+function getFilteredStock() {
+  const q = lc(document.getElementById("q").value);
+  const fSize = document.getElementById("fSize").value;
+  const sort = document.getElementById("sort").value;
+  let list = STOCK.filter(it => {
+    if (q && !(lc(it.name).includes(q) || lc(it.subtitle).includes(q) || lc(it.size).includes(q))) return false;
+    if (fSize && it.size !== fSize) return false;
+    return true;
+  });
+  list.sort((a, b) => {
+    if (sort === "qtyDesc") return b.qty - a.qty;
+    if (sort === "qtyAsc") return a.qty - b.qty;
+    if (sort === "dateDesc") return (parseTs(b.updated)?.getTime() || 0) - (parseTs(a.updated)?.getTime() || 0);
+    return a.name.localeCompare(b.name, "pl");
+  });
+  return list;
+}
+function stanClass(q) { return q <= 0 ? "stan-zero" : q <= CONFIG.LOW_STOCK ? "stan-low" : "stan-ok"; }
+function stanText(q) { return q <= 0 ? "Wyprzedane" : q + " szt"; }
+
+const pinSVG = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#8A99B2" stroke-width="2" style="vertical-align:-1px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+
+/* ---------- render: stan ---------- */
+function renderStock() {
+  const list = getFilteredStock();
+  const el = document.getElementById("stockList");
+  const hasPrice = STOCK.some(it => String(it.price || "").trim());
+
+  if (!list.length) {
+    el.innerHTML = STOCK.length
+      ? `<div class="empty"><h3>Brak wyników</h3><p>Zmień filtry albo wyczyść wyszukiwarkę.</p></div>`
+      : `<div class="empty"><h3>Magazyn jest pusty</h3><p>Dodaj produkty w panelu, a pojawią się tutaj.</p></div>`;
+  } else {
+    el.innerHTML = list.map(it => {
+      const src = imgSrc(it);
+      const thumb = src ? `<img loading="lazy" src="${src}" alt="" data-ph="1">` : `<img src="${ph()}" alt="">`;
+      const price = hasPrice && fmtPrice(it.price) ? `<span class="field price">${fmtPrice(it.price)}</span>` : "";
+      const loc = it.location ? `<span class="field">${pinSVG} <b>${it.location}</b></span>` : "";
+      return `
+        <div class="row ${it.qty <= 0 ? "out" : ""}">
+          <div class="thumb">${thumb}</div>
+          <div class="info">
+            <div class="name">${it.name}</div>
+            ${it.subtitle ? `<div class="sub">${it.subtitle}</div>` : ""}
+          </div>
+          <div class="meta">
+            <span class="field">Rozm: <b>${it.size || "-"}</b></span>
+            ${price}
+            ${loc}
+            <span class="when">${relDate(it.updated)}</span>
+            <span class="stan ${stanClass(it.qty)}">${stanText(it.qty)}</span>
+          </div>
+        </div>`;
+    }).join("");
+    el.querySelectorAll('img[data-ph]').forEach(img => {
+      img.addEventListener("error", () => { img.src = ph(); img.removeAttribute("data-ph"); });
+    });
+  }
+
+  const fSize = document.getElementById("fSize").value;
+  document.getElementById("filterNote").innerHTML = fSize
+    ? `Filtr rozmiaru: <b>${fSize}</b>. Eksport Excela i ZIP obejmie tylko rozmiar ${fSize}.`
+    : `Eksport Excela i ZIP obejmuje aktualnie widoczne pozycje. Zaznacz rozmiar, żeby pobrać tylko jego.`;
+  document.getElementById("foot").textContent = `Pokazano ${list.length} z ${STOCK.length} pozycji.`;
+}
+
+/* ---------- render: zmiany ---------- */
+function chgTag(e) {
+  const n = Math.abs(e.delta || 0);
+  if (e.type === "sold_out") return `<span class="chg-tag t-sold">Wyprzedane</span>`;
+  if (e.type === "decrease") return `<span class="chg-tag t-dec">-${n} szt</span>`;
+  if (e.type === "restock")  return `<span class="chg-tag t-inc">Dostawa +${n}</span>`;
+  if (e.type === "increase") return `<span class="chg-tag t-inc">+${n} szt</span>`;
+  if (e.type === "new")      return `<span class="chg-tag t-new">Nowy +${n}</span>`;
+  if (e.type === "removed")  return `<span class="chg-tag t-rem">Usunięto</span>`;
+  return `<span class="chg-tag t-rem">Zmiana</span>`;
+}
+function renderChanges() {
+  const el = document.getElementById("changesList");
+  const list = [...HISTORY].sort((a, b) => (parseTs(b.ts)?.getTime() || 0) - (parseTs(a.ts)?.getTime() || 0));
+  if (!list.length) {
+    el.innerHTML = `<div class="empty"><h3>Brak zmian</h3><p>Tu pojawią się zejścia sztuk, wyprzedane rozmiary i dostawy.</p></div>`;
+    return;
+  }
+  let html = "", lastDay = null, open = false;
+  for (const e of list) {
+    const d = dayLabel(e.ts);
+    if (d !== lastDay) {
+      if (open) html += `</div>`;
+      html += `<div class="day">${d}</div><div class="list">`;
+      lastDay = d; open = true;
+    }
+    const src = imgSrc(e);
+    const thumb = src ? `<img src="${src}" alt="" data-ph="1" style="width:100%;height:100%;object-fit:cover">` : `<img src="${ph()}" alt="" style="width:100%;height:100%;object-fit:cover">`;
+    html += `
+      <div class="chg-row">
+        <div class="thumb" style="width:42px;height:42px">${thumb}</div>
+        <div class="chg-name"><div class="n">${e.name}</div><div class="s">Rozm: ${e.size || "-"}</div></div>
+        <span class="chg-time">${timeLabel(e.ts)}</span>
+        ${chgTag(e)}
+      </div>`;
+  }
+  if (open) html += `</div>`;
+  el.innerHTML = html;
+  el.querySelectorAll('img[data-ph]').forEach(img => img.addEventListener("error", () => { img.src = ph(); img.removeAttribute("data-ph"); }));
+}
+
+/* ---------- filtry rozmiaru ---------- */
+function fillSizes() {
+  const sizes = [...new Set(STOCK.map(i => i.size).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "pl", { numeric: true }));
+  const sel = document.getElementById("fSize"); const keep = sel.value;
+  sel.innerHTML = `<option value="">Wszystkie rozmiary</option>` + sizes.map(s => `<option>${s}</option>`).join("");
+  sel.value = keep;
+}
+function updateCounts() {
+  document.getElementById("cStock").textContent = STOCK.length;
+  document.getElementById("cChanges").textContent = HISTORY.length;
+}
+
+/* ---------- eksport Excel ---------- */
+function exportXlsx() {
+  const list = getFilteredStock();
+  if (!list.length) return toast("Brak pozycji do eksportu.");
+  const rows = list.map(it => ({
+    "Nazwa": it.name, "Kategoria": it.subtitle || "", "Rozmiar": it.size,
+    "Ilość": it.qty, "Status": it.qty <= 0 ? "Wyprzedane" : "Dostępne",
+    "Cena": fmtPrice(it.price), "Magazyn": it.location || "",
+    "Aktualizacja": it.updated ? new Date(it.updated).toLocaleDateString("pl-PL") : "",
+    "Zdjęcie": imgSrc(it)
+  }));
+  const ws = XLSX.utils.json_to_sheet(rows);
+  ws["!cols"] = [{wch:34},{wch:12},{wch:10},{wch:7},{wch:11},{wch:10},{wch:14},{wch:13},{wch:48}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "Stan magazynowy");
+  const sz = document.getElementById("fSize").value;
+  XLSX.writeFile(wb, `stan${sz ? "_" + sanitize(sz) : ""}_${new Date().toISOString().slice(0,10)}.xlsx`);
+  toast(`Excel gotowy: <b>${list.length}</b> pozycji${sz ? " (rozmiar " + sz + ")" : ""}.`);
+}
+
+/* ---------- eksport ZIP ---------- */
+async function exportZip() {
+  const list = getFilteredStock().filter(it => imgSrc(it));
+  if (!list.length) return toast("Brak zdjęć do spakowania w tym widoku.");
+  const btn = document.getElementById("btnZip"); btn.disabled = true; const orig = btn.innerHTML; btn.innerHTML = "Pakuję...";
+  const zip = new JSZip(); let ok = 0, fail = 0;
+  await Promise.all(list.map(async (it, i) => {
+    try {
+      const res = await fetch(imgSrc(it)); const blob = await res.blob();
+      const ext = (blob.type.split("/")[1] || "jpg").replace("svg+xml", "svg").replace("jpeg", "jpg");
+      zip.file(`${String(i+1).padStart(2,"0")}_${sanitize(it.name)}_${sanitize(it.size)}.${ext}`, blob); ok++;
+    } catch (e) { fail++; }
+  }));
+  if (ok) { const out = await zip.generateAsync({ type: "blob" });
+    const sz = document.getElementById("fSize").value;
+    downloadBlob(out, `zdjecia${sz ? "_" + sanitize(sz) : ""}_${new Date().toISOString().slice(0,10)}.zip`); }
+  btn.disabled = false; btn.innerHTML = orig;
+  toast(fail ? `Spakowano <b>${ok}</b>, nie udało się ${fail} (CORS hosta zdjęć).` : `ZIP gotowy: <b>${ok}</b> zdjęć.`);
+}
+function downloadBlob(blob, name) {
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+}
+
+/* ---------- toast ---------- */
+let toastT;
+function toast(html) {
+  const el = document.getElementById("toast"); el.innerHTML = html; el.classList.add("show");
+  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("show"), 4200);
+}
+
+/* ---------- zakladki ---------- */
+function switchTab(page) {
+  document.getElementById("tabStock").classList.toggle("active", page === "stock");
+  document.getElementById("tabChanges").classList.toggle("active", page === "changes");
+  document.getElementById("pageStock").classList.toggle("hidden", page !== "stock");
+  document.getElementById("pageChanges").classList.toggle("hidden", page !== "changes");
+}
+
+/* ---------- init ---------- */
+async function init() {
+  document.getElementById("brandName").textContent = CONFIG.STORE_NAME;
+  document.getElementById("brandSq").textContent = (CONFIG.STORE_NAME[0] || "M").toUpperCase();
+  await loadData();
+  fillSizes(); updateCounts(); renderStock(); renderChanges();
+}
+["q","fSize","sort"].forEach(id => document.getElementById(id).addEventListener("input", renderStock));
+document.getElementById("tabStock").addEventListener("click", () => switchTab("stock"));
+document.getElementById("tabChanges").addEventListener("click", () => switchTab("changes"));
+document.getElementById("btnXls").addEventListener("click", exportXlsx);
+document.getElementById("btnZip").addEventListener("click", exportZip);
+init();
+</script>
+</body>
+</html>
