@@ -35,14 +35,14 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
-    --bg: #F4F7FB; --surface: #FFFFFF; --surface-2: #FAFCFF;
-    --line: #E4EAF3; --line-soft: #EEF2F8;
-    --ink: #13294B; --ink-soft: #4E5F7B; --muted: #8A99B2;
-    --blue: #2563EB; --blue-soft: #EAF1FE; --blue-line: #C9DCFD;
-    --green: #15924B; --green-soft: #E6F6ED;
+    --bg: #F4F8F5; --surface: #FFFFFF; --surface-2: #F8FBF9;
+    --line: #E2EAE4; --line-soft: #EDF2EE;
+    --ink: #15251B; --ink-soft: #47584E; --muted: #899690;
+    --blue: #15683E; --blue-soft: #E7F4EC; --blue-line: #C2E0CD;
+    --green: #15683E; --green-soft: #E7F4EC;
     --amber: #B8730A; --amber-soft: #FBF1DF;
     --red: #D62E2E; --red-soft: #FCEAEA;
-    --shadow: 0 1px 2px rgba(19,41,75,0.05), 0 1px 3px rgba(19,41,75,0.04);
+    --shadow: 0 1px 2px rgba(13,30,20,0.06), 0 1px 3px rgba(13,30,20,0.05);
   }
   html { -webkit-text-size-adjust: 100%; }
   body {
@@ -101,7 +101,7 @@
   .btn svg { width: 16px; height: 16px; stroke-width: 2; fill: none; }
   .btn:active { transform: translateY(1px); }
   .btn-primary { background: var(--blue); color: #fff; box-shadow: var(--shadow); }
-  .btn-primary:hover { background: #1d57d6; }
+  .btn-primary:hover { background: #10502F; }
   .btn-primary svg { stroke: #fff; }
   .btn-ghost { background: var(--surface); border-color: var(--line); color: var(--ink); box-shadow: var(--shadow); }
   .btn-ghost:hover { border-color: var(--blue-line); }
@@ -166,7 +166,7 @@
     background: var(--ink); color: #fff; padding: 12px 18px; border-radius: 11px; font-size: 13.5px; z-index: 100;
     opacity: 0; transition: opacity .25s ease, transform .25s ease; max-width: 90vw; box-shadow: 0 12px 36px rgba(19,41,75,0.28); }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
-  .toast b { color: #9ec1ff; }
+  .toast b { color: #9BE2B7; }
 
   .hidden { display: none !important; }
 
@@ -207,9 +207,11 @@
         <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         <input type="text" id="q" placeholder="Szukaj: nazwa, rozmiar...">
       </label>
+      <select id="fBrand"><option value="">Wszystkie marki</option></select>
       <select id="fSize"><option value="">Wszystkie rozmiary</option></select>
       <select id="sort">
         <option value="name">Sortuj: nazwa A-Z</option>
+        <option value="brand">Sortuj: marka A-Z</option>
         <option value="qtyDesc">Sortuj: ilość malejąco</option>
         <option value="qtyAsc">Sortuj: ilość rosnąco</option>
         <option value="dateDesc">Sortuj: ostatnio zmienione</option>
@@ -254,10 +256,10 @@ let HISTORY = [];
 /* ---------- przykladowe dane (gdy brak data/*.json) ---------- */
 function ph() {
   const s = `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>
-    <rect width='120' height='120' fill='#EEF2F8'/>
-    <rect x='34' y='38' width='52' height='40' rx='5' fill='none' stroke='#B7C3D6' stroke-width='3'/>
-    <circle cx='49' cy='52' r='5' fill='#B7C3D6'/>
-    <path d='M40 72 L54 58 L64 68 L72 60 L82 72 Z' fill='#B7C3D6'/></svg>`;
+    <rect width='120' height='120' fill='#EDF2EE'/>
+    <rect x='34' y='38' width='52' height='40' rx='5' fill='none' stroke='#AEC0B4' stroke-width='3'/>
+    <circle cx='49' cy='52' r='5' fill='#AEC0B4'/>
+    <path d='M40 72 L54 58 L64 68 L72 60 L82 72 Z' fill='#AEC0B4'/></svg>`;
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
 }
 function hAgo(h) { const d = new Date(); d.setHours(d.getHours() - h); return d.toISOString(); }
@@ -325,16 +327,19 @@ async function loadData() {
 function getFilteredStock() {
   const q = lc(document.getElementById("q").value);
   const fSize = document.getElementById("fSize").value;
+  const fBrand = document.getElementById("fBrand").value;
   const sort = document.getElementById("sort").value;
   let list = STOCK.filter(it => {
-    if (q && !(lc(it.name).includes(q) || lc(it.subtitle).includes(q) || lc(it.size).includes(q))) return false;
+    if (q && !(lc(it.name).includes(q) || lc(it.brand).includes(q) || lc(it.subtitle).includes(q) || lc(it.size).includes(q))) return false;
     if (fSize && it.size !== fSize) return false;
+    if (fBrand && it.brand !== fBrand) return false;
     return true;
   });
   list.sort((a, b) => {
     if (sort === "qtyDesc") return b.qty - a.qty;
     if (sort === "qtyAsc") return a.qty - b.qty;
     if (sort === "dateDesc") return (parseTs(b.updated)?.getTime() || 0) - (parseTs(a.updated)?.getTime() || 0);
+    if (sort === "brand") return (a.brand || "").localeCompare(b.brand || "", "pl") || a.name.localeCompare(b.name, "pl");
     return a.name.localeCompare(b.name, "pl");
   });
   return list;
@@ -342,7 +347,7 @@ function getFilteredStock() {
 function stanClass(q) { return q <= 0 ? "stan-zero" : q <= CONFIG.LOW_STOCK ? "stan-low" : "stan-ok"; }
 function stanText(q) { return q <= 0 ? "Wyprzedane" : q + " szt"; }
 
-const pinSVG = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#8A99B2" stroke-width="2" style="vertical-align:-1px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
+const pinSVG = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="#899690" stroke-width="2" style="vertical-align:-1px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>`;
 
 /* ---------- render: stan ---------- */
 function renderStock() {
@@ -360,12 +365,13 @@ function renderStock() {
       const thumb = src ? `<img loading="lazy" src="${src}" alt="" data-ph="1">` : `<img src="${ph()}" alt="">`;
       const price = hasPrice && fmtPrice(it.price) ? `<span class="field price">${fmtPrice(it.price)}</span>` : "";
       const loc = it.location ? `<span class="field">${pinSVG} <b>${it.location}</b></span>` : "";
+      const subline = [it.brand ? `<b style="color:var(--ink-soft);font-weight:600">${it.brand}</b>` : "", it.subtitle].filter(Boolean).join(" · ");
       return `
         <div class="row ${it.qty <= 0 ? "out" : ""}">
           <div class="thumb">${thumb}</div>
           <div class="info">
             <div class="name">${it.name}</div>
-            ${it.subtitle ? `<div class="sub">${it.subtitle}</div>` : ""}
+            ${subline ? `<div class="sub">${subline}</div>` : ""}
           </div>
           <div class="meta">
             <span class="field">Rozm: <b>${it.size || "-"}</b></span>
@@ -429,12 +435,19 @@ function renderChanges() {
   el.querySelectorAll('img[data-ph]').forEach(img => img.addEventListener("error", () => { img.src = ph(); img.removeAttribute("data-ph"); }));
 }
 
-/* ---------- filtry rozmiaru ---------- */
+/* ---------- filtry ---------- */
 function fillSizes() {
   const sizes = [...new Set(STOCK.map(i => i.size).filter(Boolean))]
     .sort((a, b) => a.localeCompare(b, "pl", { numeric: true }));
   const sel = document.getElementById("fSize"); const keep = sel.value;
   sel.innerHTML = `<option value="">Wszystkie rozmiary</option>` + sizes.map(s => `<option>${s}</option>`).join("");
+  sel.value = keep;
+}
+function fillBrands() {
+  const brands = [...new Set(STOCK.map(i => i.brand).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "pl"));
+  const sel = document.getElementById("fBrand"); const keep = sel.value;
+  sel.innerHTML = `<option value="">Wszystkie marki</option>` + brands.map(s => `<option>${s}</option>`).join("");
   sel.value = keep;
 }
 function updateCounts() {
@@ -447,14 +460,14 @@ function exportXlsx() {
   const list = getFilteredStock();
   if (!list.length) return toast("Brak pozycji do eksportu.");
   const rows = list.map(it => ({
-    "Nazwa": it.name, "Kategoria": it.subtitle || "", "Rozmiar": it.size,
+    "Nazwa": it.name, "Marka": it.brand || "", "Kategoria": it.subtitle || "", "Rozmiar": it.size,
     "Ilość": it.qty, "Status": it.qty <= 0 ? "Wyprzedane" : "Dostępne",
     "Cena": fmtPrice(it.price), "Magazyn": it.location || "",
     "Aktualizacja": it.updated ? new Date(it.updated).toLocaleDateString("pl-PL") : "",
     "Zdjęcie": imgSrc(it)
   }));
   const ws = XLSX.utils.json_to_sheet(rows);
-  ws["!cols"] = [{wch:34},{wch:12},{wch:10},{wch:7},{wch:11},{wch:10},{wch:14},{wch:13},{wch:48}];
+  ws["!cols"] = [{wch:32},{wch:12},{wch:12},{wch:10},{wch:7},{wch:11},{wch:10},{wch:14},{wch:13},{wch:48}];
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, "Stan magazynowy");
   const sz = document.getElementById("fSize").value;
@@ -506,9 +519,9 @@ async function init() {
   document.getElementById("brandName").textContent = CONFIG.STORE_NAME;
   document.getElementById("brandSq").textContent = (CONFIG.STORE_NAME[0] || "M").toUpperCase();
   await loadData();
-  fillSizes(); updateCounts(); renderStock(); renderChanges();
+  fillSizes(); fillBrands(); updateCounts(); renderStock(); renderChanges();
 }
-["q","fSize","sort"].forEach(id => document.getElementById(id).addEventListener("input", renderStock));
+["q","fSize","fBrand","sort"].forEach(id => document.getElementById(id).addEventListener("input", renderStock));
 document.getElementById("tabStock").addEventListener("click", () => switchTab("stock"));
 document.getElementById("tabChanges").addEventListener("click", () => switchTab("changes"));
 document.getElementById("btnXls").addEventListener("click", exportXlsx);
