@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:29:27Z",
+      "id": "eternal-flame-tee-white-s",
+      "name": "Eternal Flame Tee - White",
+      "size": "S",
+      "image": "images/eternal-flame-tee-white-1782253766303.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:28:55Z",
       "id": "outdoor-pants-red-l",
       "name": "Outdoor Pants Red",
