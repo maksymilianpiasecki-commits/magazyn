@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:27:36Z",
+      "id": "shooters-playoff-tee-black-s",
+      "name": "Shooters Playoff Tee - Black",
+      "size": "S",
+      "image": "images/shooters-playoff-tee-black-1782257255193.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:27:36Z",
+      "id": "shooters-playoff-tee-black-m",
+      "name": "Shooters Playoff Tee - Black",
+      "size": "M",
+      "image": "images/shooters-playoff-tee-black-1782257255193.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T23:27:36Z",
+      "id": "shooters-playoff-tee-black-l",
+      "name": "Shooters Playoff Tee - Black",
+      "size": "L",
+      "image": "images/shooters-playoff-tee-black-1782257255193.jpg",
+      "type": "new",
+      "delta": 5,
+      "after": 5
+    },
+    {
       "ts": "2026-06-23T23:27:03Z",
       "id": "shooters-playoff-tee-black-s",
       "name": "Shooters Playoff Tee - Black",
