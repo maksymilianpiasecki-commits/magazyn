@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:13:55Z",
+      "id": "art-of-war-camo-tee-white-m",
+      "name": "Art Of War Camo Tee - White",
+      "size": "M",
+      "image": "images/art-of-war-camo-tee-white-1782245633954.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T20:13:55Z",
+      "id": "art-of-war-camo-tee-white-l",
+      "name": "Art Of War Camo Tee - White",
+      "size": "L",
+      "image": "images/art-of-war-camo-tee-white-1782245633954.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T20:09:44Z",
       "id": "adg-thermal-green-m",
       "name": "ADG Thermal Green",
