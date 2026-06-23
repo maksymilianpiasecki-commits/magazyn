@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:40:45Z",
+      "id": "skarpetki-syna-white-aruba-blue-2pack-one-size",
+      "name": "Skarpetki Syna White/Aruba Blue (2PACK)",
+      "size": "ONE SIZE",
+      "image": "images/skarpetki-syna-white-aruba-blue-2pack-1782258044562.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:39:43Z",
       "id": "skarpetki-syna-grey-white-2pack-one-size",
       "name": "Skarpetki Syna Grey/White (2PACK)",
