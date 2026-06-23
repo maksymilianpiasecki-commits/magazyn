@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:30:10Z",
+      "id": "extraordinary-tee-black-s",
+      "name": "Extraordinary Tee - Black",
+      "size": "S",
+      "image": "images/extraordinary-tee-black-1782253809434.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:30:10Z",
+      "id": "extraordinary-tee-black-l",
+      "name": "Extraordinary Tee - Black",
+      "size": "L",
+      "image": "images/extraordinary-tee-black-1782253809434.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:29:27Z",
       "id": "eternal-flame-tee-white-s",
       "name": "Eternal Flame Tee - White",
