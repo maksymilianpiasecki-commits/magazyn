@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:02:57Z",
+      "id": "irongate-arch-puffer-aw23-black-l",
+      "name": "Irongate Arch Puffer AW23 - Black",
+      "size": "L",
+      "image": "images/irongate-arch-puffer-aw23-black-1782255776340.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:02:12Z",
       "id": "irongate-arch-piping-puffer-black-purple-s",
       "name": "Irongate Arch Piping Puffer - Black/Purple",
