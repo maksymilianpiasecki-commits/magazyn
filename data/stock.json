@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:55:38Z",
+  "updated": "2026-06-23T22:56:06Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1356,6 +1356,18 @@
       "price": "450",
       "location": "Wrocław",
       "updated": "2026-06-23T22:55:38Z"
+    },
+    {
+      "id": "hyperdrive-t-hoodie-black-camo-s",
+      "name": "Hyperdrive T Hoodie - Black/Camo",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/hyperdrive-t-hoodie-black-camo-1782255365997.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:56:06Z"
     }
   ]
 }
