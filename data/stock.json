@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:46:48Z",
+  "updated": "2026-06-23T23:48:21Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2496,6 +2496,18 @@
       "price": "700",
       "location": "Wrocław",
       "updated": "2026-06-23T23:46:48Z"
+    },
+    {
+      "id": "syna-sling-bag-x-central-cee-one-size",
+      "name": "Syna Sling Bag x Central Cee",
+      "brand": "Syna World",
+      "subtitle": "Akcesoria",
+      "image": "images/syna-sling-bag-x-central-cee-1782258500134.jpg",
+      "size": "ONE SIZE",
+      "qty": 25,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:48:21Z"
     }
   ]
 }
