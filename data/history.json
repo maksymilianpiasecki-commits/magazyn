@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:59:00Z",
+      "id": "alcatraz-beanie-brown-one-size",
+      "name": "Alcatraz Beanie - Brown",
+      "size": "ONE SIZE",
+      "image": "images/alcatraz-beanie-brown-1782248339528.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T20:57:42Z",
       "id": "c-star-corduroy-trucker-black-navy-one-size",
       "name": "C-Star Corduroy Trucker - Black/Navy",
