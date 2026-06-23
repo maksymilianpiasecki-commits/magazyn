@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:58:13Z",
+      "id": "boxerki-i-love-syna-3pack-s",
+      "name": "Boxerki I love Syna (3PACK)",
+      "size": "S",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T22:58:13Z",
+      "id": "boxerki-i-love-syna-3pack-m",
+      "name": "Boxerki I love Syna (3PACK)",
+      "size": "M",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:58:13Z",
+      "id": "boxerki-i-love-syna-3pack-xl",
+      "name": "Boxerki I love Syna (3PACK)",
+      "size": "XL",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:57:07Z",
       "id": "skarpetki-i-love-syna-2pack-one-size",
       "name": "Skarpetki I love Syna (2PACK)",
