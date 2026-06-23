@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:24:26Z",
+  "updated": "2026-06-23T23:25:07Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2076,6 +2076,30 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:24:26Z"
+    },
+    {
+      "id": "shooters-hooded-puffer-black-reflective-s",
+      "name": "Shooters Hooded Puffer - Black/Reflective",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:25:07Z"
+    },
+    {
+      "id": "shooters-hooded-puffer-black-reflective-m",
+      "name": "Shooters Hooded Puffer - Black/Reflective",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:25:07Z"
     }
   ]
 }
