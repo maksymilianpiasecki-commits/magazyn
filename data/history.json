@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:13:51Z",
+      "id": "decoded-camo-hoodie-blackout-edition-s",
+      "name": "Decoded Camo Hoodie - Blackout Edition",
+      "size": "S",
+      "image": "images/decoded-camo-hoodie-blackout-edition-1782252830355.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:13:51Z",
+      "id": "decoded-camo-hoodie-blackout-edition-l",
+      "name": "Decoded Camo Hoodie - Blackout Edition",
+      "size": "L",
+      "image": "images/decoded-camo-hoodie-blackout-edition-1782252830355.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T22:13:13Z",
       "id": "decoded-camo-hoodie-black-neon-green-m",
       "name": "Decoded Camo Hoodie - Black/Neon Green",
