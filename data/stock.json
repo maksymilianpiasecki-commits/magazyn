@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:09:38Z",
+  "updated": "2026-06-23T23:10:04Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1704,6 +1704,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:09:38Z"
+    },
+    {
+      "id": "it-s-a-secret-print-tee-black-m",
+      "name": "It's A Secret Print Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/it-s-a-secret-print-tee-black-1782256203121.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:10:04Z"
     }
   ]
 }
