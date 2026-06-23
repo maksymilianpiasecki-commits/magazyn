@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:56:59Z",
+  "updated": "2026-06-23T20:57:17Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -192,18 +192,6 @@
       "price": "1100",
       "location": "Wrocław",
       "updated": "2026-06-23T20:56:03Z"
-    },
-    {
-      "id": "corteiz-c-star-corduroy-trucker-black-na-one-size",
-      "name": "Corteiz  C-Star Corduroy Trucker - Black/Navy",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/corteiz-c-star-corduroy-trucker-black-na-1782248218276.jpg",
-      "size": "ONE SIZE",
-      "qty": 5,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T20:56:59Z"
     }
   ]
 }
