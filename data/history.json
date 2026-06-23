@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:03:32Z",
+      "id": "irongate-arch-puffer-aw23-black-gradient-s",
+      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
+      "size": "S",
+      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:03:32Z",
+      "id": "irongate-arch-puffer-aw23-black-gradient-l",
+      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
+      "size": "L",
+      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:02:57Z",
       "id": "irongate-arch-puffer-aw23-black-l",
       "name": "Irongate Arch Puffer AW23 - Black",
