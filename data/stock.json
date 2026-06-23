@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:55:09Z",
+  "updated": "2026-06-23T20:56:03Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -168,6 +168,30 @@
       "price": "500",
       "location": "Wrocław",
       "updated": "2026-06-23T20:55:09Z"
+    },
+    {
+      "id": "college-hood-tracksuit-black-yellow-s",
+      "name": "College Hood Tracksuit - Black/Yellow",
+      "brand": "Syna World",
+      "subtitle": "Tracksuit",
+      "image": "images/college-hood-tracksuit-black-yellow-1782248162331.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "1100",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:56:03Z"
+    },
+    {
+      "id": "college-hood-tracksuit-black-yellow-l",
+      "name": "College Hood Tracksuit - Black/Yellow",
+      "brand": "Syna World",
+      "subtitle": "Tracksuit",
+      "image": "images/college-hood-tracksuit-black-yellow-1782248162331.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "1100",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:56:03Z"
     }
   ]
 }
