@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:13:13Z",
+  "updated": "2026-06-23T22:13:51Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -672,6 +672,30 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T22:13:13Z"
+    },
+    {
+      "id": "decoded-camo-hoodie-blackout-edition-s",
+      "name": "Decoded Camo Hoodie - Blackout Edition",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-camo-hoodie-blackout-edition-1782252830355.jpg",
+      "size": "S",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:13:51Z"
+    },
+    {
+      "id": "decoded-camo-hoodie-blackout-edition-l",
+      "name": "Decoded Camo Hoodie - Blackout Edition",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/decoded-camo-hoodie-blackout-edition-1782252830355.jpg",
+      "size": "L",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:13:51Z"
     }
   ]
 }
