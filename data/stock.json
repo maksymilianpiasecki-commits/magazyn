@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:18:02Z",
+  "updated": "2026-06-23T23:18:32Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1968,6 +1968,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:18:02Z"
+    },
+    {
+      "id": "outlaw-tee-black-s",
+      "name": "Outlaw Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/outlaw-tee-black-1782256711467.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:18:32Z"
     }
   ]
 }
