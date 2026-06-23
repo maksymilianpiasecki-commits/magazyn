@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:00:45Z",
+      "id": "alcatraz-beanie-cream-one-size",
+      "name": "Alcatraz Beanie - Cream",
+      "size": "ONE SIZE",
+      "image": "images/alcatraz-beanie-cream-1782248444318.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T20:59:00Z",
       "id": "alcatraz-beanie-brown-one-size",
       "name": "Alcatraz Beanie - Brown",
