@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:17:57Z",
+      "id": "decoded-paisley-monochrome-edition-hoodi-s",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "size": "S",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:17:57Z",
+      "id": "decoded-paisley-monochrome-edition-hoodi-m",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "size": "M",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T22:17:57Z",
+      "id": "decoded-paisley-monochrome-edition-hoodi-l",
+      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
+      "size": "L",
+      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:16:55Z",
       "id": "decoded-mask-black-white-one-size",
       "name": "Decoded Mask - Black/White",
