@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:01:26Z",
+      "id": "irongate-arch-it-s-a-secret-hoodie-black-s",
+      "name": "Irongate Arch It's A Secret Hoodie - Black/Revolution Edition",
+      "size": "S",
+      "image": "images/irongate-arch-it-s-a-secret-hoodie-black-1782255685464.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:01:26Z",
+      "id": "irongate-arch-it-s-a-secret-hoodie-black-m",
+      "name": "Irongate Arch It's A Secret Hoodie - Black/Revolution Edition",
+      "size": "M",
+      "image": "images/irongate-arch-it-s-a-secret-hoodie-black-1782255685464.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:00:42Z",
       "id": "irongate-arch-gilet-blue-gradient-s",
       "name": "Irongate Arch Gilet - Blue Gradient",
