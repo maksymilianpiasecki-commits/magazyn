@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:30:44Z",
+      "id": "extraordinary-tee-white-s",
+      "name": "Extraordinary Tee - White",
+      "size": "S",
+      "image": "images/extraordinary-tee-white-1782253843179.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:30:44Z",
+      "id": "extraordinary-tee-white-l",
+      "name": "Extraordinary Tee - White",
+      "size": "L",
+      "image": "images/extraordinary-tee-white-1782253843179.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:30:10Z",
       "id": "extraordinary-tee-black-s",
       "name": "Extraordinary Tee - Black",
