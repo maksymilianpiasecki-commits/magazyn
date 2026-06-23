@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:49:34Z",
+  "updated": "2026-06-23T20:55:09Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -132,6 +132,42 @@
       "price": "750",
       "location": "Wrocław",
       "updated": "2026-06-23T20:49:34Z"
+    },
+    {
+      "id": "college-hood-grey-marl-s",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "brand": "Syna World",
+      "subtitle": "Bluza",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "500",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:55:09Z"
+    },
+    {
+      "id": "college-hood-grey-marl-m",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "brand": "Syna World",
+      "subtitle": "Bluza",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "500",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:55:09Z"
+    },
+    {
+      "id": "college-hood-grey-marl-l",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "brand": "Syna World",
+      "subtitle": "Bluza",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "500",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:55:09Z"
     }
   ]
 }
