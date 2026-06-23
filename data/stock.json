@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:46:20Z",
+  "updated": "2026-06-23T23:46:48Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2484,6 +2484,18 @@
       "price": "700",
       "location": "Wrocław",
       "updated": "2026-06-23T23:46:20Z"
+    },
+    {
+      "id": "syna-og-hood-black-yellow-s",
+      "name": "Syna Og Hood - Black/Yellow",
+      "brand": "Syna World",
+      "subtitle": "Bluza",
+      "image": "images/syna-og-hood-black-yellow-1782258407193.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "700",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:46:48Z"
     }
   ]
 }
