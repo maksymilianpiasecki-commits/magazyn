@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:23:58Z",
+      "id": "script-tee-black-teal-l",
+      "name": "Script Tee - Black/Teal",
+      "size": "L",
+      "image": "images/script-tee-black-teal-1782257037660.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:21:10Z",
       "id": "script-shell-shorts-black-slime-s",
       "name": "Script Shell Shorts - Black/Slime",
