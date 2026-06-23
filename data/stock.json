@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:14:44Z",
+  "updated": "2026-06-23T22:15:28Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -708,6 +708,18 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T22:14:44Z"
+    },
+    {
+      "id": "decoded-infrared-edition-tee-black-m",
+      "name": "Decoded Infrared Edition Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/decoded-infrared-edition-tee-black-1782252927356.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:15:28Z"
     }
   ]
 }
