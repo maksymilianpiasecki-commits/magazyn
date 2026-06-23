@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:40:45Z",
+  "updated": "2026-06-23T23:41:27Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2376,6 +2376,18 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T23:40:45Z"
+    },
+    {
+      "id": "skarpetki-syna-white-blue-2pack-one-size",
+      "name": "Skarpetki Syna White/Blue (2PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/skarpetki-syna-white-blue-2pack-1782258086811.jpg",
+      "size": "ONE SIZE",
+      "qty": 4,
+      "price": "120",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:41:27Z"
     }
   ]
 }
