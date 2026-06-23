@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:14:31Z",
+      "id": "neon-hyperdrive-hoodie-black-s",
+      "name": "Neon Hyperdrive Hoodie - Black",
+      "size": "S",
+      "image": "images/neon-hyperdrive-hoodie-black-1782256470790.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:14:31Z",
+      "id": "neon-hyperdrive-hoodie-black-m",
+      "name": "Neon Hyperdrive Hoodie - Black",
+      "size": "M",
+      "image": "images/neon-hyperdrive-hoodie-black-1782256470790.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T23:14:31Z",
+      "id": "neon-hyperdrive-hoodie-black-l",
+      "name": "Neon Hyperdrive Hoodie - Black",
+      "size": "L",
+      "image": "images/neon-hyperdrive-hoodie-black-1782256470790.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:14:00Z",
       "id": "my-pain-is-tee-white-xl",
       "name": "My Pain Is Tee White",
