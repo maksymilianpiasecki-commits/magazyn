@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:24:09Z",
+      "id": "jacket-tracksuit-green-white-m",
+      "name": "Jacket Tracksuit Green/White",
+      "size": "M",
+      "image": "images/jacket-tracksuit-green-white-1782253448362.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:24:09Z",
+      "id": "jacket-tracksuit-green-white-l",
+      "name": "Jacket Tracksuit Green/White",
+      "size": "L",
+      "image": "images/jacket-tracksuit-green-white-1782253448362.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:21:04Z",
       "id": "decoded-tracksuit-black-monochrome-s",
       "name": "Decoded Tracksuit - Black Monochrome",
