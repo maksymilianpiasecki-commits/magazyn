@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:56:18Z",
+      "id": "micro-allstarz-beanie-yellow-one-size",
+      "name": "Micro Allstarz Beanie - Yellow",
+      "size": "ONE SIZE",
+      "image": "images/micro-allstarz-beanie-yellow-1782251777018.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T21:55:47Z",
       "id": "micro-allstarz-beanie-cream-one-size",
       "name": "Micro Allstarz Beanie - Cream",
