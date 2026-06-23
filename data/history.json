@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:03:05Z",
+      "id": "allstarz-folded-beanie-brown-one-size",
+      "name": "Allstarz Folded Beanie - Brown",
+      "size": "ONE SIZE",
+      "image": "images/allstarz-folded-beanie-brown-1782248584022.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T21:01:43Z",
       "id": "allstarz-folded-beanie-blue-one-size",
       "name": "Allstarz Folded Beanie - Blue",
