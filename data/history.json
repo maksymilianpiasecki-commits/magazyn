@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:19:09Z",
+      "id": "outlaw-tee-white-s",
+      "name": "Outlaw Tee - White",
+      "size": "S",
+      "image": "images/outlaw-tee-white-1782256748204.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:19:09Z",
+      "id": "outlaw-tee-white-m",
+      "name": "Outlaw Tee - White",
+      "size": "M",
+      "image": "images/outlaw-tee-white-1782256748204.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:18:32Z",
       "id": "outlaw-tee-black-s",
       "name": "Outlaw Tee - Black",
