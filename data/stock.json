@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:25:26Z",
+  "updated": "2026-06-23T22:26:11Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -900,6 +900,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:25:26Z"
+    },
+    {
+      "id": "dream-team-hoodie-black-blue-l",
+      "name": "Dream Team Hoodie - Black/Blue",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/dream-team-hoodie-black-blue-1782253570682.jpg",
+      "size": "L",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:26:11Z"
     }
   ]
 }
