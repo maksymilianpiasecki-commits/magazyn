@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:44:59Z",
+      "id": "foundation-crew-inked-blue-s",
+      "name": "Foundation Crew - Inked Blue",
+      "size": "S",
+      "image": "images/foundation-crew-inked-blue-1782254698182.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:44:59Z",
+      "id": "foundation-crew-inked-blue-m",
+      "name": "Foundation Crew - Inked Blue",
+      "size": "M",
+      "image": "images/foundation-crew-inked-blue-1782254698182.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:44:12Z",
       "id": "forgive-me-tee-white-3d-print-m",
       "name": "Forgive Me Tee - White (3D PRINT)",
