@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:47:21Z",
+  "updated": "2026-06-23T22:48:04Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1188,6 +1188,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T22:47:21Z"
+    },
+    {
+      "id": "foundation-hoodie-grey-s",
+      "name": "Foundation Hoodie - Grey",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/foundation-hoodie-grey-1782254883521.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:48:04Z"
     }
   ]
 }
