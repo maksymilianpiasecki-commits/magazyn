@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T20:15:20Z",
+  "updated": "2026-06-23T20:32:32Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -108,6 +108,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T20:15:20Z"
+    },
+    {
+      "id": "chain-script-hoodie-black-ice-s",
+      "name": "Chain Script Hoodie - Black/Ice",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/chain-script-hoodie-black-ice-1782246751476.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:32:32Z"
     }
   ]
 }
