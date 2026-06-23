@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:48:04Z",
+      "id": "foundation-hoodie-grey-s",
+      "name": "Foundation Hoodie - Grey",
+      "size": "S",
+      "image": "images/foundation-hoodie-grey-1782254883521.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:47:21Z",
       "id": "foundation-hoodie-black-s",
       "name": "Foundation Hoodie - Black",
