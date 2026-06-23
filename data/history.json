@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:20:19Z",
+      "id": "decoded-paisley-revolution-tee-m",
+      "name": "Decoded Paisley Revolution Tee",
+      "size": "M",
+      "image": "images/decoded-paisley-revolution-tee-1782253218620.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:20:19Z",
+      "id": "decoded-paisley-revolution-tee-l",
+      "name": "Decoded Paisley Revolution Tee",
+      "size": "L",
+      "image": "images/decoded-paisley-revolution-tee-1782253218620.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T22:17:57Z",
       "id": "decoded-paisley-monochrome-edition-hoodi-s",
       "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
