@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:48:04Z",
+  "updated": "2026-06-23T22:48:31Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1200,6 +1200,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T22:48:04Z"
+    },
+    {
+      "id": "foundation-hoodie-inked-blue-s",
+      "name": "Foundation Hoodie - Inked Blue",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/foundation-hoodie-inked-blue-1782254909987.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:48:31Z"
     }
   ]
 }
