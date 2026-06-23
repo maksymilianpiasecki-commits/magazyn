@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:33:57Z",
+  "updated": "2026-06-23T23:34:53Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2220,6 +2220,42 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T23:33:57Z"
+    },
+    {
+      "id": "sticker-tee-s",
+      "name": "Sticker Tee",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/sticker-tee-1782257691943.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:34:53Z"
+    },
+    {
+      "id": "sticker-tee-m",
+      "name": "Sticker Tee",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/sticker-tee-1782257691943.jpg",
+      "size": "M",
+      "qty": 2,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:34:53Z"
+    },
+    {
+      "id": "sticker-tee-l",
+      "name": "Sticker Tee",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/sticker-tee-1782257691943.jpg",
+      "size": "L",
+      "qty": 2,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:34:53Z"
     }
   ]
 }
