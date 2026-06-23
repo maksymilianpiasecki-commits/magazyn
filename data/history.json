@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:36:57Z",
+      "id": "syn-no-trace-gloves-blue-s-m",
+      "name": "Syn No Trace Gloves - Blue",
+      "size": "S/M",
+      "image": "images/syn-no-trace-gloves-blue-1782257816038.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:36:04Z",
       "id": "sun-will-rise-tee-black-l",
       "name": "Sun Will Rise Tee - Black",
