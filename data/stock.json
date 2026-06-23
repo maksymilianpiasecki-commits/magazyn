@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:25:07Z",
+  "updated": "2026-06-23T23:25:49Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2100,6 +2100,18 @@
       "price": "1200",
       "location": "Wrocław",
       "updated": "2026-06-23T23:25:07Z"
+    },
+    {
+      "id": "shooters-league-2-0-hoodie-black-l",
+      "name": "Shooters League 2.0 Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Hoodie",
+      "image": "images/shooters-league-2-0-hoodie-black-1782257148632.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:25:49Z"
     }
   ]
 }
