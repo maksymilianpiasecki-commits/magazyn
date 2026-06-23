@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:55:58Z",
+      "id": "target-print-tee-lime-m",
+      "name": "Target Print Tee - Lime",
+      "size": "M",
+      "image": "images/target-print-tee-lime-1782258957919.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T23:55:58Z",
+      "id": "target-print-tee-lime-l",
+      "name": "Target Print Tee - Lime",
+      "size": "L",
+      "image": "images/target-print-tee-lime-1782258957919.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:55:22Z",
       "id": "t-phone-tee-white-m",
       "name": "T Phone Tee - White",
