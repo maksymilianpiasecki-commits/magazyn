@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:11:24Z",
+      "id": "yacht-club-olive-trucker-one-size",
+      "name": "Yacht Club Olive Trucker",
+      "size": "ONE SIZE",
+      "image": "images/yacht-club-olive-trucker-1782252683560.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:10:43Z",
       "id": "yacht-club-grey-trucker-one-size",
       "name": "Yacht Club Grey Trucker",
