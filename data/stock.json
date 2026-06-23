@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:27:36Z",
+  "updated": "2026-06-23T23:30:19Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2160,6 +2160,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:27:36Z"
+    },
+    {
+      "id": "shooters-reflective-tee-black-l",
+      "name": "Shooters Reflective Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/shooters-reflective-tee-black-1782257418890.jpg",
+      "size": "L",
+      "qty": 3,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:30:19Z"
     }
   ]
 }
