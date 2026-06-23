@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:06:14Z",
+  "updated": "2026-06-23T23:06:55Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1632,6 +1632,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:06:14Z"
+    },
+    {
+      "id": "irongate-t-high-frequency-hoodie-black-s",
+      "name": "Irongate T High Frequency Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/irongate-t-high-frequency-hoodie-black-1782256014480.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:06:55Z"
     }
   ]
 }
