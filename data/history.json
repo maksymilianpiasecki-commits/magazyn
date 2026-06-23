@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:52:56Z",
+      "id": "synarchy-short-sleeve-tee-black-red-s",
+      "name": "Synarchy Short Sleeve Tee - Black/Red",
+      "size": "S",
+      "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:52:56Z",
+      "id": "synarchy-short-sleeve-tee-black-red-m",
+      "name": "Synarchy Short Sleeve Tee - Black/Red",
+      "size": "M",
+      "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:51:49Z",
       "id": "synarchy-double-long-sleeve-tee-black-bl-s",
       "name": "Synarchy Double Long Sleeve Tee - Black/Black",
