@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T19:49:19Z",
+  "updated": "2026-06-23T19:58:19Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -12,6 +12,30 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T19:49:19Z"
+    },
+    {
+      "id": "3-peat-hoodie-black-s",
+      "name": "3 Peat Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/3-peat-hoodie-black-1782244697983.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T19:58:19Z"
+    },
+    {
+      "id": "3-peat-hoodie-black-m",
+      "name": "3 Peat Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/3-peat-hoodie-black-1782244697983.jpg",
+      "size": "M",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T19:58:19Z"
     }
   ]
 }
