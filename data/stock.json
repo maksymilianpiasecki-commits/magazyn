@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:25:49Z",
+  "updated": "2026-06-23T23:26:11Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2112,6 +2112,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:25:49Z"
+    },
+    {
+      "id": "shooters-league-2-0-t-shirt-black-l",
+      "name": "Shooters League 2.0 T-Shirt - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/shooters-league-2-0-t-shirt-black-1782257170354.jpg",
+      "size": "L",
+      "qty": 4,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:26:11Z"
     }
   ]
 }
