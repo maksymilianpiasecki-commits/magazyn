@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:02:57Z",
+  "updated": "2026-06-23T23:03:32Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1500,6 +1500,30 @@
       "price": "1200",
       "location": "Wrocław",
       "updated": "2026-06-23T23:02:57Z"
+    },
+    {
+      "id": "irongate-arch-puffer-aw23-black-gradient-s",
+      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:03:32Z"
+    },
+    {
+      "id": "irongate-arch-puffer-aw23-black-gradient-l",
+      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:03:32Z"
     }
   ]
 }
