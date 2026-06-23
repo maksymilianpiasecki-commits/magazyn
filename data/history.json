@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T19:58:19Z",
+      "id": "3-peat-hoodie-black-s",
+      "name": "3 Peat Hoodie - Black",
+      "size": "S",
+      "image": "images/3-peat-hoodie-black-1782244697983.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T19:58:19Z",
+      "id": "3-peat-hoodie-black-m",
+      "name": "3 Peat Hoodie - Black",
+      "size": "M",
+      "image": "images/3-peat-hoodie-black-1782244697983.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T19:49:19Z",
       "id": "skarpetki-syna-x-central-cee-one-size",
       "name": "Skarpetki Syna x Central Cee",
