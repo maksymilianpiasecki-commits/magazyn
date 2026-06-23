@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:38:06Z",
+      "id": "syn-no-trace-gloves-grey-marl-s-m",
+      "name": "Syn No Trace Gloves - Grey/Marl",
+      "size": "S/M",
+      "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T23:38:06Z",
+      "id": "syn-no-trace-gloves-grey-marl-l-xl",
+      "name": "Syn No Trace Gloves - Grey/Marl",
+      "size": "L/XL",
+      "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:36:57Z",
       "id": "syn-no-trace-gloves-blue-s-m",
       "name": "Syn No Trace Gloves - Blue",
