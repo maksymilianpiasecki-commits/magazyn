@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:15:28Z",
+  "updated": "2026-06-23T22:16:19Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -720,6 +720,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:15:28Z"
+    },
+    {
+      "id": "decoded-liquid-chrome-hoodie-tracksuit-b-l",
+      "name": "Decoded Liquid Chrome Hoodie Tracksuit - Black",
+      "brand": "Trapstar",
+      "subtitle": "Tracksuit",
+      "image": "images/decoded-liquid-chrome-hoodie-tracksuit-b-1782252978204.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "600",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:16:19Z"
     }
   ]
 }
