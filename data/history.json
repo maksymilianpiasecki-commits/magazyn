@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:25:26Z",
+      "id": "dragon-tee-white-l",
+      "name": "Dragon Tee - White",
+      "size": "L",
+      "image": "images/dragon-tee-white-1782253525040.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:24:49Z",
       "id": "diy-art-of-war-hoodie-black-s",
       "name": "DIY Art of War Hoodie - Black",
