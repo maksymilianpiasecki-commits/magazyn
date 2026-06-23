@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:52:29Z",
+      "id": "hustlers-spirit-2-1-tee-black-s",
+      "name": "Hustlers Spirit 2.1 Tee - Black",
+      "size": "S",
+      "image": "images/hustlers-spirit-2-1-tee-black-1782255148669.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:52:29Z",
+      "id": "hustlers-spirit-2-1-tee-black-m",
+      "name": "Hustlers Spirit 2.1 Tee - Black",
+      "size": "M",
+      "image": "images/hustlers-spirit-2-1-tee-black-1782255148669.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:51:45Z",
       "id": "halftone-tee-2-0-white-l",
       "name": "Halftone Tee 2.0 - White",
