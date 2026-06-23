@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:16:42Z",
+      "id": "nocturnal-tee-black-l",
+      "name": "Nocturnal Tee - Black",
+      "size": "L",
+      "image": "images/nocturnal-tee-black-1782256601047.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:16:02Z",
       "id": "no-gimmicks-t-shirt-m",
       "name": "No Gimmicks T-Shirt",
