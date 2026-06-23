@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:44:12Z",
+  "updated": "2026-06-23T22:44:59Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1128,6 +1128,30 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T22:44:12Z"
+    },
+    {
+      "id": "foundation-crew-inked-blue-s",
+      "name": "Foundation Crew - Inked Blue",
+      "brand": "Trapstar",
+      "subtitle": "Longsleeve",
+      "image": "images/foundation-crew-inked-blue-1782254698182.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:44:59Z"
+    },
+    {
+      "id": "foundation-crew-inked-blue-m",
+      "name": "Foundation Crew - Inked Blue",
+      "brand": "Trapstar",
+      "subtitle": "Longsleeve",
+      "image": "images/foundation-crew-inked-blue-1782254698182.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:44:59Z"
     }
   ]
 }
