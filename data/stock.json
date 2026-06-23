@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:56:18Z",
+  "updated": "2026-06-23T21:56:56Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -480,6 +480,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T21:56:18Z"
+    },
+    {
+      "id": "mula-guerillaz-black-green-cargo-pants-m",
+      "name": "Mula Guerillaz Black Green Cargo Pants",
+      "brand": "Corteiz",
+      "subtitle": "Spodnie",
+      "image": "images/mula-guerillaz-black-green-cargo-pants-1782251815921.jpg",
+      "size": "M",
+      "qty": 2,
+      "price": "600",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:56:56Z"
     }
   ]
 }
