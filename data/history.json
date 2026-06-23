@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:05:43Z",
+      "id": "repeat-alcatraz-beanie-brown-cream-one-size",
+      "name": "Repeat Alcatraz Beanie - Brown Cream",
+      "size": "ONE SIZE",
+      "image": "images/repeat-alcatraz-beanie-brown-cream-1782252342427.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:04:53Z",
       "id": "orange-short-peak-trucker-one-size",
       "name": "Orange Short Peak Trucker",
