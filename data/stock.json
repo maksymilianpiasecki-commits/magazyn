@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:46:13Z",
+  "updated": "2026-06-23T22:46:44Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1164,6 +1164,18 @@
       "price": "500",
       "location": "Wrocław",
       "updated": "2026-06-23T22:46:13Z"
+    },
+    {
+      "id": "foundation-gilet-grey-camo-s",
+      "name": "Foundation Gilet - Grey Camo",
+      "brand": "Trapstar",
+      "subtitle": "Kamizelka",
+      "image": "images/foundation-gilet-grey-camo-1782254803449.jpg",
+      "size": "S",
+      "qty": 2,
+      "price": "500",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:46:44Z"
     }
   ]
 }
