@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:32:10Z",
+      "id": "flying-birds-tee-black-s",
+      "name": "Flying Birds Tee - Black",
+      "size": "S",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "type": "new",
+      "delta": 11,
+      "after": 11
+    },
+    {
+      "ts": "2026-06-23T22:32:10Z",
+      "id": "flying-birds-tee-black-m",
+      "name": "Flying Birds Tee - Black",
+      "size": "M",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "type": "new",
+      "delta": 19,
+      "after": 19
+    },
+    {
+      "ts": "2026-06-23T22:32:10Z",
+      "id": "flying-birds-tee-black-l",
+      "name": "Flying Birds Tee - Black",
+      "size": "L",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "type": "new",
+      "delta": 17,
+      "after": 17
+    },
+    {
       "ts": "2026-06-23T22:30:44Z",
       "id": "extraordinary-tee-white-s",
       "name": "Extraordinary Tee - White",
