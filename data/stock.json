@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:52:56Z",
+  "updated": "2026-06-23T23:54:02Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2616,6 +2616,18 @@
       "price": "280",
       "location": "Wrocław",
       "updated": "2026-06-23T23:52:56Z"
+    },
+    {
+      "id": "team-syna-x-central-cee-tracksuit-l",
+      "name": "Team Syna x Central Cee Tracksuit",
+      "brand": "Syna World",
+      "subtitle": "Tracksuit",
+      "image": "images/team-syna-x-central-cee-tracksuit-1782258840931.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "1000",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:54:02Z"
     }
   ]
 }
