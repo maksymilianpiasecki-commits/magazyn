@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:35:35Z",
+      "id": "strike-out-hoodie-black-s",
+      "name": "Strike Out Hoodie - Black",
+      "size": "S",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:35:35Z",
+      "id": "strike-out-hoodie-black-m",
+      "name": "Strike Out Hoodie - Black",
+      "size": "M",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:35:35Z",
+      "id": "strike-out-hoodie-black-l",
+      "name": "Strike Out Hoodie - Black",
+      "size": "L",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:34:53Z",
       "id": "sticker-tee-s",
       "name": "Sticker Tee",
