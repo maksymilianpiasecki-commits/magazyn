@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:55:22Z",
+      "id": "t-phone-tee-white-m",
+      "name": "T Phone Tee - White",
+      "size": "M",
+      "image": "images/t-phone-tee-white-1782258921861.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:55:22Z",
+      "id": "t-phone-tee-white-l",
+      "name": "T Phone Tee - White",
+      "size": "L",
+      "image": "images/t-phone-tee-white-1782258921861.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:54:28Z",
       "id": "t-phone-tee-black-m",
       "name": "T Phone Tee - Black",
