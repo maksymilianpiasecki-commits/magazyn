@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:16:55Z",
+      "id": "decoded-mask-black-white-one-size",
+      "name": "Decoded Mask - Black/White",
+      "size": "ONE SIZE",
+      "image": "images/decoded-mask-black-white-1782253014180.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:16:19Z",
       "id": "decoded-liquid-chrome-hoodie-tracksuit-b-l",
       "name": "Decoded Liquid Chrome Hoodie Tracksuit - Black",
