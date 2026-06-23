@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:10:58Z",
+      "id": "it-s-a-secret-tee-2-0-black-blue-m",
+      "name": "It's a Secret Tee 2.0 - Black/Blue",
+      "size": "M",
+      "image": "images/it-s-a-secret-tee-2-0-black-blue-1782256257209.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:10:58Z",
+      "id": "it-s-a-secret-tee-2-0-black-blue-l",
+      "name": "It's a Secret Tee 2.0 - Black/Blue",
+      "size": "L",
+      "image": "images/it-s-a-secret-tee-2-0-black-blue-1782256257209.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:10:04Z",
       "id": "it-s-a-secret-print-tee-black-m",
       "name": "It's A Secret Print Tee - Black",
