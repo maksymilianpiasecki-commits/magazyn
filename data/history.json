@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:10:43Z",
+      "id": "yacht-club-grey-trucker-one-size",
+      "name": "Yacht Club Grey Trucker",
+      "size": "ONE SIZE",
+      "image": "images/yacht-club-grey-trucker-1782252641962.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:10:01Z",
       "id": "women-s-tiger-mesh-longsleeve-yellow-s",
       "name": "Women's Tiger Mesh Longsleeve Yellow",
