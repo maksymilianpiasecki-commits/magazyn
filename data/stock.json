@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:10:58Z",
+  "updated": "2026-06-23T23:11:22Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1740,6 +1740,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:10:58Z"
+    },
+    {
+      "id": "knight-tee-black-l",
+      "name": "Knight Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/knight-tee-black-1782256281393.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:11:22Z"
     }
   ]
 }
