@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:52:43Z",
+  "updated": "2026-06-23T22:53:08Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1284,6 +1284,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:52:29Z"
+    },
+    {
+      "id": "hustler-s-spirit-tee-black-m",
+      "name": "Hustler's Spirit Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/hustler-s-spirit-tee-black-1782255186731.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:53:08Z"
     }
   ]
 }
