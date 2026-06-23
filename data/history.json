@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:56:49Z",
+      "id": "skarpetki-syna-black-pink-2pack-one-size",
+      "name": "Skarpetki Syna Black/Pink (2PACK)",
+      "size": "ONE SIZE",
+      "image": "images/skarpetki-syna-black-pink-2pack-1782259008166.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:55:58Z",
       "id": "target-print-tee-lime-m",
       "name": "Target Print Tee - Lime",
