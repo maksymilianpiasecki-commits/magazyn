@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:05:08Z",
+  "updated": "2026-06-23T23:05:40Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1584,6 +1584,42 @@
       "price": "1200",
       "location": "Wrocław",
       "updated": "2026-06-23T23:05:08Z"
+    },
+    {
+      "id": "irongate-t-badge-tee-black-s",
+      "name": "Irongate T Badge Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:05:40Z"
+    },
+    {
+      "id": "irongate-t-badge-tee-black-m",
+      "name": "Irongate T Badge Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:05:40Z"
+    },
+    {
+      "id": "irongate-t-badge-tee-black-l",
+      "name": "Irongate T Badge Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:05:40Z"
     }
   ]
 }
