@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:26:51Z",
+  "updated": "2026-06-23T22:27:43Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -948,6 +948,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:26:51Z"
+    },
+    {
+      "id": "metallic-gold-script-beanie-one-size",
+      "name": "Metallic Gold Script Beanie",
+      "brand": "Denim Tears",
+      "subtitle": "Beanie",
+      "image": "images/metallic-gold-script-beanie-1782253662885.jpg",
+      "size": "ONE SIZE",
+      "qty": 9,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:27:43Z"
     }
   ]
 }
