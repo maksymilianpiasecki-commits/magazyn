@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:05:40Z",
+  "updated": "2026-06-23T23:06:14Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1620,6 +1620,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:05:40Z"
+    },
+    {
+      "id": "irongate-t-cross-body-bag-black-one-size",
+      "name": "Irongate T Cross-Body Bag - Black",
+      "brand": "Trapstar",
+      "subtitle": "Akcesoria",
+      "image": "images/irongate-t-cross-body-bag-black-1782255973373.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:06:14Z"
     }
   ]
 }
