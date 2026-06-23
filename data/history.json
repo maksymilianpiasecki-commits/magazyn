@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:28:18Z",
+      "id": "metallic-gold-script-tee-m",
+      "name": "Metallic Gold Script Tee",
+      "size": "M",
+      "image": "images/metallic-gold-script-tee-1782253697313.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:27:43Z",
       "id": "metallic-gold-script-beanie-one-size",
       "name": "Metallic Gold Script Beanie",
