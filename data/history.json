@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:39:06Z",
+      "id": "skarpetki-syna-black-blue-2pack-one-size",
+      "name": "Skarpetki Syna Black/Blue (2PACK)",
+      "size": "ONE SIZE",
+      "image": "images/skarpetki-syna-black-blue-2pack-1782257945653.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:38:06Z",
       "id": "syn-no-trace-gloves-grey-marl-s-m",
       "name": "Syn No Trace Gloves - Grey/Marl",
