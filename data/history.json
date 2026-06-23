@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:54:28Z",
+      "id": "t-phone-tee-black-m",
+      "name": "T Phone Tee - Black",
+      "size": "M",
+      "image": "images/t-phone-tee-black-1782258867845.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:54:02Z",
       "id": "team-syna-x-central-cee-tracksuit-l",
       "name": "Team Syna x Central Cee Tracksuit",
