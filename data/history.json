@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:15:28Z",
+      "id": "decoded-infrared-edition-tee-black-m",
+      "name": "Decoded Infrared Edition Tee - Black",
+      "size": "M",
+      "image": "images/decoded-infrared-edition-tee-black-1782252927356.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:14:44Z",
       "id": "decoded-chenille-tracksuit-enzyme-m",
       "name": "Decoded Chenille Tracksuit - Enzyme",
