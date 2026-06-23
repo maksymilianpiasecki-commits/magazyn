@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:56:06Z",
+      "id": "hyperdrive-t-hoodie-black-camo-s",
+      "name": "Hyperdrive T Hoodie - Black/Camo",
+      "size": "S",
+      "image": "images/hyperdrive-t-hoodie-black-camo-1782255365997.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:55:38Z",
       "id": "hyperdrive-ripstop-puffer-blue-orange-s",
       "name": "Hyperdrive Ripstop Puffer - Blue/Orange",
