@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:25:07Z",
+      "id": "shooters-hooded-puffer-black-reflective-s",
+      "name": "Shooters Hooded Puffer - Black/Reflective",
+      "size": "S",
+      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:25:07Z",
+      "id": "shooters-hooded-puffer-black-reflective-m",
+      "name": "Shooters Hooded Puffer - Black/Reflective",
+      "size": "M",
+      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:24:26Z",
       "id": "shooters-breakthrough-tee-black-m",
       "name": "Shooters Breakthrough Tee - Black",
