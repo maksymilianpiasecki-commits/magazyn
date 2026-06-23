@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:14:44Z",
+      "id": "decoded-chenille-tracksuit-enzyme-m",
+      "name": "Decoded Chenille Tracksuit - Enzyme",
+      "size": "M",
+      "image": "images/decoded-chenille-tracksuit-enzyme-1782252883626.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:13:51Z",
       "id": "decoded-camo-hoodie-blackout-edition-s",
       "name": "Decoded Camo Hoodie - Blackout Edition",
