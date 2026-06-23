@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:05:40Z",
+      "id": "irongate-t-badge-tee-black-s",
+      "name": "Irongate T Badge Tee - Black",
+      "size": "S",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:05:40Z",
+      "id": "irongate-t-badge-tee-black-m",
+      "name": "Irongate T Badge Tee - Black",
+      "size": "M",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:05:40Z",
+      "id": "irongate-t-badge-tee-black-l",
+      "name": "Irongate T Badge Tee - Black",
+      "size": "L",
+      "image": "images/irongate-t-badge-tee-black-1782255939061.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:05:08Z",
       "id": "irongate-detachable-hooded-puffer-jacket-xl",
       "name": "Irongate Detachable Hooded Puffer Jacket - Black",
