@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:53:46Z",
+      "id": "hyperdrive-chrome-hoodie-tracksuit-black-m",
+      "name": "Hyperdrive Chrome Hoodie Tracksuit - Black/Infrared",
+      "size": "M",
+      "image": "images/hyperdrive-chrome-hoodie-tracksuit-black-1782255225300.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:53:46Z",
+      "id": "hyperdrive-chrome-hoodie-tracksuit-black-l",
+      "name": "Hyperdrive Chrome Hoodie Tracksuit - Black/Infrared",
+      "size": "L",
+      "image": "images/hyperdrive-chrome-hoodie-tracksuit-black-1782255225300.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:53:08Z",
       "id": "hustler-s-spirit-tee-black-m",
       "name": "Hustler's Spirit Tee - Black",
