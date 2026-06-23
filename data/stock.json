@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:34:53Z",
+  "updated": "2026-06-23T23:35:35Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2256,6 +2256,42 @@
       "price": "280",
       "location": "Wrocław",
       "updated": "2026-06-23T23:34:53Z"
+    },
+    {
+      "id": "strike-out-hoodie-black-s",
+      "name": "Strike Out Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:35:35Z"
+    },
+    {
+      "id": "strike-out-hoodie-black-m",
+      "name": "Strike Out Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:35:35Z"
+    },
+    {
+      "id": "strike-out-hoodie-black-l",
+      "name": "Strike Out Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/strike-out-hoodie-black-1782257734782.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:35:35Z"
     }
   ]
 }
