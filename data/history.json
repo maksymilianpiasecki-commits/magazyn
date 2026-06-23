@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:49:20Z",
+      "id": "greatness-tee-black-s",
+      "name": "Greatness Tee - Black",
+      "size": "S",
+      "image": "",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T22:49:20Z",
+      "id": "greatness-tee-black-m",
+      "name": "Greatness Tee - Black",
+      "size": "M",
+      "image": "",
+      "type": "new",
+      "delta": 7,
+      "after": 7
+    },
+    {
+      "ts": "2026-06-23T22:49:20Z",
+      "id": "greatness-tee-black-xl",
+      "name": "Greatness Tee - Black",
+      "size": "XL",
+      "image": "",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:48:31Z",
       "id": "foundation-hoodie-inked-blue-s",
       "name": "Foundation Hoodie - Inked Blue",
