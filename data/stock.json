@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:50:38Z",
+  "updated": "2026-06-23T22:51:45Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1260,6 +1260,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T22:50:38Z"
+    },
+    {
+      "id": "halftone-tee-2-0-white-l",
+      "name": "Halftone Tee 2.0 - White",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/halftone-tee-2-0-white-1782255104142.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:51:45Z"
     }
   ]
 }
