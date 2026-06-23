@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:46:20Z",
+      "id": "syna-og-hood-black-orange-s",
+      "name": "Syna OG Hood - Black/Orange",
+      "size": "S",
+      "image": "images/syna-og-hood-black-orange-1782258379206.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:45:06Z",
       "id": "syna-big-logo-skull-blue-one-size",
       "name": "Syna Big Logo Skull - Blue",
