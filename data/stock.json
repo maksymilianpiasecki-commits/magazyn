@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:33:07Z",
+  "updated": "2026-06-23T22:44:12Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1104,6 +1104,30 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:33:07Z"
+    },
+    {
+      "id": "forgive-me-tee-white-3d-print-m",
+      "name": "Forgive Me Tee - White (3D PRINT)",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
+      "size": "M",
+      "qty": 8,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:44:12Z"
+    },
+    {
+      "id": "forgive-me-tee-white-3d-print-l",
+      "name": "Forgive Me Tee - White (3D PRINT)",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
+      "size": "L",
+      "qty": 21,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:44:12Z"
     }
   ]
 }
