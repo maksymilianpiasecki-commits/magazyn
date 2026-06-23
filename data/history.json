@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:16:02Z",
+      "id": "no-gimmicks-t-shirt-m",
+      "name": "No Gimmicks T-Shirt",
+      "size": "M",
+      "image": "images/no-gimmicks-t-shirt-1782256561588.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T23:16:02Z",
+      "id": "no-gimmicks-t-shirt-l",
+      "name": "No Gimmicks T-Shirt",
+      "size": "L",
+      "image": "images/no-gimmicks-t-shirt-1782256561588.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T23:16:02Z",
+      "id": "no-gimmicks-t-shirt-xl",
+      "name": "No Gimmicks T-Shirt",
+      "size": "XL",
+      "image": "images/no-gimmicks-t-shirt-1782256561588.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:15:13Z",
       "id": "never-miss-tee-white-s",
       "name": "Never Miss Tee - White",
