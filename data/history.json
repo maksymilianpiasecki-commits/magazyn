@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:12:26Z",
+      "id": "decoded-aw23-puffer-black-l",
+      "name": "Decoded AW23 Puffer - Black",
+      "size": "L",
+      "image": "images/decoded-aw23-puffer-black-1782252744910.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:12:26Z",
+      "id": "decoded-aw23-puffer-black-xl",
+      "name": "Decoded AW23 Puffer - Black",
+      "size": "XL",
+      "image": "images/decoded-aw23-puffer-black-1782252744910.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:11:24Z",
       "id": "yacht-club-olive-trucker-one-size",
       "name": "Yacht Club Olive Trucker",
