@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:16:19Z",
+  "updated": "2026-06-23T22:16:55Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -732,6 +732,18 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T22:16:19Z"
+    },
+    {
+      "id": "decoded-mask-black-white-one-size",
+      "name": "Decoded Mask - Black/White",
+      "brand": "Trapstar",
+      "subtitle": "Akcesoria",
+      "image": "images/decoded-mask-black-white-1782253014180.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "150",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:16:55Z"
     }
   ]
 }
