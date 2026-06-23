@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:33:57Z",
+      "id": "yella-guerillaz-cargos-black-yellow-m",
+      "name": "Yella Guerillaz Cargos Black Yellow",
+      "size": "M",
+      "image": "images/yella-guerillaz-cargos-black-yellow-1782257636153.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:33:15Z",
       "id": "shooters-reflective-tracksuit-black-s",
       "name": "Shooters Reflective Tracksuit - Black",
