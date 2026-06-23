@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:28:55Z",
+  "updated": "2026-06-23T22:29:27Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -984,6 +984,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T22:28:55Z"
+    },
+    {
+      "id": "eternal-flame-tee-white-s",
+      "name": "Eternal Flame Tee - White",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/eternal-flame-tee-white-1782253766303.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:29:27Z"
     }
   ]
 }
