@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:30:44Z",
+  "updated": "2026-06-23T22:32:10Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1044,6 +1044,42 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:30:44Z"
+    },
+    {
+      "id": "flying-birds-tee-black-s",
+      "name": "Flying Birds Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "size": "S",
+      "qty": 11,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:32:10Z"
+    },
+    {
+      "id": "flying-birds-tee-black-m",
+      "name": "Flying Birds Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "size": "M",
+      "qty": 19,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:32:10Z"
+    },
+    {
+      "id": "flying-birds-tee-black-l",
+      "name": "Flying Birds Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/flying-birds-tee-black-1782253929586.jpg",
+      "size": "L",
+      "qty": 17,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:32:10Z"
     }
   ]
 }
