@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:48:21Z",
+  "updated": "2026-06-23T23:49:00Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2508,6 +2508,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:48:21Z"
+    },
+    {
+      "id": "syna-trucker-grey-one-size",
+      "name": "Syna Trucker - Grey",
+      "brand": "Syna World",
+      "subtitle": "Czapka z daszkiem",
+      "image": "images/syna-trucker-grey-1782258538823.jpg",
+      "size": "ONE SIZE",
+      "qty": 2,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:49:00Z"
     }
   ]
 }
