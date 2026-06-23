@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:09:05Z",
+      "id": "it-s-a-secret-hooded-puffer-black-m",
+      "name": "It's A Secret Hooded Puffer - Black",
+      "size": "M",
+      "image": "images/it-s-a-secret-hooded-puffer-black-1782256144901.jpg",
+      "type": "new",
+      "delta": 6,
+      "after": 6
+    },
+    {
       "ts": "2026-06-23T23:08:12Z",
       "id": "irongate-t-tee-desert-camo-edition-white-l",
       "name": "Irongate T Tee Desert Camo Edition - White",
