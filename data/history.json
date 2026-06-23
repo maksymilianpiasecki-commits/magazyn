@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:34:19Z",
+      "id": "green-box-trucker-one-size",
+      "name": "Green Box Trucker",
+      "size": "ONE SIZE",
+      "image": "images/green-box-trucker-1782250458067.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T21:27:47Z",
       "id": "gasolina-trucker-olive-green-one-size",
       "name": "Gasolina Trucker Olive Green",
