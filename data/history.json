@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:04:53Z",
+      "id": "orange-short-peak-trucker-one-size",
+      "name": "Orange Short Peak Trucker",
+      "size": "ONE SIZE",
+      "image": "images/orange-short-peak-trucker-1782252291878.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T21:58:35Z",
       "id": "og-strike-beanie-green-one-size",
       "name": "OG Strike Beanie - Green",
