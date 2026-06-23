@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:56:56Z",
+      "id": "mula-guerillaz-black-green-cargo-pants-m",
+      "name": "Mula Guerillaz Black Green Cargo Pants",
+      "size": "M",
+      "image": "images/mula-guerillaz-black-green-cargo-pants-1782251815921.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T21:56:18Z",
       "id": "micro-allstarz-beanie-yellow-one-size",
       "name": "Micro Allstarz Beanie - Yellow",
