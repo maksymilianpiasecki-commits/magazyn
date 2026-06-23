@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:06:24Z",
+  "updated": "2026-06-23T22:07:08Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -564,6 +564,18 @@
       "price": "115",
       "location": "Wrocław",
       "updated": "2026-06-23T22:06:24Z"
+    },
+    {
+      "id": "star-mesh-tee-black-red-s",
+      "name": "Star Mesh Tee - Black/Red",
+      "brand": "Corteiz",
+      "subtitle": "Koszulka",
+      "image": "images/star-mesh-tee-black-red-1782252427455.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:07:08Z"
     }
   ]
 }
