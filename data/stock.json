@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:36:57Z",
+  "updated": "2026-06-23T23:38:06Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2316,6 +2316,30 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:36:57Z"
+    },
+    {
+      "id": "syn-no-trace-gloves-grey-marl-s-m",
+      "name": "Syn No Trace Gloves - Grey/Marl",
+      "brand": "Syna World",
+      "subtitle": "Akcesoria",
+      "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
+      "size": "S/M",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:38:06Z"
+    },
+    {
+      "id": "syn-no-trace-gloves-grey-marl-l-xl",
+      "name": "Syn No Trace Gloves - Grey/Marl",
+      "brand": "Syna World",
+      "subtitle": "Akcesoria",
+      "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
+      "size": "L/XL",
+      "qty": 3,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:38:06Z"
     }
   ]
 }
