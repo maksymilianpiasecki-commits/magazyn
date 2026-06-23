@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:55:09Z",
+      "id": "college-hood-grey-marl-s",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "size": "S",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T20:55:09Z",
+      "id": "college-hood-grey-marl-m",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "size": "M",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T20:55:09Z",
+      "id": "college-hood-grey-marl-l",
+      "name": "COLLEGE HOOD - GREY MARL",
+      "size": "L",
+      "image": "images/college-hood-grey-marl-1782248107945.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T20:49:34Z",
       "id": "college-crew-short-set-l",
       "name": "College Crew - Short Set",
