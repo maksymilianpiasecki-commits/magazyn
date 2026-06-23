@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:55:38Z",
+      "id": "hyperdrive-ripstop-puffer-blue-orange-s",
+      "name": "Hyperdrive Ripstop Puffer - Blue/Orange",
+      "size": "S",
+      "image": "images/hyperdrive-ripstop-puffer-blue-orange-1782255337724.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:54:58Z",
       "id": "hyperdrive-ripstop-puffer-blackout-m",
       "name": "Hyperdrive Ripstop Puffer - Blackout",
