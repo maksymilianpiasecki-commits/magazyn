@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:28:18Z",
+  "updated": "2026-06-23T22:28:55Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -972,6 +972,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T22:28:18Z"
+    },
+    {
+      "id": "outdoor-pants-red-l",
+      "name": "Outdoor Pants Red",
+      "brand": "Denim Tears",
+      "subtitle": "Spodnie",
+      "image": "images/outdoor-pants-red-1782253733724.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:28:55Z"
     }
   ]
 }
