@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:15:13Z",
+      "id": "never-miss-tee-white-s",
+      "name": "Never Miss Tee - White",
+      "size": "S",
+      "image": "images/never-miss-tee-white-1782256512230.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:15:13Z",
+      "id": "never-miss-tee-white-m",
+      "name": "Never Miss Tee - White",
+      "size": "M",
+      "image": "images/never-miss-tee-white-1782256512230.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:15:13Z",
+      "id": "never-miss-tee-white-l",
+      "name": "Never Miss Tee - White",
+      "size": "L",
+      "image": "images/never-miss-tee-white-1782256512230.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
       "ts": "2026-06-23T23:14:31Z",
       "id": "neon-hyperdrive-hoodie-black-s",
       "name": "Neon Hyperdrive Hoodie - Black",
