@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:49:00Z",
+      "id": "syna-trucker-grey-one-size",
+      "name": "Syna Trucker - Grey",
+      "size": "ONE SIZE",
+      "image": "images/syna-trucker-grey-1782258538823.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:48:21Z",
       "id": "syna-sling-bag-x-central-cee-one-size",
       "name": "Syna Sling Bag x Central Cee",
