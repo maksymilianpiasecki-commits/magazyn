@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:54:24Z",
+      "id": "hyperdrive-puffer-teal-xs",
+      "name": "Hyperdrive Puffer - Teal",
+      "size": "XS",
+      "image": "images/hyperdrive-puffer-teal-1782255263413.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:53:46Z",
       "id": "hyperdrive-chrome-hoodie-tracksuit-black-m",
       "name": "Hyperdrive Chrome Hoodie Tracksuit - Black/Infrared",
