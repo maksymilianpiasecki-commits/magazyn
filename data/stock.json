@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:29:27Z",
+  "updated": "2026-06-23T22:30:10Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -996,6 +996,30 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:29:27Z"
+    },
+    {
+      "id": "extraordinary-tee-black-s",
+      "name": "Extraordinary Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/extraordinary-tee-black-1782253809434.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:30:10Z"
+    },
+    {
+      "id": "extraordinary-tee-black-l",
+      "name": "Extraordinary Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/extraordinary-tee-black-1782253809434.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:30:10Z"
     }
   ]
 }
