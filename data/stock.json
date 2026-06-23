@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:57:07Z",
+  "updated": "2026-06-23T22:58:13Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1380,6 +1380,42 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T22:57:07Z"
+    },
+    {
+      "id": "boxerki-i-love-syna-3pack-s",
+      "name": "Boxerki I love Syna (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "size": "S",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:58:13Z"
+    },
+    {
+      "id": "boxerki-i-love-syna-3pack-m",
+      "name": "Boxerki I love Syna (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "size": "M",
+      "qty": 3,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:58:13Z"
+    },
+    {
+      "id": "boxerki-i-love-syna-3pack-xl",
+      "name": "Boxerki I love Syna (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-i-love-syna-3pack-1782255492264.jpg",
+      "size": "XL",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:58:13Z"
     }
   ]
 }
