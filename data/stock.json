@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:11:24Z",
+  "updated": "2026-06-23T22:12:26Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -624,6 +624,30 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T22:11:24Z"
+    },
+    {
+      "id": "decoded-aw23-puffer-black-l",
+      "name": "Decoded AW23 Puffer - Black",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/decoded-aw23-puffer-black-1782252744910.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:12:26Z"
+    },
+    {
+      "id": "decoded-aw23-puffer-black-xl",
+      "name": "Decoded AW23 Puffer - Black",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/decoded-aw23-puffer-black-1782252744910.jpg",
+      "size": "XL",
+      "qty": 1,
+      "price": "1200",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:12:26Z"
     }
   ]
 }
