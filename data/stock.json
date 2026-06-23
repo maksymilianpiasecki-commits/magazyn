@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:27:43Z",
+  "updated": "2026-06-23T22:28:18Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -960,6 +960,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T22:27:43Z"
+    },
+    {
+      "id": "metallic-gold-script-tee-m",
+      "name": "Metallic Gold Script Tee",
+      "brand": "Denim Tears",
+      "subtitle": "Koszulka",
+      "image": "images/metallic-gold-script-tee-1782253697313.jpg",
+      "size": "M",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:28:18Z"
     }
   ]
 }
