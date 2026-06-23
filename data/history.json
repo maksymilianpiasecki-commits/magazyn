@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T20:56:03Z",
+      "id": "college-hood-tracksuit-black-yellow-s",
+      "name": "College Hood Tracksuit - Black/Yellow",
+      "size": "S",
+      "image": "images/college-hood-tracksuit-black-yellow-1782248162331.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T20:56:03Z",
+      "id": "college-hood-tracksuit-black-yellow-l",
+      "name": "College Hood Tracksuit - Black/Yellow",
+      "size": "L",
+      "image": "images/college-hood-tracksuit-black-yellow-1782248162331.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T20:55:09Z",
       "id": "college-hood-grey-marl-s",
       "name": "COLLEGE HOOD - GREY MARL",
