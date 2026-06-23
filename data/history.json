@@ -1,6 +1,46 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:43:30Z",
+      "id": "boxerki-syna-white-grey-black-3pack-s",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "size": "S",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:43:30Z",
+      "id": "boxerki-syna-white-grey-black-3pack-m",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "size": "M",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-23T23:43:30Z",
+      "id": "boxerki-syna-white-grey-black-3pack-l",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "size": "L",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T23:43:30Z",
+      "id": "boxerki-syna-white-grey-black-3pack-xl",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "size": "XL",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:42:05Z",
       "id": "skarpetki-syna-white-yellow-2pack-one-size",
       "name": "Skarpetki Syna White/Yellow (2PACK)",
