@@ -79,7 +79,8 @@
   .tab.active .count { background: var(--blue); color: #fff; }
 
   /* ---------- toolbar ---------- */
-  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 12px; }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
   .search { position: relative; flex: 1 1 220px; min-width: 160px; }
   .search input {
     width: 100%; background: var(--surface); border: 1px solid var(--line); color: var(--ink);
@@ -208,15 +209,18 @@
         <input type="text" id="q" placeholder="Szukaj: nazwa, rozmiar...">
       </label>
       <select id="fBrand"><option value="">Wszystkie marki</option></select>
+      <select id="fCat"><option value="">Wszystkie kategorie</option></select>
       <select id="fSize"><option value="">Wszystkie rozmiary</option></select>
       <select id="sort">
         <option value="name">Sortuj: nazwa A-Z</option>
         <option value="brand">Sortuj: marka A-Z</option>
+        <option value="cat">Sortuj: kategoria A-Z</option>
         <option value="qtyDesc">Sortuj: ilość malejąco</option>
         <option value="qtyAsc">Sortuj: ilość rosnąco</option>
         <option value="dateDesc">Sortuj: ostatnio zmienione</option>
       </select>
-      <div class="spacer"></div>
+    </div>
+    <div class="actions">
       <button class="btn btn-primary" id="btnXls">
         <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Pobierz Excel
@@ -328,11 +332,13 @@ function getFilteredStock() {
   const q = lc(document.getElementById("q").value);
   const fSize = document.getElementById("fSize").value;
   const fBrand = document.getElementById("fBrand").value;
+  const fCat = document.getElementById("fCat").value;
   const sort = document.getElementById("sort").value;
   let list = STOCK.filter(it => {
     if (q && !(lc(it.name).includes(q) || lc(it.brand).includes(q) || lc(it.subtitle).includes(q) || lc(it.size).includes(q))) return false;
     if (fSize && it.size !== fSize) return false;
     if (fBrand && it.brand !== fBrand) return false;
+    if (fCat && it.subtitle !== fCat) return false;
     return true;
   });
   list.sort((a, b) => {
@@ -340,6 +346,7 @@ function getFilteredStock() {
     if (sort === "qtyAsc") return a.qty - b.qty;
     if (sort === "dateDesc") return (parseTs(b.updated)?.getTime() || 0) - (parseTs(a.updated)?.getTime() || 0);
     if (sort === "brand") return (a.brand || "").localeCompare(b.brand || "", "pl") || a.name.localeCompare(b.name, "pl");
+    if (sort === "cat") return (a.subtitle || "").localeCompare(b.subtitle || "", "pl") || a.name.localeCompare(b.name, "pl");
     return a.name.localeCompare(b.name, "pl");
   });
   return list;
@@ -450,6 +457,13 @@ function fillBrands() {
   sel.innerHTML = `<option value="">Wszystkie marki</option>` + brands.map(s => `<option>${s}</option>`).join("");
   sel.value = keep;
 }
+function fillCats() {
+  const cats = [...new Set(STOCK.map(i => i.subtitle).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b, "pl"));
+  const sel = document.getElementById("fCat"); const keep = sel.value;
+  sel.innerHTML = `<option value="">Wszystkie kategorie</option>` + cats.map(s => `<option>${s}</option>`).join("");
+  sel.value = keep;
+}
 function updateCounts() {
   document.getElementById("cStock").textContent = STOCK.length;
   document.getElementById("cChanges").textContent = HISTORY.length;
@@ -519,9 +533,9 @@ async function init() {
   document.getElementById("brandName").textContent = CONFIG.STORE_NAME;
   document.getElementById("brandSq").textContent = (CONFIG.STORE_NAME[0] || "M").toUpperCase();
   await loadData();
-  fillSizes(); fillBrands(); updateCounts(); renderStock(); renderChanges();
+  fillSizes(); fillBrands(); fillCats(); updateCounts(); renderStock(); renderChanges();
 }
-["q","fSize","fBrand","sort"].forEach(id => document.getElementById(id).addEventListener("input", renderStock));
+["q","fSize","fBrand","fCat","sort"].forEach(id => document.getElementById(id).addEventListener("input", renderStock));
 document.getElementById("tabStock").addEventListener("click", () => switchTab("stock"));
 document.getElementById("tabChanges").addEventListener("click", () => switchTab("changes"));
 document.getElementById("btnXls").addEventListener("click", exportXlsx);
