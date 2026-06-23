@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:51:45Z",
+      "id": "halftone-tee-2-0-white-l",
+      "name": "Halftone Tee 2.0 - White",
+      "size": "L",
+      "image": "images/halftone-tee-2-0-white-1782255104142.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:50:38Z",
       "id": "halftone-hoodie-black-s",
       "name": "Halftone Hoodie - Black",
