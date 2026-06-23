@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T22:53:46Z",
+  "updated": "2026-06-23T22:54:24Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1320,6 +1320,18 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-23T22:53:46Z"
+    },
+    {
+      "id": "hyperdrive-puffer-teal-xs",
+      "name": "Hyperdrive Puffer - Teal",
+      "brand": "Trapstar",
+      "subtitle": "Kurtka",
+      "image": "images/hyperdrive-puffer-teal-1782255263413.jpg",
+      "size": "XS",
+      "qty": 1,
+      "price": "450",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:54:24Z"
     }
   ]
 }
