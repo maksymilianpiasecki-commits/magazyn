@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:23:44Z",
+      "id": "black-box-trucker-one-size",
+      "name": "Black Box Trucker",
+      "size": "ONE SIZE",
+      "image": "images/black-box-trucker-1782249823250.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T21:22:48Z",
       "id": "allstarz-folded-beanie-red-black-one-size",
       "name": "Allstarz Folded Beanie - Red/Black",
