@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:32:33Z",
+      "id": "shooters-reflective-tee-white-l",
+      "name": "Shooters Reflective Tee - White",
+      "size": "L",
+      "image": "images/shooters-reflective-tee-white-1782257552634.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
       "ts": "2026-06-23T23:30:19Z",
       "id": "shooters-reflective-tee-black-l",
       "name": "Shooters Reflective Tee - Black",
