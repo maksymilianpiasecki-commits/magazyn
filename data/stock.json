@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:24:24Z",
+  "updated": "2026-06-23T21:24:56Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -324,6 +324,18 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T21:24:24Z"
+    },
+    {
+      "id": "brown-box-trucker-one-size",
+      "name": "Brown Box Trucker",
+      "brand": "Corteiz",
+      "subtitle": "Czapka z daszkiem",
+      "image": "images/brown-box-trucker-1782249895515.jpg",
+      "size": "ONE SIZE",
+      "qty": 2,
+      "price": "120",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:24:56Z"
     }
   ]
 }
