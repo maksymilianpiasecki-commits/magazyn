@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:58:35Z",
+  "updated": "2026-06-23T22:04:53Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -528,6 +528,18 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T21:58:35Z"
+    },
+    {
+      "id": "orange-short-peak-trucker-one-size",
+      "name": "Orange Short Peak Trucker",
+      "brand": "Corteiz",
+      "subtitle": "Czapka z daszkiem",
+      "image": "images/orange-short-peak-trucker-1782252291878.jpg",
+      "size": "ONE SIZE",
+      "qty": 2,
+      "price": "120",
+      "location": "Wrocław",
+      "updated": "2026-06-23T22:04:53Z"
     }
   ]
 }
