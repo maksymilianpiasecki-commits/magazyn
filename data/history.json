@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:26:51Z",
+      "id": "dream-team-tee-black-blue-s",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "S",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T22:26:51Z",
+      "id": "dream-team-tee-black-blue-m",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "M",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T22:26:51Z",
+      "id": "dream-team-tee-black-blue-l",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "L",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:26:11Z",
       "id": "dream-team-hoodie-black-blue-l",
       "name": "Dream Team Hoodie - Black/Blue",
