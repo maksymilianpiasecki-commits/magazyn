@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:12:07Z",
+      "id": "lil-syna-womens-t-shirt-s",
+      "name": "Lil Syna Womens T-shirt",
+      "size": "S",
+      "image": "images/lil-syna-womens-t-shirt-1782256326773.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:11:22Z",
       "id": "knight-tee-black-l",
       "name": "Knight Tee - Black",
