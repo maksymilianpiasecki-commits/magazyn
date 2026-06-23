@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:00:42Z",
+      "id": "irongate-arch-gilet-blue-gradient-s",
+      "name": "Irongate Arch Gilet - Blue Gradient",
+      "size": "S",
+      "image": "images/irongate-arch-gilet-blue-gradient-1782255641567.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T23:00:42Z",
+      "id": "irongate-arch-gilet-blue-gradient-m",
+      "name": "Irongate Arch Gilet - Blue Gradient",
+      "size": "M",
+      "image": "images/irongate-arch-gilet-blue-gradient-1782255641567.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:59:45Z",
       "id": "irongate-arch-fade-tracksuit-grey-blue-s",
       "name": "Irongate Arch Fade Tracksuit -Grey/Blue",
