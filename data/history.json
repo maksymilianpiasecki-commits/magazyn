@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:13:28Z",
+      "id": "link-up-tee-white-m",
+      "name": "Link Up Tee - White",
+      "size": "M",
+      "image": "images/link-up-tee-white-1782256407426.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:13:28Z",
+      "id": "link-up-tee-white-l",
+      "name": "Link Up Tee - White",
+      "size": "L",
+      "image": "images/link-up-tee-white-1782256407426.jpg",
+      "type": "new",
+      "delta": 12,
+      "after": 12
+    },
+    {
       "ts": "2026-06-23T23:12:40Z",
       "id": "link-up-tee-black-m",
       "name": "Link Up Tee - Black",
