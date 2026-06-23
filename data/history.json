@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:13:13Z",
+      "id": "decoded-camo-hoodie-black-neon-green-m",
+      "name": "Decoded Camo Hoodie - Black/Neon Green",
+      "size": "M",
+      "image": "images/decoded-camo-hoodie-black-neon-green-1782252792325.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-23T22:13:13Z",
+      "id": "decoded-camo-hoodie-black-neon-green-l",
+      "name": "Decoded Camo Hoodie - Black/Neon Green",
+      "size": "L",
+      "image": "images/decoded-camo-hoodie-black-neon-green-1782252792325.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:12:26Z",
       "id": "decoded-aw23-puffer-black-l",
       "name": "Decoded AW23 Puffer - Black",
