@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T21:27:19Z",
+  "updated": "2026-06-23T21:27:47Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -384,6 +384,18 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T21:27:19Z"
+    },
+    {
+      "id": "gasolina-trucker-olive-green-one-size",
+      "name": "Gasolina Trucker Olive Green",
+      "brand": "Corteiz",
+      "subtitle": "Czapka z daszkiem",
+      "image": "images/gasolina-trucker-olive-green-1782250066881.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "120",
+      "location": "Wrocław",
+      "updated": "2026-06-23T21:27:47Z"
     }
   ]
 }
