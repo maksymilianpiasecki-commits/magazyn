@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:33:15Z",
+      "id": "shooters-reflective-tracksuit-black-s",
+      "name": "Shooters Reflective Tracksuit - Black",
+      "size": "S",
+      "image": "images/shooters-reflective-tracksuit-black-1782257594371.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:33:15Z",
+      "id": "shooters-reflective-tracksuit-black-l",
+      "name": "Shooters Reflective Tracksuit - Black",
+      "size": "L",
+      "image": "images/shooters-reflective-tracksuit-black-1782257594371.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:32:33Z",
       "id": "shooters-reflective-tee-white-l",
       "name": "Shooters Reflective Tee - White",
