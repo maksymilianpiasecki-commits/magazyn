@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:58:41Z",
+      "id": "three-peat-champions-tee-black-blue-edit-s",
+      "name": "Three-peat Champions Tee - Black/Blue Edition",
+      "size": "S",
+      "image": "images/three-peat-champions-tee-black-blue-edit-1782259120671.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:58:41Z",
+      "id": "three-peat-champions-tee-black-blue-edit-m",
+      "name": "Three-peat Champions Tee - Black/Blue Edition",
+      "size": "M",
+      "image": "images/three-peat-champions-tee-black-blue-edit-1782259120671.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-23T23:58:41Z",
+      "id": "three-peat-champions-tee-black-blue-edit-l",
+      "name": "Three-peat Champions Tee - Black/Blue Edition",
+      "size": "L",
+      "image": "images/three-peat-champions-tee-black-blue-edit-1782259120671.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:57:53Z",
       "id": "boxerki-syna-black-black-3pack-s",
       "name": "Boxerki Syna Black/Black (3PACK)",
