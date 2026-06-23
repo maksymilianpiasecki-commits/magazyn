@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:06:55Z",
+  "updated": "2026-06-23T23:07:38Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -1644,6 +1644,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:06:55Z"
+    },
+    {
+      "id": "irongate-t-snake-slayer-tee-black-m",
+      "name": "Irongate T Snake Slayer Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/irongate-t-snake-slayer-tee-black-1782256057081.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:07:38Z"
     }
   ]
 }
