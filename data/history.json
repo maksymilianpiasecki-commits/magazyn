@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:09:38Z",
+      "id": "it-s-a-secret-hoodie-2-0-black-blue-m",
+      "name": "It's a Secret Hoodie 2.0 - Black/Blue",
+      "size": "M",
+      "image": "images/it-s-a-secret-hoodie-2-0-black-blue-1782256177964.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-23T23:09:38Z",
+      "id": "it-s-a-secret-hoodie-2-0-black-blue-l",
+      "name": "It's a Secret Hoodie 2.0 - Black/Blue",
+      "size": "L",
+      "image": "images/it-s-a-secret-hoodie-2-0-black-blue-1782256177964.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:09:05Z",
       "id": "it-s-a-secret-hooded-puffer-black-m",
       "name": "It's A Secret Hooded Puffer - Black",
