@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:42:05Z",
+      "id": "skarpetki-syna-white-yellow-2pack-one-size",
+      "name": "Skarpetki Syna White/Yellow (2PACK)",
+      "size": "ONE SIZE",
+      "image": "images/skarpetki-syna-white-yellow-2pack-1782258124222.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T23:41:27Z",
       "id": "skarpetki-syna-white-blue-2pack-one-size",
       "name": "Skarpetki Syna White/Blue (2PACK)",
