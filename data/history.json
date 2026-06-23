@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:02:12Z",
+      "id": "irongate-arch-piping-puffer-black-purple-s",
+      "name": "Irongate Arch Piping Puffer - Black/Purple",
+      "size": "S",
+      "image": "images/irongate-arch-piping-puffer-black-purple-1782255731631.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:01:26Z",
       "id": "irongate-arch-it-s-a-secret-hoodie-black-s",
       "name": "Irongate Arch It's A Secret Hoodie - Black/Revolution Edition",
