@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:11:22Z",
+      "id": "knight-tee-black-l",
+      "name": "Knight Tee - Black",
+      "size": "L",
+      "image": "images/knight-tee-black-1782256281393.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:10:58Z",
       "id": "it-s-a-secret-tee-2-0-black-blue-m",
       "name": "It's a Secret Tee 2.0 - Black/Blue",
