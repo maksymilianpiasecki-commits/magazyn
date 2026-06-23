@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:06:55Z",
+      "id": "irongate-t-high-frequency-hoodie-black-s",
+      "name": "Irongate T High Frequency Hoodie - Black",
+      "size": "S",
+      "image": "images/irongate-t-high-frequency-hoodie-black-1782256014480.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:06:14Z",
       "id": "irongate-t-cross-body-bag-black-one-size",
       "name": "Irongate T Cross-Body Bag - Black",
