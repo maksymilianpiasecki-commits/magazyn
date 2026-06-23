@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:19:09Z",
+  "updated": "2026-06-23T23:20:01Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2004,6 +2004,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:19:09Z"
+    },
+    {
+      "id": "reversible-synarchy-beanie-black-green-one-size",
+      "name": "Reversible Synarchy Beanie - Black/Green",
+      "brand": "Syna World",
+      "subtitle": "Beanie",
+      "image": "images/reversible-synarchy-beanie-black-green-1782256799871.jpg",
+      "size": "ONE SIZE",
+      "qty": 8,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:20:01Z"
     }
   ]
 }
