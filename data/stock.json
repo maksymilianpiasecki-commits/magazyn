@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T19:58:19Z",
+  "updated": "2026-06-23T19:59:33Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -36,6 +36,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T19:58:19Z"
+    },
+    {
+      "id": "boxerki-syna-x-central-cee-3pack-m",
+      "name": "Boxerki Syna x Central Cee (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-x-central-cee-3pack-1782244772260.jpg",
+      "size": "M",
+      "qty": 5,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T19:59:33Z"
     }
   ]
 }
