@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:50:38Z",
+      "id": "halftone-hoodie-black-s",
+      "name": "Halftone Hoodie - Black",
+      "size": "S",
+      "image": "images/halftone-hoodie-black-1782255037378.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T22:50:14Z",
       "id": "greatness-tee-black-s",
       "name": "Greatness Tee - Black",
