@@ -33,14 +33,14 @@
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
-    --bg: #F4F7FB; --surface: #FFFFFF; --surface-2: #FAFCFF;
-    --line: #E4EAF3; --line-soft: #EEF2F8;
-    --ink: #13294B; --ink-soft: #4E5F7B; --muted: #8A99B2;
-    --blue: #2563EB; --blue-soft: #EAF1FE; --blue-line: #C9DCFD;
-    --green: #15924B; --green-soft: #E6F6ED;
+    --bg: #F4F8F5; --surface: #FFFFFF; --surface-2: #F8FBF9;
+    --line: #E2EAE4; --line-soft: #EDF2EE;
+    --ink: #15251B; --ink-soft: #47584E; --muted: #899690;
+    --blue: #15683E; --blue-soft: #E7F4EC; --blue-line: #C2E0CD;
+    --green: #15683E; --green-soft: #E7F4EC;
     --amber: #B8730A; --amber-soft: #FBF1DF;
     --red: #D62E2E; --red-soft: #FCEAEA;
-    --shadow: 0 1px 2px rgba(19,41,75,0.05), 0 1px 3px rgba(19,41,75,0.04);
+    --shadow: 0 1px 2px rgba(13,30,20,0.06), 0 1px 3px rgba(13,30,20,0.05);
   }
   html { -webkit-text-size-adjust: 100%; }
   body { background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; line-height: 1.45; min-height: 100vh; font-size: 14px; }
@@ -73,7 +73,7 @@
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; cursor: pointer; font-family: inherit; font-weight: 600; font-size: 14px; padding: 11px 18px; border-radius: 9px; border: 1px solid transparent; transition: background .14s, transform .1s, border-color .14s; }
   .btn:active { transform: translateY(1px); }
   .btn-primary { background: var(--blue); color: #fff; }
-  .btn-primary:hover { background: #1d57d6; }
+  .btn-primary:hover { background: #10502F; }
   .btn-ghost { background: var(--surface); border-color: var(--line); color: var(--ink); }
   .btn-ghost:hover { border-color: var(--blue-line); }
   .btn-danger { background: var(--surface); border-color: var(--line); color: var(--red); }
@@ -92,7 +92,7 @@
 
   /* zdjecie */
   .drop { border: 1.5px dashed var(--blue-line); border-radius: 11px; background: var(--blue-soft); padding: 18px; text-align: center; cursor: pointer; color: var(--blue); font-weight: 600; font-size: 13.5px; transition: background .14s; }
-  .drop:hover { background: #e1ecfe; }
+  .drop:hover { background: #DCEFE2; }
   .preview { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
   .preview img { width: 64px; height: 64px; object-fit: cover; border-radius: 9px; border: 1px solid var(--line); }
   .preview .x { font-size: 12.5px; color: var(--red); cursor: pointer; font-weight: 600; }
@@ -120,7 +120,7 @@
   .toast { position: fixed; bottom: 22px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--ink); color: #fff; padding: 12px 18px; border-radius: 11px; font-size: 13.5px; z-index: 100; opacity: 0; transition: opacity .25s, transform .25s; max-width: 90vw; box-shadow: 0 12px 36px rgba(19,41,75,0.28); }
   .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   .toast.err { background: #7a1f1f; }
-  .toast b { color: #9ec1ff; }
+  .toast b { color: #9BE2B7; }
   .hidden { display: none !important; }
   a.tokenlink { color: var(--blue); font-weight: 600; text-decoration: none; }
 
@@ -159,12 +159,15 @@
       <h2>Dodaj produkt</h2>
       <p class="hint">Jeden produkt, dowolnie wiele rozmiarów z osobną ilością. Zdjęcie wspólne dla wszystkich rozmiarów.</p>
 
-      <div class="field"><label class="fl">Nazwa</label><input class="inp" id="aName" placeholder="np. SynaWorld OG Syna Skull Beanie"></div>
+      <div class="field"><label class="fl">Nazwa</label><input class="inp" id="aName" placeholder="np. Decoded Hoodie"></div>
       <div class="grid2">
-        <div class="field"><label class="fl">Kategoria (opcjonalnie)</label><input class="inp" id="aCat" placeholder="np. Czapka"></div>
-        <div class="field"><label class="fl">Cena (opcjonalnie)</label><input class="inp" id="aPrice" placeholder="np. 250"></div>
+        <div class="field"><label class="fl">Marka (opcjonalnie)</label><input class="inp" id="aBrand" placeholder="np. Trapstar"></div>
+        <div class="field"><label class="fl">Kategoria (opcjonalnie)</label><input class="inp" id="aCat" placeholder="np. Bluza"></div>
       </div>
-      <div class="field"><label class="fl">Magazyn</label><input class="inp" id="aLoc" value="Wrocław"></div>
+      <div class="grid2">
+        <div class="field"><label class="fl">Cena (opcjonalnie)</label><input class="inp" id="aPrice" placeholder="np. 389"></div>
+        <div class="field"><label class="fl">Magazyn</label><input class="inp" id="aLoc" value="Wrocław"></div>
+      </div>
 
       <div class="field">
         <label class="fl">Rozmiary i ilości</label>
@@ -206,8 +209,8 @@
 /* ====================== CONFIG ====================== */
 const CONFIG = {
   STORE_NAME: "Magazyn",
-  OWNER:  "maks",   // <- twoj login GitHub
-  REPO:   "magazyn",   // <- nazwa repo
+  OWNER:  "twoj-login",   // <- twoj login GitHub
+  REPO:   "twoje-repo",   // <- nazwa repo
   BRANCH: "main",         // <- galaz (czesto main)
   DATA_DIR: "data",
   IMAGE_DIR: "images",
@@ -364,6 +367,7 @@ async function addProduct() {
   if (!name) return toast("Podaj nazwę produktu.", true);
   if (!sizes.length) return toast("Dodaj przynajmniej jeden rozmiar.", true);
 
+  const brand = $("aBrand").value.trim();
   const subtitle = $("aCat").value.trim();
   const price = $("aPrice").value.trim();
   const location = $("aLoc").value.trim();
@@ -389,10 +393,10 @@ async function addProduct() {
         const before = existing.qty;
         existing.qty = qty;
         if (imagePath) existing.image = imagePath;
-        existing.price = price; existing.subtitle = subtitle; existing.location = location;
+        existing.brand = brand; existing.price = price; existing.subtitle = subtitle; existing.location = location;
         if (qty !== before) newEntries.push(diffEntry(existing, before, qty, ts));
       } else {
-        const it = { id, name, subtitle, image: imagePath, size, qty, price, location, updated: ts };
+        const it = { id, name, brand, subtitle, image: imagePath, size, qty, price, location, updated: ts };
         items.push(it);
         newEntries.push({ ts, id, name, size, image: imagePath, type: "new", delta: qty, after: qty });
       }
@@ -404,7 +408,7 @@ async function addProduct() {
     original = items.map(cleanItem);
 
     // reset formularza
-    $("aName").value = ""; $("aCat").value = ""; $("aPrice").value = "";
+    $("aName").value = ""; $("aBrand").value = ""; $("aCat").value = ""; $("aPrice").value = "";
     $("sizeRows").innerHTML = ""; clearImage();
     renderStock(); markClean();
     toast(`Dodano: <b>${name}</b> (${sizes.length} rozm.). Na stronie za chwilę.`);
@@ -472,13 +476,13 @@ async function saveChanges() {
 function groupByProduct(list) {
   const m = new Map();
   list.forEach(it => {
-    if (!m.has(it.name)) m.set(it.name, { name: it.name, subtitle: it.subtitle, image: it.image, rows: [] });
+    if (!m.has(it.name)) m.set(it.name, { name: it.name, brand: it.brand, subtitle: it.subtitle, image: it.image, rows: [] });
     m.get(it.name).rows.push(it);
   });
   return [...m.values()];
 }
 function phImg() {
-  const s = `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='80' height='80' fill='#EEF2F8'/><rect x='22' y='25' width='36' height='28' rx='4' fill='none' stroke='#B7C3D6' stroke-width='2.5'/><circle cx='33' cy='35' r='4' fill='#B7C3D6'/><path d='M27 49 L37 39 L45 47 L51 41 L57 49 Z' fill='#B7C3D6'/></svg>`;
+  const s = `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='80' height='80' fill='#EDF2EE'/><rect x='22' y='25' width='36' height='28' rx='4' fill='none' stroke='#AEC0B4' stroke-width='2.5'/><circle cx='33' cy='35' r='4' fill='#AEC0B4'/><path d='M27 49 L37 39 L45 47 L51 41 L57 49 Z' fill='#AEC0B4'/></svg>`;
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
 }
 function renderStock() {
@@ -490,7 +494,7 @@ function renderStock() {
     <div class="prod">
       <div class="prod-head">
         <img src="${g.image || phImg()}" alt="" data-ph="1">
-        <div><div class="n">${g.name}</div>${g.subtitle ? `<div class="s">${g.subtitle}</div>` : ""}</div>
+        <div><div class="n">${g.name}</div>${(g.brand || g.subtitle) ? `<div class="s">${[g.brand, g.subtitle].filter(Boolean).join(" · ")}</div>` : ""}</div>
       </div>
       ${g.rows.sort((a,b)=>String(a.size).localeCompare(String(b.size),"pl",{numeric:true})).map(it => `
         <div class="vrow" data-id="${it.id}">
