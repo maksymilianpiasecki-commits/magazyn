@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:20:38Z",
+  "updated": "2026-06-23T23:21:10Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2028,6 +2028,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:20:38Z"
+    },
+    {
+      "id": "script-shell-shorts-black-slime-s",
+      "name": "Script Shell Shorts - Black/Slime",
+      "brand": "Trapstar",
+      "subtitle": "Spodenki",
+      "image": "images/script-shell-shorts-black-slime-1782256869543.jpg",
+      "size": "S",
+      "qty": 2,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:21:10Z"
     }
   ]
 }
