@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T21:26:14Z",
+      "id": "eagle-trucker-hat-black-one-size",
+      "name": "Eagle Trucker Hat - Black",
+      "size": "ONE SIZE",
+      "image": "images/eagle-trucker-hat-black-1782249973354.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
       "ts": "2026-06-23T21:25:39Z",
       "id": "crtzrtw-blue-trucker-one-size",
       "name": "CRTZRTW Blue Trucker",
