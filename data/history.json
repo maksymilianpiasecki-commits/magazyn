@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:08:12Z",
+      "id": "totebag-black-white-one-size",
+      "name": "Totebag - Black/White",
+      "size": "ONE SIZE",
+      "image": "images/totebag-black-white-1782252491318.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:07:08Z",
       "id": "star-mesh-tee-black-red-s",
       "name": "Star Mesh Tee - Black/Red",
