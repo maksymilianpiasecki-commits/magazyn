@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T19:59:33Z",
+  "updated": "2026-06-23T20:06:05Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -48,6 +48,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T19:59:33Z"
+    },
+    {
+      "id": "adg-tee-purple-l",
+      "name": "ADG Tee Purple",
+      "brand": "Denim Tears",
+      "subtitle": "Koszulka",
+      "image": "images/adg-tee-purple-1782245164662.jpg",
+      "size": "L",
+      "qty": 5,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T20:06:05Z"
     }
   ]
 }
