@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:42:05Z",
+  "updated": "2026-06-23T23:43:30Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2400,6 +2400,54 @@
       "price": "120",
       "location": "Wrocław",
       "updated": "2026-06-23T23:42:05Z"
+    },
+    {
+      "id": "boxerki-syna-white-grey-black-3pack-s",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "size": "S",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:43:30Z"
+    },
+    {
+      "id": "boxerki-syna-white-grey-black-3pack-m",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "size": "M",
+      "qty": 4,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:43:30Z"
+    },
+    {
+      "id": "boxerki-syna-white-grey-black-3pack-l",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "size": "L",
+      "qty": 3,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:43:30Z"
+    },
+    {
+      "id": "boxerki-syna-white-grey-black-3pack-xl",
+      "name": "Boxerki Syna White/Grey/Black (3PACK)",
+      "brand": "Syna World",
+      "subtitle": "Bielizna",
+      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
+      "size": "XL",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:43:30Z"
     }
   ]
 }
