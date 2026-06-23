@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T22:26:11Z",
+      "id": "dream-team-hoodie-black-blue-l",
+      "name": "Dream Team Hoodie - Black/Blue",
+      "size": "L",
+      "image": "images/dream-team-hoodie-black-blue-1782253570682.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-23T22:25:26Z",
       "id": "dragon-tee-white-l",
       "name": "Dragon Tee - White",
