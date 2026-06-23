@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:44:22Z",
+  "updated": "2026-06-23T23:45:06Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2460,6 +2460,18 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:44:22Z"
+    },
+    {
+      "id": "syna-big-logo-skull-blue-one-size",
+      "name": "Syna Big Logo Skull - Blue",
+      "brand": "Syna World",
+      "subtitle": "Beanie",
+      "image": "images/syna-big-logo-skull-blue-1782258305372.jpg",
+      "size": "ONE SIZE",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-23T23:45:06Z"
     }
   ]
 }
