@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-23T23:46:48Z",
+      "id": "syna-og-hood-black-yellow-s",
+      "name": "Syna Og Hood - Black/Yellow",
+      "size": "S",
+      "image": "images/syna-og-hood-black-yellow-1782258407193.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-23T23:46:20Z",
       "id": "syna-og-hood-black-orange-s",
       "name": "Syna OG Hood - Black/Orange",
