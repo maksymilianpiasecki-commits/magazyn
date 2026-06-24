@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:12:46Z",
+  "updated": "2026-06-24T00:13:43Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3132,6 +3132,42 @@
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-24T00:12:46Z"
+    },
+    {
+      "id": "trp-hoodie-black-blackout-edition-s",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "size": "S",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:13:43Z"
+    },
+    {
+      "id": "trp-hoodie-black-blackout-edition-m",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "size": "M",
+      "qty": 3,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:13:43Z"
+    },
+    {
+      "id": "trp-hoodie-black-blackout-edition-l",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "size": "L",
+      "qty": 4,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:13:43Z"
     }
   ]
 }
