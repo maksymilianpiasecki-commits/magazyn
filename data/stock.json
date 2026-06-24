@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:15:29Z",
+  "updated": "2026-06-24T00:16:26Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3216,6 +3216,42 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-24T00:15:29Z"
+    },
+    {
+      "id": "watch-t-shirt-m",
+      "name": "Watch T-Shirt",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:16:26Z"
+    },
+    {
+      "id": "watch-t-shirt-l",
+      "name": "Watch T-Shirt",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "size": "L",
+      "qty": 3,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:16:26Z"
+    },
+    {
+      "id": "watch-t-shirt-xl",
+      "name": "Watch T-Shirt",
+      "brand": "Syna World",
+      "subtitle": "Koszulka",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "size": "XL",
+      "qty": 1,
+      "price": "280",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:16:26Z"
     }
   ]
 }
