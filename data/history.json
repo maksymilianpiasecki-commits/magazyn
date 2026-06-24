@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:11:50Z",
+      "id": "nemzzz-rent-s-due-hoodie-black-s",
+      "name": "Nemzzz Rent's Due Hoodie - Black",
+      "size": "S",
+      "image": "images/nemzzz-rent-s-due-hoodie-black-1782259909051.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:11:50Z",
+      "id": "nemzzz-rent-s-due-hoodie-black-l",
+      "name": "Nemzzz Rent's Due Hoodie - Black",
+      "size": "L",
+      "image": "images/nemzzz-rent-s-due-hoodie-black-1782259909051.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:11:21Z",
       "id": "italiano-art-of-war-hoodie-black-m",
       "name": "Italiano Art. Of War Hoodie - Black",
