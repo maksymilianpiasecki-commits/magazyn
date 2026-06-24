@@ -103,6 +103,16 @@
   .prod-head img { width: 44px; height: 44px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); flex-shrink: 0; }
   .prod-head .n { font-weight: 600; font-size: 14px; }
   .prod-head .s { font-size: 12px; color: var(--muted); }
+
+  .modal-bg { position: fixed; inset: 0; background: rgba(13,30,20,0.45); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 16px; }
+  .modal-bg.hidden { display: none; }
+  .modal { background: var(--surface); border-radius: 14px; padding: 22px; width: 100%; max-width: 460px; box-shadow: 0 20px 60px rgba(13,30,20,0.32); max-height: 90vh; overflow-y: auto; }
+  .modal h2 { font-size: 17px; font-weight: 700; margin-bottom: 16px; }
+
+  .summary { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+  .sbox { flex: 1 1 0; min-width: 104px; background: var(--surface-2); border: 1px solid var(--line-soft); border-radius: 11px; padding: 12px 14px; }
+  .sbox .num { font-size: 22px; font-weight: 800; color: var(--blue); line-height: 1.1; letter-spacing: -0.3px; }
+  .sbox .lbl { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--muted); margin-top: 5px; font-weight: 600; }
   .vrow { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-bottom: 1px solid var(--line-soft); }
   .vrow:last-child { border-bottom: none; }
   .vrow .size { font-weight: 600; font-size: 13.5px; min-width: 70px; }
@@ -188,8 +198,9 @@
 
     <!-- STAN -->
     <div class="card">
-      <h2>Stan magazynowy <span id="cntBadge" style="font-size:12px;font-weight:600;color:var(--muted)"></span></h2>
+      <h2>Stan magazynowy</h2>
       <p class="hint">Zmień ilość, żeby zaktualizować stan. Ustaw 0, żeby oznaczyć rozmiar jako wyprzedany. Po edycji kliknij Zapisz zmiany.</p>
+      <div class="summary" id="stockSummary"></div>
       <div id="stockList"></div>
     </div>
 
@@ -203,14 +214,39 @@
   </div>
 </div>
 
+<!-- OKNO EDYCJI PRODUKTU -->
+<div class="modal-bg hidden" id="editModal">
+  <div class="modal">
+    <h2>Edytuj produkt</h2>
+    <div class="field"><label class="fl">Nazwa</label><input class="inp" id="eName"></div>
+    <div class="grid2">
+      <div class="field"><label class="fl">Marka</label><input class="inp" id="eBrand" placeholder="np. Trapstar"></div>
+      <div class="field"><label class="fl">Kategoria</label><input class="inp" id="eCat" placeholder="np. Bluza"></div>
+    </div>
+    <div class="grid2">
+      <div class="field"><label class="fl">Cena</label><input class="inp" id="ePrice" placeholder="np. 389"></div>
+      <div class="field"><label class="fl">Magazyn</label><input class="inp" id="eLoc"></div>
+    </div>
+    <div class="field">
+      <label class="fl">Zdjęcie</label>
+      <div class="preview"><img id="eImgThumb" alt=""><button class="btn btn-ghost btn-sm" id="eImgBtn" type="button">Zmień zdjęcie</button></div>
+      <input type="file" id="eImg" accept="image/*" class="hidden">
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:6px">
+      <button class="btn btn-ghost" id="eCancel" type="button">Anuluj</button>
+      <button class="btn btn-primary" id="eSave" type="button">Zapisz</button>
+    </div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
 
 <script>
 /* ====================== CONFIG ====================== */
 const CONFIG = {
   STORE_NAME: "Magazyn",
-  OWNER:  "maksymilianpiasecki-commits",   // <- twoj login GitHub
-  REPO:   "magazyn",   // <- nazwa repo
+  OWNER:  "twoj-login",   // <- twoj login GitHub
+  REPO:   "twoje-repo",   // <- nazwa repo
   BRANCH: "main",         // <- galaz (czesto main)
   DATA_DIR: "data",
   IMAGE_DIR: "images",
@@ -227,6 +263,9 @@ let original = [];    // ostatnio zapisany stan (do liczenia zmian)
 let history = [];
 let shaStock = null, shaHistory = null;
 let pendingImage = null;   // { dataURL, name }
+let lastGroups = [];       // ostatnio wyrenderowane grupy produktow
+let editKey = null;        // nazwa edytowanego produktu
+let editImage = null;      // nowe zdjecie w oknie edycji
 
 /* ---------- utils ---------- */
 function $(id) { return document.getElementById(id); }
@@ -485,16 +524,35 @@ function phImg() {
   const s = `<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><rect width='80' height='80' fill='#EDF2EE'/><rect x='22' y='25' width='36' height='28' rx='4' fill='none' stroke='#AEC0B4' stroke-width='2.5'/><circle cx='33' cy='35' r='4' fill='#AEC0B4'/><path d='M27 49 L37 39 L45 47 L51 41 L57 49 Z' fill='#AEC0B4'/></svg>`;
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(s);
 }
+function priceToNumber(p) {
+  const s = String(p || "").replace(/\s/g, "").replace(",", ".").replace(/[^\d.]/g, "");
+  const n = parseFloat(s);
+  return isNaN(n) ? 0 : n;
+}
+function fmtMoney(v) {
+  return v.toLocaleString("pl-PL", { maximumFractionDigits: 2 }) + " zł";
+}
+function renderSummary() {
+  const positions = items.length;
+  const units = items.reduce((s, it) => s + Math.max(0, it.qty || 0), 0);
+  const value = items.reduce((s, it) => s + Math.max(0, it.qty || 0) * priceToNumber(it.price), 0);
+  $("stockSummary").innerHTML = `
+    <div class="sbox"><div class="num">${positions}</div><div class="lbl">Pozycji (rozmiarów)</div></div>
+    <div class="sbox"><div class="num">${units}</div><div class="lbl">Sztuk razem</div></div>
+    <div class="sbox"><div class="num">${fmtMoney(value)}</div><div class="lbl">Wartość magazynu</div></div>`;
+}
 function renderStock() {
   const el = $("stockList");
-  $("cntBadge").textContent = items.length ? `(${items.length} pozycji)` : "";
+  renderSummary();
   if (!items.length) { el.innerHTML = `<div class="empty">Brak produktów. Dodaj pierwszy powyżej.</div>`; return; }
   const groups = groupByProduct(items).sort((a, b) => a.name.localeCompare(b.name, "pl"));
-  el.innerHTML = groups.map(g => `
+  lastGroups = groups;
+  el.innerHTML = groups.map((g, gi) => `
     <div class="prod">
       <div class="prod-head">
         <img src="${g.image || phImg()}" alt="" data-ph="1">
-        <div><div class="n">${g.name}</div>${(g.brand || g.subtitle) ? `<div class="s">${[g.brand, g.subtitle].filter(Boolean).join(" · ")}</div>` : ""}</div>
+        <div style="min-width:0"><div class="n">${g.name}</div>${(g.brand || g.subtitle) ? `<div class="s">${[g.brand, g.subtitle].filter(Boolean).join(" · ")}</div>` : ""}</div>
+        <button class="btn btn-ghost btn-sm prod-edit" data-gi="${gi}" style="margin-left:auto">Edytuj</button>
       </div>
       ${g.rows.sort((a,b)=>String(a.size).localeCompare(String(b.size),"pl",{numeric:true})).map(it => `
         <div class="vrow" data-id="${it.id}">
@@ -509,11 +567,12 @@ function renderStock() {
   el.querySelectorAll("img[data-ph]").forEach(img => img.addEventListener("error", () => { img.src = phImg(); img.removeAttribute("data-ph"); }));
   el.querySelectorAll("input.qty").forEach(inp => inp.addEventListener("input", () => {
     const it = items.find(r => r.id === inp.dataset.id);
-    if (it) { it.qty = Math.max(0, parseInt(inp.value, 10) || 0); checkDirty(); }
+    if (it) { it.qty = Math.max(0, parseInt(inp.value, 10) || 0); checkDirty(); renderSummary(); }
   }));
   el.querySelectorAll("button[data-del]").forEach(btn => btn.addEventListener("click", () => {
     items = items.filter(r => r.id !== btn.dataset.del); renderStock(); checkDirty();
   }));
+  el.querySelectorAll(".prod-edit").forEach(btn => btn.addEventListener("click", () => openEdit(lastGroups[+btn.dataset.gi].name)));
 }
 
 /* ---------- stan zmian (dirty) ---------- */
@@ -544,6 +603,62 @@ async function onPickImage(file) {
 }
 function clearImage() { pendingImage = null; $("aImg").value = ""; $("imgPreview").classList.add("hidden"); $("drop").classList.remove("hidden"); }
 
+/* ---------- edycja produktu ---------- */
+function openEdit(name) {
+  const p = items.find(it => it.name === name);
+  if (!p) return;
+  editKey = name; editImage = null;
+  $("eName").value = p.name || "";
+  $("eBrand").value = p.brand || "";
+  $("eCat").value = p.subtitle || "";
+  $("ePrice").value = p.price || "";
+  $("eLoc").value = p.location || "";
+  $("eImgThumb").src = p.image || phImg();
+  $("eImg").value = "";
+  $("editModal").classList.remove("hidden");
+}
+function closeEdit() { $("editModal").classList.add("hidden"); editKey = null; editImage = null; }
+async function onPickEditImage(file) {
+  if (!file) return;
+  try { const dataURL = await resizeToDataURL(file); editImage = { dataURL }; $("eImgThumb").src = dataURL; }
+  catch (e) { toast("Nie udało się wczytać zdjęcia. Spróbuj JPG lub PNG.", true); }
+}
+async function saveEdit() {
+  const name = $("eName").value.trim();
+  if (!name) return toast("Nazwa nie może być pusta.", true);
+  const brand = $("eBrand").value.trim();
+  const subtitle = $("eCat").value.trim();
+  const price = $("ePrice").value.trim();
+  const location = $("eLoc").value.trim();
+  $("eSave").disabled = true; $("eSave").textContent = "Zapisuję...";
+  try {
+    let imagePath = null;
+    if (editImage) {
+      const fname = `${CONFIG.IMAGE_DIR}/${slug(name)}-${Date.now()}.jpg`;
+      await ghPut(fname, editImage.dataURL.split(",")[1], null, `foto: ${name}`);
+      imagePath = fname;
+    }
+    items.forEach(it => {
+      if (it.name === editKey) {
+        it.name = name; it.brand = brand; it.subtitle = subtitle; it.price = price; it.location = location;
+        if (imagePath) it.image = imagePath;
+      }
+    });
+    const ts = nowISO();
+    const entries = buildDiff(ts);   // gdyby byly tez niezapisane zmiany ilosci
+    items.forEach(it => { const o = original.find(r => r.id === it.id); if (!o || o.qty !== it.qty) it.updated = ts; });
+    await saveStock(ts);
+    if (entries.length) await saveHistory(entries);
+    original = items.map(cleanItem);
+    closeEdit(); renderStock(); markClean();
+    toast(`Zapisano zmiany w: <b>${name}</b>. Na stronie za chwilę.`);
+  } catch (e) {
+    toast("Błąd zapisu: " + e.message, true);
+  } finally {
+    $("eSave").disabled = false; $("eSave").textContent = "Zapisz";
+  }
+}
+
 /* ---------- init ---------- */
 $("brandName").textContent = CONFIG.STORE_NAME;
 $("brandSq").textContent = (CONFIG.STORE_NAME[0] || "M").toUpperCase();
@@ -558,6 +673,11 @@ $("btnDiscard").addEventListener("click", discard);
 $("drop").addEventListener("click", () => $("aImg").click());
 $("aImg").addEventListener("change", e => onPickImage(e.target.files[0]));
 $("imgClear").addEventListener("click", clearImage);
+$("eImgBtn").addEventListener("click", () => $("eImg").click());
+$("eImg").addEventListener("change", e => onPickEditImage(e.target.files[0]));
+$("eCancel").addEventListener("click", closeEdit);
+$("eSave").addEventListener("click", saveEdit);
+$("editModal").addEventListener("click", e => { if (e.target === $("editModal")) closeEdit(); });
 </script>
 </body>
 </html>
