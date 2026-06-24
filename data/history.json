@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:04:40Z",
+      "id": "script-2-0-tee-white-s",
+      "name": "Script 2.0 Tee - White",
+      "size": "S",
+      "image": "images/script-2-0-tee-white-1782259479866.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:04:40Z",
+      "id": "script-2-0-tee-white-m",
+      "name": "Script 2.0 Tee - White",
+      "size": "M",
+      "image": "images/script-2-0-tee-white-1782259479866.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:04:40Z",
+      "id": "script-2-0-tee-white-l",
+      "name": "Script 2.0 Tee - White",
+      "size": "L",
+      "image": "images/script-2-0-tee-white-1782259479866.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-24T00:03:58Z",
       "id": "london-tee-white-red-m",
       "name": "London Tee - White/Red",
