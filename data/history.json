@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:18:33Z",
+      "id": "wavy-t-box-hoodie-black-s",
+      "name": "Wavy T Box Hoodie - Black",
+      "size": "S",
+      "image": "images/wavy-t-box-hoodie-black-1782260312745.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:18:33Z",
+      "id": "wavy-t-box-hoodie-black-m",
+      "name": "Wavy T Box Hoodie - Black",
+      "size": "M",
+      "image": "images/wavy-t-box-hoodie-black-1782260312745.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:18:33Z",
+      "id": "wavy-t-box-hoodie-black-l",
+      "name": "Wavy T Box Hoodie - Black",
+      "size": "L",
+      "image": "images/wavy-t-box-hoodie-black-1782260312745.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-24T00:17:15Z",
       "id": "wave-jacket-grey-l",
       "name": "Wave Jacket - Grey",
