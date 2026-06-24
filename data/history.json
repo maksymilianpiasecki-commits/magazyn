@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:19:04Z",
+      "id": "wavy-t-box-hoodie-grey-blue-s",
+      "name": "Wavy T Box Hoodie - Grey/Blue",
+      "size": "S",
+      "image": "images/wavy-t-box-hoodie-grey-blue-1782260343812.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:19:04Z",
+      "id": "wavy-t-box-hoodie-grey-blue-m",
+      "name": "Wavy T Box Hoodie - Grey/Blue",
+      "size": "M",
+      "image": "images/wavy-t-box-hoodie-grey-blue-1782260343812.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:19:04Z",
+      "id": "wavy-t-box-hoodie-grey-blue-l",
+      "name": "Wavy T Box Hoodie - Grey/Blue",
+      "size": "L",
+      "image": "images/wavy-t-box-hoodie-grey-blue-1782260343812.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-24T00:18:33Z",
       "id": "wavy-t-box-hoodie-black-s",
       "name": "Wavy T Box Hoodie - Black",
