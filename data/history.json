@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:13:43Z",
+      "id": "trp-hoodie-black-blackout-edition-s",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "size": "S",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-24T00:13:43Z",
+      "id": "trp-hoodie-black-blackout-edition-m",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "size": "M",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-24T00:13:43Z",
+      "id": "trp-hoodie-black-blackout-edition-l",
+      "name": "TRP Hoodie - Black/Blackout Edition",
+      "size": "L",
+      "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
       "ts": "2026-06-24T00:12:46Z",
       "id": "trp-flame-shorts-black-pink-m",
       "name": "TRP Flame Shorts - Black/Pink",
