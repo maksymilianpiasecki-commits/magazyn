@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:00:56Z",
+      "id": "hunter-x-hunter-shotgun-hoodie-black-l",
+      "name": "Hunter x Hunter Shotgun Hoodie - Black",
+      "size": "L",
+      "image": "images/hunter-x-hunter-shotgun-hoodie-black-1782259255347.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:00:34Z",
       "id": "hunter-x-hunter-resistance-arch-hoodie-b-m",
       "name": "Hunter x Hunter Resistance Arch Hoodie - Black",
