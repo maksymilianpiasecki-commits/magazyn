@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:02:48Z",
+      "id": "friends-family-tee-black-grey-s",
+      "name": "Friends & Family Tee - Black/Grey",
+      "size": "S",
+      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:02:48Z",
+      "id": "friends-family-tee-black-grey-m",
+      "name": "Friends & Family Tee - Black/Grey",
+      "size": "M",
+      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:02:48Z",
+      "id": "friends-family-tee-black-grey-l",
+      "name": "Friends & Family Tee - Black/Grey",
+      "size": "L",
+      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:01:54Z",
       "id": "distortion-tee-black-teal-s",
       "name": "Distortion Tee - Black/Teal",
