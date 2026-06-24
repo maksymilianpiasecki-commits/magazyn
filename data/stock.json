@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:16:26Z",
+  "updated": "2026-06-24T00:17:15Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3252,6 +3252,18 @@
       "price": "280",
       "location": "Wrocław",
       "updated": "2026-06-24T00:16:26Z"
+    },
+    {
+      "id": "wave-jacket-grey-l",
+      "name": "Wave Jacket - Grey",
+      "brand": "Syna World",
+      "subtitle": "Kurtka",
+      "image": "images/wave-jacket-grey-1782260234681.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "1500",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:17:15Z"
     }
   ]
 }
