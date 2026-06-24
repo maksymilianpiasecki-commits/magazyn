@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:14:12Z",
+      "id": "ts-varsity-hoodie-tracksuit-black-l",
+      "name": "TS Varsity Hoodie Tracksuit - Black",
+      "size": "L",
+      "image": "images/ts-varsity-hoodie-tracksuit-black-1782260051184.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:13:43Z",
       "id": "trp-hoodie-black-blackout-edition-s",
       "name": "TRP Hoodie - Black/Blackout Edition",
