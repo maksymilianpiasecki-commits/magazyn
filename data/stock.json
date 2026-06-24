@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-23T23:58:41Z",
+  "updated": "2026-06-24T00:00:34Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2760,6 +2760,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:58:41Z"
+    },
+    {
+      "id": "hunter-x-hunter-resistance-arch-hoodie-b-m",
+      "name": "Hunter x Hunter Resistance Arch Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/hunter-x-hunter-resistance-arch-hoodie-b-1782259233061.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:00:34Z"
     }
   ]
 }
