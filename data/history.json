@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:09:30Z",
+      "id": "central-cee-game-time-tee-black-s",
+      "name": "Central Cee Game Time Tee - Black",
+      "size": "S",
+      "image": "images/central-cee-game-time-tee-black-1782259769679.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:09:30Z",
+      "id": "central-cee-game-time-tee-black-m",
+      "name": "Central Cee Game Time Tee - Black",
+      "size": "M",
+      "image": "images/central-cee-game-time-tee-black-1782259769679.jpg",
+      "type": "new",
+      "delta": 4,
+      "after": 4
+    },
+    {
       "ts": "2026-06-24T00:08:59Z",
       "id": "central-cee-arch-tee-black-s",
       "name": "Central Cee Arch Tee - Black",
