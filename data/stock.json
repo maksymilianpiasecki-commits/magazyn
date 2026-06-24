@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:06:58Z",
+  "updated": "2026-06-24T00:07:39Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2952,6 +2952,30 @@
       "price": "600",
       "location": "Wrocław",
       "updated": "2026-06-24T00:06:58Z"
+    },
+    {
+      "id": "central-cee-arch-hoodie-black-m",
+      "name": "Central Cee Arch Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/central-cee-arch-hoodie-black-1782259658200.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:07:39Z"
+    },
+    {
+      "id": "central-cee-arch-hoodie-black-l",
+      "name": "Central Cee Arch Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/central-cee-arch-hoodie-black-1782259658200.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:07:39Z"
     }
   ]
 }
