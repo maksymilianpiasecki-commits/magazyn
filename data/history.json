@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:16:26Z",
+      "id": "watch-t-shirt-m",
+      "name": "Watch T-Shirt",
+      "size": "M",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:16:26Z",
+      "id": "watch-t-shirt-l",
+      "name": "Watch T-Shirt",
+      "size": "L",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "type": "new",
+      "delta": 3,
+      "after": 3
+    },
+    {
+      "ts": "2026-06-24T00:16:26Z",
+      "id": "watch-t-shirt-xl",
+      "name": "Watch T-Shirt",
+      "size": "XL",
+      "image": "images/watch-t-shirt-1782260185711.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:15:29Z",
       "id": "wall-to-wall-tee-white-s",
       "name": "Wall to Wall Tee - White",
