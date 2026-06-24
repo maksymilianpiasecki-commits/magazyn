@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:15:29Z",
+      "id": "wall-to-wall-tee-white-s",
+      "name": "Wall to Wall Tee - White",
+      "size": "S",
+      "image": "images/wall-to-wall-tee-white-1782260128487.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:15:29Z",
+      "id": "wall-to-wall-tee-white-l",
+      "name": "Wall to Wall Tee - White",
+      "size": "L",
+      "image": "images/wall-to-wall-tee-white-1782260128487.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:14:40Z",
       "id": "wall-to-wall-tee-black-m",
       "name": "Wall to Wall Tee - Black",
