@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:03:19Z",
+      "id": "london-strikeout-tee-black-l",
+      "name": "London Strikeout Tee - Black",
+      "size": "L",
+      "image": "images/london-strikeout-tee-black-1782259398657.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:02:48Z",
       "id": "friends-family-tee-black-grey-s",
       "name": "Friends & Family Tee - Black/Grey",
