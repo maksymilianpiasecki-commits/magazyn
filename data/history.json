@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:19:41Z",
+      "id": "wild-roses-tee-black-s",
+      "name": "Wild Roses Tee - Black",
+      "size": "S",
+      "image": "images/wild-roses-tee-black-1782260380664.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:19:41Z",
+      "id": "wild-roses-tee-black-l",
+      "name": "Wild Roses Tee - Black",
+      "size": "L",
+      "image": "images/wild-roses-tee-black-1782260380664.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:19:04Z",
       "id": "wavy-t-box-hoodie-grey-blue-s",
       "name": "Wavy T Box Hoodie - Grey/Blue",
