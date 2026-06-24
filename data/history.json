@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:08:59Z",
+      "id": "central-cee-arch-tee-black-s",
+      "name": "Central Cee Arch Tee - Black",
+      "size": "S",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "type": "new",
+      "delta": 11,
+      "after": 11
+    },
+    {
+      "ts": "2026-06-24T00:08:59Z",
+      "id": "central-cee-arch-tee-black-m",
+      "name": "Central Cee Arch Tee - Black",
+      "size": "M",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "type": "new",
+      "delta": 17,
+      "after": 17
+    },
+    {
+      "ts": "2026-06-24T00:08:59Z",
+      "id": "central-cee-arch-tee-black-l",
+      "name": "Central Cee Arch Tee - Black",
+      "size": "L",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "type": "new",
+      "delta": 12,
+      "after": 12
+    },
+    {
       "ts": "2026-06-24T00:07:39Z",
       "id": "central-cee-arch-hoodie-black-m",
       "name": "Central Cee Arch Hoodie - Black",
