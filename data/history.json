@@ -1,6 +1,16 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:12:20Z",
+      "id": "nemzzz-rent-s-due-tee-white-m",
+      "name": "Nemzzz Rent's Due Tee - White",
+      "size": "M",
+      "image": "images/nemzzz-rent-s-due-tee-white-1782259939026.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:11:50Z",
       "id": "nemzzz-rent-s-due-hoodie-black-s",
       "name": "Nemzzz Rent's Due Hoodie - Black",
