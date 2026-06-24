@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:01:54Z",
+      "id": "distortion-tee-black-teal-s",
+      "name": "Distortion Tee - Black/Teal",
+      "size": "S",
+      "image": "images/distortion-tee-black-teal-1782259313303.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:01:54Z",
+      "id": "distortion-tee-black-teal-m",
+      "name": "Distortion Tee - Black/Teal",
+      "size": "M",
+      "image": "images/distortion-tee-black-teal-1782259313303.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:01:54Z",
+      "id": "distortion-tee-black-teal-l",
+      "name": "Distortion Tee - Black/Teal",
+      "size": "L",
+      "image": "images/distortion-tee-black-teal-1782259313303.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:00:56Z",
       "id": "hunter-x-hunter-shotgun-hoodie-black-l",
       "name": "Hunter x Hunter Shotgun Hoodie - Black",
