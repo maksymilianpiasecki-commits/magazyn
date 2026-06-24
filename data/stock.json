@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:07:39Z",
+  "updated": "2026-06-24T00:08:59Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2976,6 +2976,42 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-24T00:07:39Z"
+    },
+    {
+      "id": "central-cee-arch-tee-black-s",
+      "name": "Central Cee Arch Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "size": "S",
+      "qty": 11,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:08:59Z"
+    },
+    {
+      "id": "central-cee-arch-tee-black-m",
+      "name": "Central Cee Arch Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "size": "M",
+      "qty": 17,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:08:59Z"
+    },
+    {
+      "id": "central-cee-arch-tee-black-l",
+      "name": "Central Cee Arch Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
+      "size": "L",
+      "qty": 12,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:08:59Z"
     }
   ]
 }
