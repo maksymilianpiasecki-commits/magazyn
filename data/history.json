@@ -1,6 +1,36 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:10:07Z",
+      "id": "dave-box-logo-hoodie-black-s",
+      "name": "Dave Box Logo Hoodie - Black",
+      "size": "S",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-24T00:10:07Z",
+      "id": "dave-box-logo-hoodie-black-m",
+      "name": "Dave Box Logo Hoodie - Black",
+      "size": "M",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:10:07Z",
+      "id": "dave-box-logo-hoodie-black-l",
+      "name": "Dave Box Logo Hoodie - Black",
+      "size": "L",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "type": "new",
+      "delta": 2,
+      "after": 2
+    },
+    {
       "ts": "2026-06-24T00:09:30Z",
       "id": "central-cee-game-time-tee-black-s",
       "name": "Central Cee Game Time Tee - Black",
