@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:09:30Z",
+  "updated": "2026-06-24T00:10:07Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3036,6 +3036,42 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-24T00:09:30Z"
+    },
+    {
+      "id": "dave-box-logo-hoodie-black-s",
+      "name": "Dave Box Logo Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "size": "S",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:10:07Z"
+    },
+    {
+      "id": "dave-box-logo-hoodie-black-m",
+      "name": "Dave Box Logo Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:10:07Z"
+    },
+    {
+      "id": "dave-box-logo-hoodie-black-l",
+      "name": "Dave Box Logo Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/dave-box-logo-hoodie-black-1782259806672.jpg",
+      "size": "L",
+      "qty": 2,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:10:07Z"
     }
   ]
 }
