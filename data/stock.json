@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:12:20Z",
+  "updated": "2026-06-24T00:12:46Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3120,6 +3120,18 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-24T00:12:20Z"
+    },
+    {
+      "id": "trp-flame-shorts-black-pink-m",
+      "name": "TRP Flame Shorts - Black/Pink",
+      "brand": "Trapstar",
+      "subtitle": "Spodenki",
+      "image": "images/trp-flame-shorts-black-pink-1782259965688.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "250",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:12:46Z"
     }
   ]
 }
