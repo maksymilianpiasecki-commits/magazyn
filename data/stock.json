@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:14:12Z",
+  "updated": "2026-06-24T00:14:40Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -3180,6 +3180,18 @@
       "price": "550",
       "location": "Wrocław",
       "updated": "2026-06-24T00:14:12Z"
+    },
+    {
+      "id": "wall-to-wall-tee-black-m",
+      "name": "Wall to Wall Tee - Black",
+      "brand": "Trapstar",
+      "subtitle": "Koszulka",
+      "image": "images/wall-to-wall-tee-black-1782260079601.jpg",
+      "size": "M",
+      "qty": 1,
+      "price": "160",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:14:40Z"
     }
   ]
 }
