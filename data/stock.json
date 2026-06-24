@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:00:34Z",
+  "updated": "2026-06-24T00:00:56Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -2772,6 +2772,18 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-24T00:00:34Z"
+    },
+    {
+      "id": "hunter-x-hunter-shotgun-hoodie-black-l",
+      "name": "Hunter x Hunter Shotgun Hoodie - Black",
+      "brand": "Trapstar",
+      "subtitle": "Bluza",
+      "image": "images/hunter-x-hunter-shotgun-hoodie-black-1782259255347.jpg",
+      "size": "L",
+      "qty": 1,
+      "price": "300",
+      "location": "Wrocław",
+      "updated": "2026-06-24T00:00:56Z"
     }
   ]
 }
