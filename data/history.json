@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-24T00:07:39Z",
+      "id": "central-cee-arch-hoodie-black-m",
+      "name": "Central Cee Arch Hoodie - Black",
+      "size": "M",
+      "image": "images/central-cee-arch-hoodie-black-1782259658200.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-24T00:07:39Z",
+      "id": "central-cee-arch-hoodie-black-l",
+      "name": "Central Cee Arch Hoodie - Black",
+      "size": "L",
+      "image": "images/central-cee-arch-hoodie-black-1782259658200.jpg",
+      "type": "new",
+      "delta": 1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:06:58Z",
       "id": "central-cee-arch-23-hoodie-tracksuit-bla-s",
       "name": "Central Cee Arch 23 Hoodie Tracksuit - Black",
