@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-06-29T12:07:30Z",
+      "id": "no-gimmicks-t-shirt-m",
+      "name": "No Gimmicks T-Shirt",
+      "size": "M",
+      "image": "images/no-gimmicks-t-shirt-1782256561588.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 2
+    },
+    {
+      "ts": "2026-06-29T12:07:30Z",
+      "id": "synarchy-short-sleeve-tee-black-red-m",
+      "name": "Synarchy Short Sleeve Tee - Black/Red",
+      "size": "M",
+      "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-29T11:58:09Z",
       "id": "boxerki-syna-x-central-cee-3pack-m",
       "name": "Boxerki Syna x Central Cee (3PACK)",
