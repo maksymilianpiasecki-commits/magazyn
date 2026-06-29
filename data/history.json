@@ -1,6 +1,96 @@
 {
   "entries": [
     {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "boxerki-syna-x-central-cee-3pack-m",
+      "name": "Boxerki Syna x Central Cee (3PACK)",
+      "size": "M",
+      "image": "images/boxerki-syna-x-central-cee-3pack-1782244772260.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 4
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "decoded-tracksuit-black-monochrome-m",
+      "name": "Decoded Tracksuit - Black Monochrome",
+      "size": "M",
+      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "dream-team-tee-black-blue-m",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "M",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 1
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "eternal-flame-tee-white-s",
+      "name": "Eternal Flame Tee - White",
+      "size": "S",
+      "image": "images/eternal-flame-tee-white-1782253766303.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "forgive-me-tee-white-3d-print-m",
+      "name": "Forgive Me Tee - White (3D PRINT)",
+      "size": "M",
+      "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 7
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "forgive-me-tee-white-3d-print-l",
+      "name": "Forgive Me Tee - White (3D PRINT)",
+      "size": "L",
+      "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 20
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "greatness-tee-black-xl",
+      "name": "Greatness Tee - Black",
+      "size": "XL",
+      "image": "images/greatness-tee-black-1782255013935.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "irongate-t-snake-slayer-tee-black-m",
+      "name": "Irongate T Snake Slayer Tee - Black",
+      "size": "M",
+      "image": "images/irongate-t-snake-slayer-tee-black-1782256057081.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-06-29T11:58:09Z",
+      "id": "syna-trucker-grey-one-size",
+      "name": "Syna Trucker - Grey",
+      "size": "ONE SIZE",
+      "image": "images/syna-trucker-grey-1782258538823.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-24T00:45:58Z",
       "id": "nocturnal-tee-white-m",
       "name": "Nocturnal Tee - White",
