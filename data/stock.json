@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24T00:45:58Z",
+  "updated": "2026-06-29T11:58:09Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -44,10 +44,10 @@
       "subtitle": "Bielizna",
       "image": "images/boxerki-syna-x-central-cee-3pack-1782244772260.jpg",
       "size": "M",
-      "qty": 5,
+      "qty": 4,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-06-23T19:59:33Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "adg-tee-purple-l",
@@ -824,10 +824,10 @@
       "subtitle": "Tracksuit",
       "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
       "size": "M",
-      "qty": 1,
+      "qty": 0,
       "price": "600",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:21:04Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "decoded-tracksuit-black-monochrome-l",
@@ -932,10 +932,10 @@
       "subtitle": "Koszulka",
       "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
       "size": "M",
-      "qty": 2,
+      "qty": 1,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:26:51Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "dream-team-tee-black-blue-l",
@@ -992,10 +992,10 @@
       "subtitle": "Koszulka",
       "image": "images/eternal-flame-tee-white-1782253766303.jpg",
       "size": "S",
-      "qty": 1,
+      "qty": 0,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:29:27Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "extraordinary-tee-black-s",
@@ -1112,10 +1112,10 @@
       "subtitle": "Koszulka",
       "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
       "size": "M",
-      "qty": 8,
+      "qty": 7,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:44:12Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "forgive-me-tee-white-3d-print-l",
@@ -1124,10 +1124,10 @@
       "subtitle": "Koszulka",
       "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
       "size": "L",
-      "qty": 21,
+      "qty": 20,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:44:12Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "foundation-crew-inked-blue-s",
@@ -1244,10 +1244,10 @@
       "subtitle": "Koszulka",
       "image": "images/greatness-tee-black-1782255013935.jpg",
       "size": "XL",
-      "qty": 1,
+      "qty": 0,
       "price": "280",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:50:14Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "halftone-hoodie-black-s",
@@ -1652,10 +1652,10 @@
       "subtitle": "Koszulka",
       "image": "images/irongate-t-snake-slayer-tee-black-1782256057081.jpg",
       "size": "M",
-      "qty": 1,
+      "qty": 0,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:07:38Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "irongate-t-tee-desert-camo-edition-white-l",
@@ -2504,10 +2504,10 @@
       "subtitle": "Czapka z daszkiem",
       "image": "images/syna-trucker-grey-1782258538823.jpg",
       "size": "ONE SIZE",
-      "qty": 2,
+      "qty": 1,
       "price": "280",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:49:00Z"
+      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "synarchy-cuffed-beanie-black-green-one-size",
