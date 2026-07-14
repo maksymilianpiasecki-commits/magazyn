@@ -1,6 +1,86 @@
 {
   "entries": [
     {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "dream-team-tee-black-blue-l",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "L",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "halftone-tee-2-0-white-l",
+      "name": "Halftone Tee 2.0 - White",
+      "size": "L",
+      "image": "images/halftone-tee-2-0-white-1782255104142.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "hustlers-spirit-2-1-tee-black-s",
+      "name": "Hustlers Spirit 2.1 Tee - Black",
+      "size": "S",
+      "image": "images/hustlers-spirit-2-1-tee-black-1782255148669.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "reversible-synarchy-beanie-black-orange-one-size",
+      "name": "Reversible Synarchy Beanie - Black/Orange",
+      "size": "ONE SIZE",
+      "image": "images/reversible-synarchy-beanie-black-orange-1782256837033.jpg",
+      "type": "increase",
+      "delta": 9,
+      "after": 10
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "shooters-reflective-tracksuit-black-s",
+      "name": "Shooters Reflective Tracksuit - Black",
+      "size": "S",
+      "image": "images/shooters-reflective-tracksuit-black-1782257594371.jpg",
+      "type": "increase",
+      "delta": 1,
+      "after": 2
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "synarchy-short-sleeve-tee-black-red-m",
+      "name": "Synarchy Short Sleeve Tee - Black/Red",
+      "size": "M",
+      "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "three-peat-champions-tee-black-blue-edit-l",
+      "name": "Three-peat Champions Tee - Black/Blue Edition",
+      "size": "L",
+      "image": "images/three-peat-champions-tee-black-blue-edit-1782259120671.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 1
+    },
+    {
+      "ts": "2026-07-14T11:09:36Z",
+      "id": "london-tee-white-red-m",
+      "name": "London Tee - White/Red",
+      "size": "M",
+      "image": "images/london-tee-white-red-1782259437815.jpg",
+      "type": "decrease",
+      "delta": -1,
+      "after": 1
+    },
+    {
       "ts": "2026-06-29T12:07:30Z",
       "id": "no-gimmicks-t-shirt-m",
       "name": "No Gimmicks T-Shirt",
