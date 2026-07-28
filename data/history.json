@@ -1,6 +1,26 @@
 {
   "entries": [
     {
+      "ts": "2026-07-28T09:50:58Z",
+      "id": "flying-birds-tee-white-m",
+      "name": "Flying Birds Tee - White",
+      "size": "M",
+      "image": "images/flying-birds-tee-white-1782253986950.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-07-28T09:50:58Z",
+      "id": "flying-birds-tee-white-l",
+      "name": "Flying Birds Tee - White",
+      "size": "L",
+      "image": "images/flying-birds-tee-white-1782253986950.jpg",
+      "type": "sold_out",
+      "delta": -1,
+      "after": 0
+    },
+    {
       "ts": "2026-07-21T09:46:03Z",
       "id": "friends-family-tee-black-grey-s",
       "name": "Friends & Family Tee - Black/Grey",
