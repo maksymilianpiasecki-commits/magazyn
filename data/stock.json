@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T09:47:44Z",
+  "updated": "2026-08-03T09:48:46Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -818,18 +818,6 @@
       "updated": "2026-06-23T22:21:04Z"
     },
     {
-      "id": "decoded-tracksuit-black-monochrome-m",
-      "name": "Decoded Tracksuit - Black Monochrome",
-      "brand": "Trapstar",
-      "subtitle": "Tracksuit",
-      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
-      "size": "M",
-      "qty": 0,
-      "price": "600",
-      "location": "Wrocław",
-      "updated": "2026-06-29T11:58:09Z"
-    },
-    {
       "id": "decoded-tracksuit-black-monochrome-l",
       "name": "Decoded Tracksuit - Black Monochrome",
       "brand": "Trapstar",
@@ -938,18 +926,6 @@
       "updated": "2026-06-29T11:58:09Z"
     },
     {
-      "id": "dream-team-tee-black-blue-l",
-      "name": "Dream Team Tee - Black/Blue",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
-      "size": "L",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-14T11:09:36Z"
-    },
-    {
       "id": "metallic-gold-script-beanie-one-size",
       "name": "Metallic Gold Script Beanie",
       "brand": "Denim Tears",
@@ -984,18 +960,6 @@
       "price": "200",
       "location": "Wrocław",
       "updated": "2026-06-23T22:28:55Z"
-    },
-    {
-      "id": "eternal-flame-tee-white-s",
-      "name": "Eternal Flame Tee - White",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/eternal-flame-tee-white-1782253766303.jpg",
-      "size": "S",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "extraordinary-tee-black-s",
@@ -1080,30 +1044,6 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T22:32:10Z"
-    },
-    {
-      "id": "flying-birds-tee-white-m",
-      "name": "Flying Birds Tee - White",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/flying-birds-tee-white-1782253986950.jpg",
-      "size": "M",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-28T09:50:58Z"
-    },
-    {
-      "id": "flying-birds-tee-white-l",
-      "name": "Flying Birds Tee - White",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/flying-birds-tee-white-1782253986950.jpg",
-      "size": "L",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-28T09:50:58Z"
     },
     {
       "id": "forgive-me-tee-white-3d-print-m",
@@ -1238,18 +1178,6 @@
       "updated": "2026-06-23T22:50:14Z"
     },
     {
-      "id": "greatness-tee-black-xl",
-      "name": "Greatness Tee - Black",
-      "brand": "Syna World",
-      "subtitle": "Koszulka",
-      "image": "images/greatness-tee-black-1782255013935.jpg",
-      "size": "XL",
-      "qty": 0,
-      "price": "280",
-      "location": "Wrocław",
-      "updated": "2026-06-29T11:58:09Z"
-    },
-    {
       "id": "halftone-hoodie-black-s",
       "name": "Halftone Hoodie - Black",
       "brand": "Trapstar",
@@ -1260,30 +1188,6 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T22:50:38Z"
-    },
-    {
-      "id": "halftone-tee-2-0-white-l",
-      "name": "Halftone Tee 2.0 - White",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/halftone-tee-2-0-white-1782255104142.jpg",
-      "size": "L",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-14T11:09:36Z"
-    },
-    {
-      "id": "hustlers-spirit-2-1-tee-black-s",
-      "name": "Hustlers Spirit 2.1 Tee - Black",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/hustlers-spirit-2-1-tee-black-1782255148669.jpg",
-      "size": "S",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-14T11:09:36Z"
     },
     {
       "id": "hustler-s-spirit-tee-black-m",
@@ -1622,18 +1526,6 @@
       "updated": "2026-06-23T23:05:40Z"
     },
     {
-      "id": "irongate-t-cross-body-bag-black-one-size",
-      "name": "Irongate T Cross-Body Bag - Black",
-      "brand": "Trapstar",
-      "subtitle": "Akcesoria",
-      "image": "images/irongate-t-cross-body-bag-black-1782255973373.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "250",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:06:14Z"
-    },
-    {
       "id": "irongate-t-high-frequency-hoodie-black-s",
       "name": "Irongate T High Frequency Hoodie - Black",
       "brand": "Trapstar",
@@ -1644,18 +1536,6 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:06:55Z"
-    },
-    {
-      "id": "irongate-t-snake-slayer-tee-black-m",
-      "name": "Irongate T Snake Slayer Tee - Black",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/irongate-t-snake-slayer-tee-black-1782256057081.jpg",
-      "size": "M",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-06-29T11:58:09Z"
     },
     {
       "id": "irongate-t-tee-desert-camo-edition-white-l",
@@ -2588,10 +2468,10 @@
       "subtitle": "Koszulka",
       "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
       "size": "M",
-      "qty": 0,
+      "qty": 1,
       "price": "280",
       "location": "Wrocław",
-      "updated": "2026-07-14T11:09:36Z"
+      "updated": "2026-08-03T09:48:46Z"
     },
     {
       "id": "team-syna-x-central-cee-tracksuit-l",
@@ -2796,18 +2676,6 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-24T00:01:54Z"
-    },
-    {
-      "id": "friends-family-tee-black-grey-s",
-      "name": "Friends & Family Tee - Black/Grey",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
-      "size": "S",
-      "qty": 0,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-07-21T09:46:03Z"
     },
     {
       "id": "friends-family-tee-black-grey-m",
