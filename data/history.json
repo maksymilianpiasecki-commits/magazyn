@@ -1,6 +1,126 @@
 {
   "entries": [
     {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "synarchy-short-sleeve-tee-black-red-m",
+      "name": "Synarchy Short Sleeve Tee - Black/Red",
+      "size": "M",
+      "image": "images/synarchy-short-sleeve-tee-black-red-1782258775819.jpg",
+      "type": "restock",
+      "delta": 1,
+      "after": 1
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "decoded-tracksuit-black-monochrome-m",
+      "name": "Decoded Tracksuit - Black Monochrome",
+      "size": "M",
+      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "dream-team-tee-black-blue-l",
+      "name": "Dream Team Tee - Black/Blue",
+      "size": "L",
+      "image": "images/dream-team-tee-black-blue-1782253610219.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "eternal-flame-tee-white-s",
+      "name": "Eternal Flame Tee - White",
+      "size": "S",
+      "image": "images/eternal-flame-tee-white-1782253766303.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "flying-birds-tee-white-m",
+      "name": "Flying Birds Tee - White",
+      "size": "M",
+      "image": "images/flying-birds-tee-white-1782253986950.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "flying-birds-tee-white-l",
+      "name": "Flying Birds Tee - White",
+      "size": "L",
+      "image": "images/flying-birds-tee-white-1782253986950.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "greatness-tee-black-xl",
+      "name": "Greatness Tee - Black",
+      "size": "XL",
+      "image": "images/greatness-tee-black-1782255013935.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "halftone-tee-2-0-white-l",
+      "name": "Halftone Tee 2.0 - White",
+      "size": "L",
+      "image": "images/halftone-tee-2-0-white-1782255104142.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "hustlers-spirit-2-1-tee-black-s",
+      "name": "Hustlers Spirit 2.1 Tee - Black",
+      "size": "S",
+      "image": "images/hustlers-spirit-2-1-tee-black-1782255148669.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "irongate-t-cross-body-bag-black-one-size",
+      "name": "Irongate T Cross-Body Bag - Black",
+      "size": "ONE SIZE",
+      "image": "images/irongate-t-cross-body-bag-black-1782255973373.jpg",
+      "type": "removed",
+      "delta": -1,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "irongate-t-snake-slayer-tee-black-m",
+      "name": "Irongate T Snake Slayer Tee - Black",
+      "size": "M",
+      "image": "images/irongate-t-snake-slayer-tee-black-1782256057081.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
+      "ts": "2026-08-03T09:48:46Z",
+      "id": "friends-family-tee-black-grey-s",
+      "name": "Friends & Family Tee - Black/Grey",
+      "size": "S",
+      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
+      "type": "removed",
+      "delta": 0,
+      "after": 0
+    },
+    {
       "ts": "2026-08-03T09:47:44Z",
       "id": "shooters-breakthrough-tee-black-m",
       "name": "Shooters Breakthrough Tee - Black",
