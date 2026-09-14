@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03T10:00:40Z",
+  "updated": "2026-09-14T08:49:35Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -812,18 +812,6 @@
       "subtitle": "Tracksuit",
       "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
       "size": "S",
-      "qty": 1,
-      "price": "600",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:21:04Z"
-    },
-    {
-      "id": "decoded-tracksuit-black-monochrome-l",
-      "name": "Decoded Tracksuit - Black Monochrome",
-      "brand": "Trapstar",
-      "subtitle": "Tracksuit",
-      "image": "images/decoded-tracksuit-black-monochrome-1782253263888.jpg",
-      "size": "L",
       "qty": 1,
       "price": "600",
       "location": "Wrocław",
