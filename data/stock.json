@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T21:23:15Z",
+  "updated": "2026-09-25T21:45:39Z",
   "items": [
     {
       "id": "skarpetki-syna-x-central-cee-one-size",
@@ -8,10 +8,10 @@
       "subtitle": "Bielizna",
       "image": "images/skarpetki-syna-x-central-cee-1782244158601.jpg",
       "size": "ONE SIZE",
-      "qty": 15,
+      "qty": 7,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-06-23T19:49:19Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "3-peat-hoodie-black-s",
@@ -32,10 +32,10 @@
       "subtitle": "Bielizna",
       "image": "images/boxerki-syna-x-central-cee-3pack-1782244772260.jpg",
       "size": "M",
-      "qty": 4,
+      "qty": 3,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-06-29T11:58:09Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "adg-tee-purple-l",
@@ -134,18 +134,6 @@
       "updated": "2026-06-23T20:56:03Z"
     },
     {
-      "id": "c-star-corduroy-trucker-black-navy-one-size",
-      "name": "C-Star Corduroy Trucker - Black/Navy",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/c-star-corduroy-trucker-black-navy-1782248261482.jpg",
-      "size": "ONE SIZE",
-      "qty": 5,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T20:57:42Z"
-    },
-    {
       "id": "alcatraz-beanie-cream-one-size",
       "name": "Alcatraz Beanie - Cream",
       "brand": "Corteiz",
@@ -164,10 +152,10 @@
       "subtitle": "Beanie",
       "image": "images/allstarz-folded-beanie-brown-1782248584022.jpg",
       "size": "ONE SIZE",
-      "qty": 6,
+      "qty": 5,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T21:18:54Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "allstarz-folded-beanie-green-one-size",
@@ -176,22 +164,10 @@
       "subtitle": "Beanie",
       "image": "images/allstarz-folded-beanie-green-1782249631034.jpg",
       "size": "ONE SIZE",
-      "qty": 5,
-      "price": "200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:20:32Z"
-    },
-    {
-      "id": "allstarz-folded-beanie-pink-one-size",
-      "name": "Allstarz Folded Beanie - Pink",
-      "brand": "Corteiz",
-      "subtitle": "Beanie",
-      "image": "images/allstarz-folded-beanie-pink-1782249721211.jpg",
-      "size": "ONE SIZE",
       "qty": 2,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T21:22:02Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "allstarz-folded-beanie-red-black-one-size",
@@ -200,130 +176,10 @@
       "subtitle": "Beanie",
       "image": "images/allstarz-folded-beanie-red-black-1782249757417.jpg",
       "size": "ONE SIZE",
-      "qty": 4,
-      "price": "200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:22:48Z"
-    },
-    {
-      "id": "black-box-trucker-one-size",
-      "name": "Black Box Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/black-box-trucker-1782249823250.jpg",
-      "size": "ONE SIZE",
-      "qty": 3,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:23:44Z"
-    },
-    {
-      "id": "blue-box-trucker-one-size",
-      "name": "Blue Box Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/blue-box-trucker-1782249863334.jpg",
-      "size": "ONE SIZE",
-      "qty": 3,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:24:24Z"
-    },
-    {
-      "id": "brown-box-trucker-one-size",
-      "name": "Brown Box Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/brown-box-trucker-1782249895515.jpg",
-      "size": "ONE SIZE",
-      "qty": 3,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
-    },
-    {
-      "id": "eagle-trucker-hat-black-one-size",
-      "name": "Eagle Trucker Hat - Black",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/eagle-trucker-hat-black-1782249973354.jpg",
-      "size": "ONE SIZE",
-      "qty": 4,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:26:14Z"
-    },
-    {
-      "id": "eagle-trucker-hat-grey-one-size",
-      "name": "Eagle Trucker Hat - Grey",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/eagle-trucker-hat-grey-1782250005439.jpg",
-      "size": "ONE SIZE",
-      "qty": 3,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:26:46Z"
-    },
-    {
-      "id": "gasolina-trucker-olive-green-one-size",
-      "name": "Gasolina Trucker Olive Green",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/gasolina-trucker-olive-green-1782250066881.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:27:47Z"
-    },
-    {
-      "id": "green-box-trucker-one-size",
-      "name": "Green Box Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/green-box-trucker-1782250458067.jpg",
-      "size": "ONE SIZE",
-      "qty": 2,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:34:19Z"
-    },
-    {
-      "id": "grey-box-trucker-one-size",
-      "name": "Grey Box Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/grey-box-trucker-1782250502669.jpg",
-      "size": "ONE SIZE",
-      "qty": 2,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:35:03Z"
-    },
-    {
-      "id": "guerillaz-cargo-navy-on-navy-m",
-      "name": "Guerillaz Cargo - Navy On Navy",
-      "brand": "Corteiz",
-      "subtitle": "Spodnie",
-      "image": "images/guerillaz-cargo-navy-on-navy-1782250593071.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "500",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:36:34Z"
-    },
-    {
-      "id": "micro-allstarz-beanie-baby-blue-one-size",
-      "name": "Micro Allstarz Beanie - Baby Blue",
-      "brand": "Corteiz",
-      "subtitle": "Beanie",
-      "image": "images/micro-allstarz-beanie-baby-blue-1782251713767.jpg",
-      "size": "ONE SIZE",
       "qty": 2,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T21:55:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "micro-allstarz-beanie-cream-one-size",
@@ -356,10 +212,10 @@
       "subtitle": "Spodnie",
       "image": "images/mula-guerillaz-black-green-cargo-pants-1782251815921.jpg",
       "size": "M",
-      "qty": 2,
+      "qty": 1,
       "price": "600",
       "location": "Wrocław",
-      "updated": "2026-06-23T21:56:56Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "og-strike-beanie-brown-one-size",
@@ -368,106 +224,10 @@
       "subtitle": "Beanie",
       "image": "images/og-strike-beanie-brown-1782251857898.jpg",
       "size": "ONE SIZE",
-      "qty": 3,
+      "qty": 2,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T21:57:39Z"
-    },
-    {
-      "id": "og-strike-beanie-cream-one-size",
-      "name": "OG Strike Beanie - Cream",
-      "brand": "Corteiz",
-      "subtitle": "Beanie",
-      "image": "images/og-strike-beanie-cream-1782251886841.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:58:07Z"
-    },
-    {
-      "id": "og-strike-beanie-green-one-size",
-      "name": "OG Strike Beanie - Green",
-      "brand": "Corteiz",
-      "subtitle": "Beanie",
-      "image": "images/og-strike-beanie-green-1782251914441.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T21:58:35Z"
-    },
-    {
-      "id": "orange-short-peak-trucker-one-size",
-      "name": "Orange Short Peak Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/orange-short-peak-trucker-1782252291878.jpg",
-      "size": "ONE SIZE",
-      "qty": 2,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:04:53Z"
-    },
-    {
-      "id": "repeat-alcatraz-beanie-brown-cream-one-size",
-      "name": "Repeat Alcatraz Beanie - Brown Cream",
-      "brand": "Corteiz",
-      "subtitle": "Beanie",
-      "image": "images/repeat-alcatraz-beanie-brown-cream-1782252342427.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "115",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:05:43Z"
-    },
-    {
-      "id": "totebag-black-white-one-size",
-      "name": "Totebag - Black/White",
-      "brand": "Corteiz",
-      "subtitle": "Akcesoria",
-      "image": "images/totebag-black-white-1782252491318.jpg",
-      "size": "ONE SIZE",
-      "qty": 2,
-      "price": "100",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:08:12Z"
-    },
-    {
-      "id": "yacht-club-grey-trucker-one-size",
-      "name": "Yacht Club Grey Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/yacht-club-grey-trucker-1782252641962.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:10:43Z"
-    },
-    {
-      "id": "yacht-club-olive-trucker-one-size",
-      "name": "Yacht Club Olive Trucker",
-      "brand": "Corteiz",
-      "subtitle": "Czapka z daszkiem",
-      "image": "images/yacht-club-olive-trucker-1782252683560.jpg",
-      "size": "ONE SIZE",
-      "qty": 2,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:11:24Z"
-    },
-    {
-      "id": "decoded-aw23-puffer-black-l",
-      "name": "Decoded AW23 Puffer - Black",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/decoded-aw23-puffer-black-1782252744910.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:12:26Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "decoded-camo-hoodie-black-neon-green-m",
@@ -476,10 +236,10 @@
       "subtitle": "Bluza",
       "image": "images/decoded-camo-hoodie-black-neon-green-1782252792325.jpg",
       "size": "M",
-      "qty": 3,
+      "qty": 2,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:13:13Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "decoded-camo-hoodie-black-neon-green-l",
@@ -500,10 +260,10 @@
       "subtitle": "Bluza",
       "image": "images/decoded-camo-hoodie-blackout-edition-1782252830355.jpg",
       "size": "S",
-      "qty": 3,
+      "qty": 1,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:13:51Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "decoded-camo-hoodie-blackout-edition-l",
@@ -530,28 +290,16 @@
       "updated": "2026-06-23T22:14:44Z"
     },
     {
-      "id": "decoded-mask-black-white-one-size",
-      "name": "Decoded Mask - Black/White",
-      "brand": "Trapstar",
-      "subtitle": "Akcesoria",
-      "image": "images/decoded-mask-black-white-1782253014180.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "150",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:16:55Z"
-    },
-    {
       "id": "decoded-paisley-monochrome-edition-hoodi-s",
       "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
       "brand": "Trapstar",
       "subtitle": "Bluza",
       "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
       "size": "S",
-      "qty": 3,
+      "qty": 2,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:17:57Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "decoded-paisley-monochrome-edition-hoodi-m",
@@ -566,64 +314,16 @@
       "updated": "2026-09-25T21:23:15Z"
     },
     {
-      "id": "decoded-paisley-monochrome-edition-hoodi-l",
-      "name": "Decoded Paisley Monochrome Edition Hoodie - Purple",
-      "brand": "Trapstar",
-      "subtitle": "Bluza",
-      "image": "images/decoded-paisley-monochrome-edition-hoodi-1782253076218.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "300",
-      "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
-    },
-    {
-      "id": "decoded-paisley-revolution-tee-m",
-      "name": "Decoded Paisley Revolution Tee",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/decoded-paisley-revolution-tee-1782253218620.jpg",
-      "size": "M",
-      "qty": 3,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:20:19Z"
-    },
-    {
       "id": "decoded-paisley-revolution-tee-l",
       "name": "Decoded Paisley Revolution Tee",
       "brand": "Trapstar",
       "subtitle": "Koszulka",
       "image": "images/decoded-paisley-revolution-tee-1782253218620.jpg",
       "size": "L",
-      "qty": 2,
+      "qty": 1,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
-    },
-    {
-      "id": "jacket-tracksuit-green-white-m",
-      "name": "Jacket Tracksuit Green/White",
-      "brand": "Denim Tears",
-      "subtitle": "Tracksuit",
-      "image": "images/jacket-tracksuit-green-white-1782253448362.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "800",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:24:09Z"
-    },
-    {
-      "id": "jacket-tracksuit-green-white-l",
-      "name": "Jacket Tracksuit Green/White",
-      "brand": "Denim Tears",
-      "subtitle": "Tracksuit",
-      "image": "images/jacket-tracksuit-green-white-1782253448362.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "800",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:24:09Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "diy-art-of-war-hoodie-black-s",
@@ -692,10 +392,10 @@
       "subtitle": "Beanie",
       "image": "images/metallic-gold-script-beanie-1782253662885.jpg",
       "size": "ONE SIZE",
-      "qty": 9,
+      "qty": 7,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:27:43Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "metallic-gold-script-tee-m",
@@ -704,10 +404,10 @@
       "subtitle": "Koszulka",
       "image": "images/metallic-gold-script-tee-1782253697313.jpg",
       "size": "M",
-      "qty": 2,
+      "qty": 1,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:28:18Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "outdoor-pants-red-l",
@@ -776,10 +476,10 @@
       "subtitle": "Koszulka",
       "image": "images/flying-birds-tee-black-1782253929586.jpg",
       "size": "S",
-      "qty": 9,
+      "qty": 5,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "flying-birds-tee-black-m",
@@ -788,10 +488,10 @@
       "subtitle": "Koszulka",
       "image": "images/flying-birds-tee-black-1782253929586.jpg",
       "size": "M",
-      "qty": 14,
+      "qty": 13,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "flying-birds-tee-black-l",
@@ -800,10 +500,10 @@
       "subtitle": "Koszulka",
       "image": "images/flying-birds-tee-black-1782253929586.jpg",
       "size": "L",
-      "qty": 16,
+      "qty": 15,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "forgive-me-tee-white-3d-print-m",
@@ -824,10 +524,10 @@
       "subtitle": "Koszulka",
       "image": "images/forgive-me-tee-white-3d-print-1782254652009.jpg",
       "size": "L",
-      "qty": 17,
+      "qty": 15,
       "price": "200",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "foundation-crew-inked-blue-s",
@@ -854,28 +554,16 @@
       "updated": "2026-06-23T22:44:59Z"
     },
     {
-      "id": "foundation-gilet-black-s",
-      "name": "Foundation Gilet - Black",
-      "brand": "Trapstar",
-      "subtitle": "Kamizelka",
-      "image": "images/foundation-gilet-black-1782254772447.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "500",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:46:13Z"
-    },
-    {
       "id": "foundation-gilet-grey-camo-s",
       "name": "Foundation Gilet - Grey Camo",
       "brand": "Trapstar",
       "subtitle": "Kamizelka",
       "image": "images/foundation-gilet-grey-camo-1782254803449.jpg",
       "size": "S",
-      "qty": 2,
+      "qty": 1,
       "price": "500",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:46:44Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "foundation-hoodie-black-s",
@@ -968,46 +656,10 @@
       "subtitle": "Tracksuit",
       "image": "images/hyperdrive-chrome-hoodie-tracksuit-black-1782255225300.jpg",
       "size": "L",
-      "qty": 2,
+      "qty": 1,
       "price": "600",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:53:46Z"
-    },
-    {
-      "id": "hyperdrive-puffer-teal-xs",
-      "name": "Hyperdrive Puffer - Teal",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/hyperdrive-puffer-teal-1782255263413.jpg",
-      "size": "XS",
-      "qty": 1,
-      "price": "450",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:54:24Z"
-    },
-    {
-      "id": "hyperdrive-ripstop-puffer-blackout-m",
-      "name": "Hyperdrive Ripstop Puffer - Blackout",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/hyperdrive-ripstop-puffer-blackout-1782255297521.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "450",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:54:58Z"
-    },
-    {
-      "id": "hyperdrive-ripstop-puffer-blue-orange-s",
-      "name": "Hyperdrive Ripstop Puffer - Blue/Orange",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/hyperdrive-ripstop-puffer-blue-orange-1782255337724.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "450",
-      "location": "Wrocław",
-      "updated": "2026-06-23T22:55:38Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "hyperdrive-t-hoodie-black-camo-s",
@@ -1028,10 +680,10 @@
       "subtitle": "Bielizna",
       "image": "images/skarpetki-i-love-syna-2pack-1782255426438.jpg",
       "size": "ONE SIZE",
-      "qty": 17,
+      "qty": 5,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-06-23T22:57:07Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "boxerki-i-love-syna-3pack-s",
@@ -1118,54 +770,6 @@
       "updated": "2026-09-25T21:23:15Z"
     },
     {
-      "id": "irongate-arch-piping-puffer-black-purple-s",
-      "name": "Irongate Arch Piping Puffer - Black/Purple",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/irongate-arch-piping-puffer-black-purple-1782255731631.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "800",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:02:12Z"
-    },
-    {
-      "id": "irongate-arch-puffer-aw23-black-l",
-      "name": "Irongate Arch Puffer AW23 - Black",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/irongate-arch-puffer-aw23-black-1782255776340.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:02:57Z"
-    },
-    {
-      "id": "irongate-arch-puffer-aw23-black-gradient-s",
-      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:03:32Z"
-    },
-    {
-      "id": "irongate-arch-puffer-aw23-black-gradient-l",
-      "name": "Irongate Arch Puffer AW23 - Black/Gradient",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/irongate-arch-puffer-aw23-black-gradient-1782255811509.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:03:32Z"
-    },
-    {
       "id": "irongate-blocks-hoodie-black-s",
       "name": "Irongate Blocks Hoodie - Black",
       "brand": "Trapstar",
@@ -1212,18 +816,6 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:04:32Z"
-    },
-    {
-      "id": "irongate-detachable-hooded-puffer-jacket-xl",
-      "name": "Irongate Detachable Hooded Puffer Jacket - Black",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/irongate-detachable-hooded-puffer-jacket-1782255907280.jpg",
-      "size": "XL",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:05:08Z"
     },
     {
       "id": "irongate-t-badge-tee-black-s",
@@ -1274,30 +866,6 @@
       "updated": "2026-06-23T23:08:12Z"
     },
     {
-      "id": "it-s-a-secret-hooded-puffer-black-m",
-      "name": "It's A Secret Hooded Puffer - Black",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/it-s-a-secret-hooded-puffer-black-1782256144901.jpg",
-      "size": "M",
-      "qty": 6,
-      "price": "450",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:09:05Z"
-    },
-    {
-      "id": "it-s-a-secret-hoodie-2-0-black-blue-m",
-      "name": "It's a Secret Hoodie 2.0 - Black/Blue",
-      "brand": "Trapstar",
-      "subtitle": "Bluza",
-      "image": "images/it-s-a-secret-hoodie-2-0-black-blue-1782256177964.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "300",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:09:38Z"
-    },
-    {
       "id": "it-s-a-secret-hoodie-2-0-black-blue-l",
       "name": "It's a Secret Hoodie 2.0 - Black/Blue",
       "brand": "Trapstar",
@@ -1308,18 +876,6 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-23T23:09:38Z"
-    },
-    {
-      "id": "it-s-a-secret-print-tee-black-m",
-      "name": "It's A Secret Print Tee - Black",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/it-s-a-secret-print-tee-black-1782256203121.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:10:04Z"
     },
     {
       "id": "it-s-a-secret-tee-2-0-black-blue-m",
@@ -1364,10 +920,10 @@
       "subtitle": "Koszulka",
       "image": "images/link-up-tee-white-1782256407426.jpg",
       "size": "L",
-      "qty": 11,
+      "qty": 10,
       "price": "280",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "my-pain-is-tee-white-xl",
@@ -1436,10 +992,10 @@
       "subtitle": "Koszulka",
       "image": "images/never-miss-tee-white-1782256512230.jpg",
       "size": "L",
-      "qty": 4,
+      "qty": 2,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:15:13Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "no-gimmicks-t-shirt-m",
@@ -1460,10 +1016,10 @@
       "subtitle": "Koszulka",
       "image": "images/no-gimmicks-t-shirt-1782256561588.jpg",
       "size": "L",
-      "qty": 5,
+      "qty": 4,
       "price": "280",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "no-gimmicks-t-shirt-xl",
@@ -1484,10 +1040,10 @@
       "subtitle": "Koszulka",
       "image": "images/nocturnal-tee-white-1782256649369.jpg",
       "size": "L",
-      "qty": 3,
+      "qty": 2,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:17:30Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "outlaw-tee-white-s",
@@ -1572,30 +1128,6 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-23T23:24:26Z"
-    },
-    {
-      "id": "shooters-hooded-puffer-black-reflective-s",
-      "name": "Shooters Hooded Puffer - Black/Reflective",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:25:07Z"
-    },
-    {
-      "id": "shooters-hooded-puffer-black-reflective-m",
-      "name": "Shooters Hooded Puffer - Black/Reflective",
-      "brand": "Trapstar",
-      "subtitle": "Kurtka",
-      "image": "images/shooters-hooded-puffer-black-reflective-1782257106015.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "1200",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:25:07Z"
     },
     {
       "id": "shooters-league-2-0-hoodie-black-l",
@@ -1754,28 +1286,16 @@
       "updated": "2026-06-23T23:36:04Z"
     },
     {
-      "id": "syn-no-trace-gloves-blue-s-m",
-      "name": "Syn No Trace Gloves - Blue",
-      "brand": "Syna World",
-      "subtitle": "Akcesoria",
-      "image": "images/syn-no-trace-gloves-blue-1782257816038.jpg",
-      "size": "S/M",
-      "qty": 1,
-      "price": "250",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:36:57Z"
-    },
-    {
       "id": "syn-no-trace-gloves-grey-marl-s-m",
       "name": "Syn No Trace Gloves - Grey/Marl",
       "brand": "Syna World",
       "subtitle": "Akcesoria",
       "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
       "size": "S/M",
-      "qty": 2,
+      "qty": 1,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:38:06Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "syn-no-trace-gloves-grey-marl-l-xl",
@@ -1784,22 +1304,10 @@
       "subtitle": "Akcesoria",
       "image": "images/syn-no-trace-gloves-grey-marl-1782257885052.jpg",
       "size": "L/XL",
-      "qty": 2,
+      "qty": 1,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
-    },
-    {
-      "id": "skarpetki-syna-black-blue-2pack-one-size",
-      "name": "Skarpetki Syna Black/Blue (2PACK)",
-      "brand": "Syna World",
-      "subtitle": "Bielizna",
-      "image": "images/skarpetki-syna-black-blue-2pack-1782257945653.jpg",
-      "size": "ONE SIZE",
-      "qty": 1,
-      "price": "120",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:39:06Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "skarpetki-syna-grey-white-2pack-one-size",
@@ -1808,10 +1316,10 @@
       "subtitle": "Bielizna",
       "image": "images/skarpetki-syna-grey-white-2pack-1782257982672.jpg",
       "size": "ONE SIZE",
-      "qty": 2,
+      "qty": 1,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:39:43Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "skarpetki-syna-white-aruba-blue-2pack-one-size",
@@ -1820,10 +1328,10 @@
       "subtitle": "Bielizna",
       "image": "images/skarpetki-syna-white-aruba-blue-2pack-1782258044562.jpg",
       "size": "ONE SIZE",
-      "qty": 3,
+      "qty": 2,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:40:45Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "skarpetki-syna-white-blue-2pack-one-size",
@@ -1844,10 +1352,10 @@
       "subtitle": "Bielizna",
       "image": "images/skarpetki-syna-white-yellow-2pack-1782258124222.jpg",
       "size": "ONE SIZE",
-      "qty": 2,
+      "qty": 1,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:42:05Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "boxerki-syna-white-grey-black-3pack-s",
@@ -1868,10 +1376,10 @@
       "subtitle": "Bielizna",
       "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
       "size": "M",
-      "qty": 4,
+      "qty": 1,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-06-23T23:43:30Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "boxerki-syna-white-grey-black-3pack-l",
@@ -1881,18 +1389,6 @@
       "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
       "size": "L",
       "qty": 3,
-      "price": "250",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:43:30Z"
-    },
-    {
-      "id": "boxerki-syna-white-grey-black-3pack-xl",
-      "name": "Boxerki Syna White/Grey/Black (3PACK)",
-      "brand": "Syna World",
-      "subtitle": "Bielizna",
-      "image": "images/boxerki-syna-white-grey-black-3pack-1782258209411.jpg",
-      "size": "XL",
-      "qty": 1,
       "price": "250",
       "location": "Wrocław",
       "updated": "2026-06-23T23:43:30Z"
@@ -1922,28 +1418,16 @@
       "updated": "2026-09-25T21:23:15Z"
     },
     {
-      "id": "syna-og-hood-black-orange-s",
-      "name": "Syna OG Hood - Black/Orange",
-      "brand": "Syna World",
-      "subtitle": "Bluza",
-      "image": "images/syna-og-hood-black-orange-1782258379206.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "700",
-      "location": "Wrocław",
-      "updated": "2026-06-23T23:46:20Z"
-    },
-    {
       "id": "syna-sling-bag-x-central-cee-one-size",
       "name": "Syna Sling Bag x Central Cee",
       "brand": "Syna World",
       "subtitle": "Akcesoria",
       "image": "images/syna-sling-bag-x-central-cee-1782258500134.jpg",
       "size": "ONE SIZE",
-      "qty": 24,
+      "qty": 5,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "synarchy-cuffed-beanie-black-green-one-size",
@@ -1952,10 +1436,10 @@
       "subtitle": "Beanie",
       "image": "images/synarchy-cuffed-beanie-black-green-1782258591239.jpg",
       "size": "ONE SIZE",
-      "qty": 8,
+      "qty": 6,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "synarchy-double-longsleeve-tee-black-ros-s",
@@ -2096,10 +1580,10 @@
       "subtitle": "Akcesoria",
       "image": "images/skarpetki-syna-black-pink-2pack-1782259008166.jpg",
       "size": "ONE SIZE",
-      "qty": 2,
+      "qty": 1,
       "price": "120",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "boxerki-syna-black-black-3pack-s",
@@ -2120,10 +1604,10 @@
       "subtitle": "Bielizna",
       "image": "images/boxerki-syna-black-black-3pack-1782259072893.jpg",
       "size": "M",
-      "qty": 3,
+      "qty": 1,
       "price": "250",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "three-peat-champions-tee-black-blue-edit-m",
@@ -2198,18 +1682,6 @@
       "updated": "2026-06-24T00:01:54Z"
     },
     {
-      "id": "friends-family-tee-black-grey-l",
-      "name": "Friends & Family Tee - Black/Grey",
-      "brand": "Trapstar",
-      "subtitle": "Koszulka",
-      "image": "images/friends-family-tee-black-grey-1782259367477.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "160",
-      "location": "Wrocław",
-      "updated": "2026-06-24T00:02:48Z"
-    },
-    {
       "id": "london-strikeout-tee-black-l",
       "name": "London Strikeout Tee - Black",
       "brand": "Trapstar",
@@ -2282,18 +1754,6 @@
       "updated": "2026-06-24T00:04:40Z"
     },
     {
-      "id": "central-cee-arch-23-hoodie-tracksuit-bla-s",
-      "name": "Central Cee Arch 23 Hoodie Tracksuit - Black",
-      "brand": "Trapstar",
-      "subtitle": "Tracksuit",
-      "image": "images/central-cee-arch-23-hoodie-tracksuit-bla-1782259617775.jpg",
-      "size": "S",
-      "qty": 1,
-      "price": "600",
-      "location": "Wrocław",
-      "updated": "2026-06-24T00:06:58Z"
-    },
-    {
       "id": "central-cee-arch-hoodie-black-m",
       "name": "Central Cee Arch Hoodie - Black",
       "brand": "Trapstar",
@@ -2324,10 +1784,10 @@
       "subtitle": "Koszulka",
       "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
       "size": "S",
-      "qty": 10,
+      "qty": 9,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "central-cee-arch-tee-black-m",
@@ -2336,10 +1796,10 @@
       "subtitle": "Koszulka",
       "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
       "size": "M",
-      "qty": 15,
+      "qty": 13,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "central-cee-arch-tee-black-l",
@@ -2348,10 +1808,10 @@
       "subtitle": "Koszulka",
       "image": "images/central-cee-arch-tee-black-1782259738053.jpg",
       "size": "L",
-      "qty": 11,
+      "qty": 9,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "central-cee-game-time-tee-black-s",
@@ -2360,10 +1820,10 @@
       "subtitle": "Koszulka",
       "image": "images/central-cee-game-time-tee-black-1782259769679.jpg",
       "size": "S",
-      "qty": 2,
+      "qty": 1,
       "price": "160",
       "location": "Wrocław",
-      "updated": "2026-06-24T00:09:30Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "central-cee-game-time-tee-black-m",
@@ -2412,18 +1872,6 @@
       "price": "300",
       "location": "Wrocław",
       "updated": "2026-06-24T00:10:07Z"
-    },
-    {
-      "id": "italiano-art-of-war-hoodie-black-m",
-      "name": "Italiano Art. Of War Hoodie - Black",
-      "brand": "Trapstar",
-      "subtitle": "Bluza",
-      "image": "images/italiano-art-of-war-hoodie-black-1782259880176.jpg",
-      "size": "M",
-      "qty": 1,
-      "price": "300",
-      "location": "Wrocław",
-      "updated": "2026-06-24T00:11:21Z"
     },
     {
       "id": "nemzzz-rent-s-due-hoodie-black-s",
@@ -2492,10 +1940,10 @@
       "subtitle": "Bluza",
       "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
       "size": "M",
-      "qty": 2,
+      "qty": 1,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "trp-hoodie-black-blackout-edition-l",
@@ -2504,10 +1952,10 @@
       "subtitle": "Bluza",
       "image": "images/trp-hoodie-black-blackout-edition-1782260022755.jpg",
       "size": "L",
-      "qty": 4,
+      "qty": 3,
       "price": "300",
       "location": "Wrocław",
-      "updated": "2026-06-24T00:13:43Z"
+      "updated": "2026-09-25T21:45:39Z"
     },
     {
       "id": "ts-varsity-hoodie-tracksuit-black-l",
@@ -2544,30 +1992,6 @@
       "price": "160",
       "location": "Wrocław",
       "updated": "2026-06-24T00:15:29Z"
-    },
-    {
-      "id": "watch-t-shirt-l",
-      "name": "Watch T-Shirt",
-      "brand": "Syna World",
-      "subtitle": "Koszulka",
-      "image": "images/watch-t-shirt-1782260185711.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "280",
-      "location": "Wrocław",
-      "updated": "2026-09-25T21:23:15Z"
-    },
-    {
-      "id": "wave-jacket-grey-l",
-      "name": "Wave Jacket - Grey",
-      "brand": "Syna World",
-      "subtitle": "Kurtka",
-      "image": "images/wave-jacket-grey-1782260234681.jpg",
-      "size": "L",
-      "qty": 1,
-      "price": "1500",
-      "location": "Wrocław",
-      "updated": "2026-06-24T00:17:15Z"
     },
     {
       "id": "wavy-t-box-hoodie-black-s",
